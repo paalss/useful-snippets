@@ -7,6 +7,6 @@ For filer i mappe hvis navn er "pages":
 npx jscodeshift -t https://mskelton.dev/ratchet.ts pages/**/*.{ts,tsx}
 ```
 
-https://github.com/mskelton/ratchet
+<https://github.com/mskelton/ratchet>
 
 funker ikke på destructured props, da
