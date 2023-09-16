@@ -9,11 +9,13 @@
   <body>
     <header>
       <h1>Useful snippets</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
     </header>
     <main>
-<div class="articles">
+<div class="cards">
   
-  <article>
+  <article class="card">
     <h2><a href="/posts/post1/">lalala</a></h2>
     Sat Sep 16 2023 15:59:35 GMT+0200 (Central European Summer Time)
     <p><p>dfsffds
@@ -22,14 +24,14 @@ Mah blog</p>
 </p>
   </article>
   
-  <article>
+  <article class="card">
     <h2><a href="/posts/post2/">mmmmmm!</a></h2>
     Sat Sep 16 2023 17:11:06 GMT+0200 (Central European Summer Time)
     <p><p>hmhmhmhmhmhm</p>
 </p>
   </article>
   
-  <article>
+  <article class="card">
     <h2><a href="/posts/convert-prop-types/">Convert React Prop Types to TS type annotations</a></h2>
     Sat Sep 16 2023 20:58:37 GMT+0200 (Central European Summer Time)
     <p><p>For filer i mappe hvis navn er &quot;pages&quot;:</p>
@@ -40,7 +42,7 @@ Mah blog</p>
 </p>
   </article>
   
-  <article>
+  <article class="card">
     <h2><a href="/posts/ivareta/">Ivareta git historikk ved file renaming</a></h2>
     Sat Sep 16 2023 20:58:37 GMT+0200 (Central European Summer Time)
     <p><p>Ifølge https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7</p>
@@ -58,7 +60,7 @@ Mah blog</p>
 </p>
   </article>
   
-  <article>
+  <article class="card">
     <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
     Sat Sep 16 2023 20:58:37 GMT+0200 (Central European Summer Time)
     <p><pre><code class="language-bash">for f in *.js; do mv -- &quot;$f&quot; &quot;${f%.js}.tsx&quot;; done

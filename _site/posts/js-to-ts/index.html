@@ -9,6 +9,8 @@
   <body>
     <header>
       <h1>Convert all JS files in folder to TS</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
     </header>
     <main><pre><code class="language-bash">for f in *.js; do mv -- &quot;$f&quot; &quot;${f%.js}.tsx&quot;; done
 </code></pre>
