@@ -10,3 +10,15 @@
   background-color: #f1f1f1;
   border: 2px solid #515151;
 }
+
+code {
+  background-color: #c3ff00;
+}
+
+a {
+  color: #000;
+}
+
+.date {
+  font-style: italic;
+}
