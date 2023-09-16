@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Useful snippets | </title>
   </head>
   <body>
     <header>
@@ -11,15 +11,69 @@
     </header>
     <main>
 
-<h2><a href="/posts/post1/">lalala</a></h2>
-<p><p>dfsffds
+<div class="articles">
+  <article>
+    <h2><a href="/posts/post1/">lalala</a></h2>
+    Sat Sep 16 2023 15:59:35 GMT+0200 (Central European Summer Time)
+    <p><p>dfsffds
 Mah blog</p>
 <p>Post innhold</p>
 </p>
+  </article>
+</div>
 
-<h2><a href="/posts/post2/">mmmmmm!</a></h2>
-<p><p>hmhmhmhmhmhm</p>
+<div class="articles">
+  <article>
+    <h2><a href="/posts/ivareta/">Ivareta git historikk ved file renaming</a></h2>
+    Sat Sep 16 2023 16:09:26 GMT+0200 (Central European Summer Time)
+    <p><p>Ifølge https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7</p>
+<p>Hvis du vil være sikker på at file history blir ivaretatt i en fil om du renamer den (eller flytter den), så må du bruke commando-linja og kjøre</p>
+<pre><code>git mv mycoolclass.cs myCoolClass.cs
+</code></pre>
+<p>eller</p>
+<pre><code>git mv layout/CardList common/List
+</code></pre>
+<p>Hvis du renamer direkte i editor-en, så kan du ikke være sikker på at git skjønner at det er samme fil.</p>
+<p>Når du ivaretar git history så kan du bruke ting som <code>git log -p --follow -- path/to/filename</code>. Se gist: https://gist.github.com/paalss/7127b421ff7f3a862ae8d76c772aeb6a</p>
+<p><strong>Kommentarer:</strong></p>
+<p>Mulig det er unødvendig å bruke <code>mv</code>. Da jeg renamet og flyttet layout/CardList til common/List så skjønte git at disse to filene var 74% like.</p>
+<p><code>git log -p --follow components/common/List/List.tsx</code> funker fjell. Historikken strekker seg tilbake til før renamingen</p>
 </p>
+  </article>
+</div>
+
+<div class="articles">
+  <article>
+    <h2><a href="/posts/convert-prop-types/">Convert React Prop Types to TS type annotations</a></h2>
+    Sat Sep 16 2023 16:10:14 GMT+0200 (Central European Summer Time)
+    <p><p>For filer i mappe hvis navn er &quot;pages&quot;:</p>
+<pre><code class="language-bash">npx jscodeshift -t https://mskelton.dev/ratchet.ts pages/**/*.{ts,tsx}
+</code></pre>
+<p>https://github.com/mskelton/ratchet</p>
+<p>funker ikke på destructured props, da</p>
+</p>
+  </article>
+</div>
+
+<div class="articles">
+  <article>
+    <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
+    Sat Sep 16 2023 16:11:16 GMT+0200 (Central European Summer Time)
+    <p><pre><code class="language-bash">for f in *.js; do mv -- &quot;$f&quot; &quot;${f%.js}.tsx&quot;; done
+</code></pre>
+<p>https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files</p>
+</p>
+  </article>
+</div>
+
+<div class="articles">
+  <article>
+    <h2><a href="/posts/post2/">mmmmmm!</a></h2>
+    Sat Sep 16 2023 16:42:36 GMT+0200 (Central European Summer Time)
+    <p><p>hmhmhmhmhmhm</p>
+<link rel="stylesheet" href="/bundle.css"></p>
+  </article>
+</div>
 
 </main>
   </body>
