@@ -3,11 +3,6 @@ layout: layout.html
 ---
 
 <div class="cards">
-  <!-- når går det tydeligvis an å bruke collection fra js uten circular reference error??? -->
-  {% for post in collections.AAAA reversed %}
-  <p>DADADA</p>
-  {% endfor%}
-  <br />
   {% for post in collections.post reversed %}
   <article class="card">
     <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
