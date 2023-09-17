@@ -1,5 +1,6 @@
 ---
 title: ulemper med vscode
+ranking: 4
 ---
 
 - den raskeste måten å cycle through hver changed file er å klikke på hver fil i source control panel. Ingen mulighet for å navigere gjennom med piltastene.
