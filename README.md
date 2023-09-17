@@ -1,12 +1,12 @@
 TODO
 
-- [ ] deploy
 - [ ] inline code vs block code styling
+- [ ] sorting ascending descending
+- [ ] deploy
 - [ ] ranking posts
 - [ ] search
-
 ## Serve
 
 ```bash
-npx @11ty/eleventy --serve
+npm start
 ````
