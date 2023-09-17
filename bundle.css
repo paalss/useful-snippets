@@ -27,12 +27,12 @@ main {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-code {
+/* code {
   padding: 2px 5px;
   border-radius: 2px;
   color: rgb(255, 192, 91);
   background-color: #333;
-}
+} */
 
 h2 a {
   color: #000;
