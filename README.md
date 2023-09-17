@@ -8,5 +8,5 @@ TODO
 ## Serve
 
 ```bash
-npm start
+npm run dev
 ````
