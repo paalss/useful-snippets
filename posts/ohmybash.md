@@ -25,7 +25,7 @@ Save & exit: `ctrl + x`, `y`, [Enter]
 
 Reload:
 ```
-. ~/.bashrc'
+. ~/.bashrc
 ```
 
 Hvis du har mellomrom i path to oh-my-bash insallation, slik:
