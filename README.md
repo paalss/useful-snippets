@@ -1,10 +1,10 @@
 TODO
 
-- [ ] inline code vs block code styling
-- [ ] sorting ascending descending
 - [ ] deploy
 - [ ] ranking posts
 - [ ] search
+- [ ] collapse cards
+- [ ] pagination
 ## Serve
 
 ```bash
