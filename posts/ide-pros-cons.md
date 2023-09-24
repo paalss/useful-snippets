@@ -1,6 +1,9 @@
 ---
 title: fordeler/ulemper med VSCode/Webstorm
 ranking: 4
+tags:
+- webstorm
+- vscode
 ---
 
 # VS Code cons

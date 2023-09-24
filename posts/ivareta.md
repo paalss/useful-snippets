@@ -1,5 +1,7 @@
 ---
 title: Ivareta git historikk ved file renaming
+tags:
+- git
 ---
 
 Ifølge <https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7>

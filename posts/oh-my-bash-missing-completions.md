@@ -1,5 +1,7 @@
 ---
 title: Oh my bash adding missing code completions
+tags:
+- ohmybash
 ---
 
 ```sh

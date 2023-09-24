@@ -1,10 +1,14 @@
 ---
-title: eleventyjs stuff
+title: eleventy stuff
 ---
 
-# Eleventy JS stuff
+# Eleventy stuff
 
-- glitch has web editor for markdown with preview
+- <https://glitch-hello-eleventy.glitch.me/> glitch has web editor for markdown with preview
+  - <https://glitch.com/edit/#!/classy-zesty-bird?path=README.md%3A1%3A0> 
+-  <https://github.com/kohrongying/11ty-blog-starter> has a `create` bash script
+
+## eleventy.js
 
 Return specific post
 

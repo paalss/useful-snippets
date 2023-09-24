@@ -1,5 +1,7 @@
 html {
-  color: #333;
+  --main-color: #333;
+  --button-color: rgb(108, 50, 27);
+  color: var(--main-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -45,4 +47,40 @@ h2 {
   color: #4d4d4d;
   margin-bottom: 25px;
   font-style: italic;
+}
+
+header a {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:link,
+header a:active,
+header a:visited {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+header a:focus,
+header a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+main a button {
+  display: inline-block;
+  color: inherit;
+  border: inherit;
+  background-color: inherit;
+}
+
+a.tag {
+  display: inline-block;
+  padding: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
