@@ -1,5 +1,9 @@
 ---
 title: Convert React Prop Types to TS type annotations
+tags:
+- typescript
+- react
+- javascript
 ---
 
 For filer i mappe hvis navn er "pages":

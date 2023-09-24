@@ -1,5 +1,7 @@
 ---
 title: eleventy stuff
+tags:
+- javascript
 ---
 
 # Eleventy stuff

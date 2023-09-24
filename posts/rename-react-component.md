@@ -1,5 +1,8 @@
 ---
 title: Rename React component
+tags:
+- react
+- javascript
 ---
 
 ```sh

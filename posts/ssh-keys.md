@@ -1,5 +1,8 @@
 ---
 title: SSH-keys
+tags:
+- github
+- bitbucket
 ---
 
 Hvordan opprette og bruke

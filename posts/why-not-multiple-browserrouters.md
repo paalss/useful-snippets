@@ -1,5 +1,8 @@
 ---
 title: why not multiple BrowserRouters
+tags:
+- react
+- javascript
 ---
 
 why not use multiple browserrouters

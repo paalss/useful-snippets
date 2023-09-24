@@ -1,5 +1,8 @@
 ---
 title: table of contents with IntersectionOvserver (not perfect)
+tags:
+- react
+- javascript
 ---
 
 **useScrollSpy.ts**

@@ -1,5 +1,8 @@
 ---
 title: i18next
+tags:
+- react
+- javascript
 ---
 
 # Usage with long nested keys

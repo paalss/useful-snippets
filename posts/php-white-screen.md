@@ -1,5 +1,7 @@
 ---
 title: PHP White screen
+tags:
+- php
 ---
 
 ```php

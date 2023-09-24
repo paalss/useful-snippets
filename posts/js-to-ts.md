@@ -1,5 +1,8 @@
 ---
 title: Convert all JS files in folder to TS
+tags:
+- typescript
+- javascript
 ---
 
 ```bash
