@@ -1,5 +1,7 @@
 ---
 title: Quit Caddy process
+tags:
+- process
 ---
 
 1. Try: `sudo ps -eaf | grep -i caddy`

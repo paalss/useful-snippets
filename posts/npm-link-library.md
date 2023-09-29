@@ -1,5 +1,7 @@
 ---
 title: npm link library
+tags:
+- npm link
 ---
 
 Hvis ting i library ikke oppdatere seg på appen gjennom npm run build  så kan du prøve å restarte app serveren. npm run dev altså

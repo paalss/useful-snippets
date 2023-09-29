@@ -1,5 +1,7 @@
 ---
 title: List processes
+tags:
+- process
 ---
 
 ```sh
