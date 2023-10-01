@@ -7,17 +7,16 @@ pagination:
 permalink: /tags/{{ tag }}/
 eleventyComputed:
   title: "{{ tag }}"
----  
+---
+
 <!-- shows all posts related to that tag -->
 
-{% for post in collections[tag] %}
-<div class="py-4 sm:py-10">
-  <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:underline"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
-  </p>
-  <em>{{ post.date | date: "%Y-%m-%d" }}</em>
-  <p class="mt-4">{{ post.data.post_excerpt }}... 
-    <span class="hover:underline text-indigo-500"><a href="{{ post.url }}">Read More</a></span>
-  </p>
+<div class="cards">
+  {% for post in collections[tag] %}
+  <article class="card">
+    <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <p>{{post.content}}</p>
+  </article>
+  {% endfor %}
 </div>
-{% endfor %}
