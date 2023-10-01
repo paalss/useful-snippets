@@ -6,7 +6,7 @@ pagination:
   alias: posts
 ---
 
-<nav class="main-nav" aria-labelledby="pagination">
+<nav class="page-nav" aria-labelledby="pagination">
   <ul>
     <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&#10094;</a>{% else %}<span class="disabled">&#10094;</span>{% endif %}</li>
 {%- for pageEntry in pagination.pages %}
@@ -14,17 +14,6 @@ pagination:
 {%- endfor %}
     <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&#10095;</a>{% else %}<span class="disabled">&#10095;</span>{% endif %}</li>
   </ol>
-  </ul>
-</nav>
-<nav class="tag-nav" aria-labelledby="tag">
-  <ul>
-    {% for tag in collections.tagList %}
-    <li>
-      <a href="/tags/{{ tag }}" class="tag">
-         &#127991; {{ tag }}
-      </a>
-    </li>
-    {% endfor %}
   </ul>
 </nav>
 <div class="cards">
