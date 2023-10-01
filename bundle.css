@@ -77,22 +77,16 @@ main a button {
   background-color: inherit;
 }
 
-a.tag {
-  display: inline-block;
-  padding: 10px;
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-nav.main-nav ul {
+nav ul {
   list-style-type: none;
   column-gap: 10px;
+  row-gap: 5px;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
 }
 
-nav.main-nav li a,
+nav li a,
 nav.main-nav li span.disabled {
   border-radius: 5px;
   display: block;
@@ -100,7 +94,7 @@ nav.main-nav li span.disabled {
   text-decoration: none;
 }
 
-nav.main-nav li a {
+nav li a {
   color: #000;
   background-color: #f3f3f3;
   border: 1px solid #b8b8b8;

@@ -16,6 +16,17 @@ pagination:
   </ol>
   </ul>
 </nav>
+<nav class="tag-nav" aria-labelledby="tag">
+  <ul>
+    {% for tag in collections.tagList %}
+    <li>
+      <a href="/tags/{{ tag }}" class="tag">
+         &#127991; {{ tag }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
 <div class="cards">
   {% for post in posts reversed %}
   <article class="card">
