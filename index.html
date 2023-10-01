@@ -6,14 +6,12 @@ pagination:
   alias: posts
 ---
 
-<a href="1">First page</a>
-<nav aria-labelledby="my-pagination">
-  <h2 id="my-pagination">This is my Pagination</h2>
-  <ol>
+<nav class="main-nav" aria-labelledby="pagination">
+  <ul>
 {%- for pageEntry in pagination.pages %}
-    <li><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
+    <li><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}> &#128462; Page {{ forloop.index }}</a></li>
 {%- endfor %}
-  </ol>
+  </ul>
 </nav>
 <div class="cards">
   {% for post in posts reversed %}
