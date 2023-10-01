@@ -92,17 +92,23 @@ nav.main-nav ul {
   padding-left: 0;
 }
 
-nav.main-nav li {
-  background-color: #f3f3f3;
-  border: 1px solid #b8b8b8;
+nav.main-nav li a,
+nav.main-nav li span.disabled {
   border-radius: 5px;
-}
-
-nav.main-nav li a {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
+}
+
+nav.main-nav li a {
   color: #000;
+  background-color: #f3f3f3;
+  border: 1px solid #b8b8b8;
+}
+
+nav.main-nav li span.disabled {
+  color: #a4a4a4;
+  background-color: #c7c7c7;
 }
 
 nav.main-nav li a[aria-current] {

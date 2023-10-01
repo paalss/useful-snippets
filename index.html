@@ -8,9 +8,12 @@ pagination:
 
 <nav class="main-nav" aria-labelledby="pagination">
   <ul>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&#10094;</a>{% else %}<span class="disabled">&#10094;</span>{% endif %}</li>
 {%- for pageEntry in pagination.pages %}
     <li><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}> &#128462; Page {{ forloop.index }}</a></li>
 {%- endfor %}
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&#10095;</a>{% else %}<span class="disabled">&#10095;</span>{% endif %}</li>
+  </ol>
   </ul>
 </nav>
 <div class="cards">
