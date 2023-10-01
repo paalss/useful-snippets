@@ -93,13 +93,14 @@ nav.main-nav ul {
 }
 
 nav.main-nav li {
-  padding: 5px 20px;
   background-color: #f3f3f3;
   border: 1px solid #b8b8b8;
   border-radius: 5px;
 }
 
 nav.main-nav li a {
+  display: block;
+  padding: 5px 20px;
   text-decoration: none;
   color: #000;
 }
