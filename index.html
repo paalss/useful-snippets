@@ -1,9 +1,14 @@
 ---
 layout: layout.html
+pagination:
+  data: collections.post
+  size: 10
+  alias: posts
 ---
 
+<a href="1">First page</a>
 <div class="cards">
-  {% for post in collections.post reversed %}
+  {% for post in posts reversed %}
   <article class="card">
     <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
     <span class="date">{{post.date}}</span>
