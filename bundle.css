@@ -103,3 +103,7 @@ nav.main-nav li a {
   text-decoration: none;
   color: #000;
 }
+
+nav.main-nav li a[aria-current] {
+  font-weight: bold;
+}
