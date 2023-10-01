@@ -1,0 +1,20 @@
+---
+layout: layout.html
+title: Paged
+pagination:
+  data: collections.post
+  size: 6
+  alias: posts
+---
+
+<a href="1">First page</a>
+
+<div class="cards">
+  {% for post in posts reversed %}
+  <article class="card">
+    <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
+    <span class="date">{{post.date}}</span>
+    <p>{{post.content}}</p>
+  </article>
+  {% endfor %}
+</div>
