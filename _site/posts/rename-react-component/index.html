@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Rename React component</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link
+      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Rename React component</h1>
+      <nav class="main-nav">
+        <a href="/index">Cards view</a>
+        <a href="/listview">List view</a>
+      </nav>
+      <nav class="tag-nav" aria-labelledby="tag">
+        <ul>
+          
+          <li>
+            <a href="/tags/bitbucket" class="tag"> # bitbucket </a>
+          </li>
+          
+          <li>
+            <a href="/tags/git" class="tag"> # git </a>
+          </li>
+          
+          <li>
+            <a href="/tags/github" class="tag"> # github </a>
+          </li>
+          
+          <li>
+            <a href="/tags/html" class="tag"> # html </a>
+          </li>
+          
+          <li>
+            <a href="/tags/javascript" class="tag"> # javascript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/npm link" class="tag"> # npm link </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ohmybash" class="tag"> # ohmybash </a>
+          </li>
+          
+          <li>
+            <a href="/tags/php" class="tag"> # php </a>
+          </li>
+          
+          <li>
+            <a href="/tags/post" class="tag"> # post </a>
+          </li>
+          
+          <li>
+            <a href="/tags/process" class="tag"> # process </a>
+          </li>
+          
+          <li>
+            <a href="/tags/python" class="tag"> # python </a>
+          </li>
+          
+          <li>
+            <a href="/tags/react" class="tag"> # react </a>
+          </li>
+          
+          <li>
+            <a href="/tags/typescript" class="tag"> # typescript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ubuntu" class="tag"> # ubuntu </a>
+          </li>
+          
+          <li>
+            <a href="/tags/vscode" class="tag"> # vscode </a>
+          </li>
+          
+          <li>
+            <a href="/tags/webstorm" class="tag"> # webstorm </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main><pre class="language-sh"><code class="language-sh"><span class="token comment"># ask in what path the component resides in</span>
+<span class="token comment"># if no answer is provided, use default value</span>
+<span class="token comment"># -e flag is for giving `cd`-code completion while answering the question</span>
+<span class="token assign-left variable">defaultValue</span><span class="token operator">=</span>src/stories/default/
+<span class="token builtin class-name">read</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"Where is component located? (default: <span class="token variable">$defaultValue</span>): "</span> location
+<span class="token assign-left variable">location</span><span class="token operator">=</span><span class="token variable">${location<span class="token operator">:-</span>$defaultValue}</span>
+
+<span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"Enter component name you want to rename: "</span> currentName
+
+<span class="token assign-left variable">componentPath</span><span class="token operator">=</span><span class="token variable">$location</span>/<span class="token variable">$currentName</span>
+<span class="token assign-left variable">index</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/index.ts
+<span class="token assign-left variable">component</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.tsx
+<span class="token assign-left variable">story</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.stories.tsx
+<span class="token assign-left variable">stylesheet</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.module.css
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$currentName</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token assign-left variable">filesInThatFolder</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">cd</span> $componentPath <span class="token operator">&amp;&amp;</span> <span class="token function">ls</span><span class="token variable">)</span></span>
+    <span class="token builtin class-name">echo</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"This will affect:"</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"---- folder -----"</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$componentPath</span>
+    <span class="token builtin class-name">echo</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"---- files -----"</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$filesInThatFolder</span>
+    <span class="token builtin class-name">echo</span>
+    
+    <span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"Enter new name: "</span> newName
+    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$newName</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        
+        <span class="token comment"># update code</span>
+        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$index</span>
+        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$component</span>
+        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$story</span>
+        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$stylesheet</span>
+        
+        <span class="token comment"># rename files and folder</span>
+        <span class="token function">mv</span> <span class="token variable">$component</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.tsx
+        <span class="token function">mv</span> <span class="token variable">$story</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.stories.tsx
+        <span class="token function">mv</span> <span class="token variable">$stylesheet</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.module.css
+        <span class="token function">mv</span> <span class="token variable">$componentPath</span> <span class="token variable">$location</span>/<span class="token variable">$newName</span>/
+    <span class="token keyword">fi</span>
+<span class="token keyword">fi</span></code></pre>
+</main>
+  </body>
+</html>

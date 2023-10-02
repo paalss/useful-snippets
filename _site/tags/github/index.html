@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | github</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link
+      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>github</h1>
+      <nav class="main-nav">
+        <a href="/index">Cards view</a>
+        <a href="/listview">List view</a>
+      </nav>
+      <nav class="tag-nav" aria-labelledby="tag">
+        <ul>
+          
+          <li>
+            <a href="/tags/bitbucket" class="tag"> # bitbucket </a>
+          </li>
+          
+          <li>
+            <a href="/tags/git" class="tag"> # git </a>
+          </li>
+          
+          <li>
+            <a href="/tags/github" class="tag"> # github </a>
+          </li>
+          
+          <li>
+            <a href="/tags/html" class="tag"> # html </a>
+          </li>
+          
+          <li>
+            <a href="/tags/javascript" class="tag"> # javascript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/npm link" class="tag"> # npm link </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ohmybash" class="tag"> # ohmybash </a>
+          </li>
+          
+          <li>
+            <a href="/tags/php" class="tag"> # php </a>
+          </li>
+          
+          <li>
+            <a href="/tags/post" class="tag"> # post </a>
+          </li>
+          
+          <li>
+            <a href="/tags/process" class="tag"> # process </a>
+          </li>
+          
+          <li>
+            <a href="/tags/python" class="tag"> # python </a>
+          </li>
+          
+          <li>
+            <a href="/tags/react" class="tag"> # react </a>
+          </li>
+          
+          <li>
+            <a href="/tags/typescript" class="tag"> # typescript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ubuntu" class="tag"> # ubuntu </a>
+          </li>
+          
+          <li>
+            <a href="/tags/vscode" class="tag"> # vscode </a>
+          </li>
+          
+          <li>
+            <a href="/tags/webstorm" class="tag"> # webstorm </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main><!-- shows all posts related to that tag -->
+<div class="cards">
+  <article class="card">
+    <h2><a href="/posts/ssh-keys/">SSH-keys</a></h2>
+    <span class="date">2023-09-25</span>
+    <p><p>Hvordan opprette og bruke</p>
+<h1>Github</h1>
+<p>Fint for å slippe å skrive inn brukernavn og passord hver eneste gang</p>
+<ol>
+<li><code>ssh-keygen</code></li>
+</ol>
+<pre><code>Generating public/private rsa key pair.
+Enter file in which to save the key (/home/paalss/.ssh/id_rsa):
+<p></code></pre></p>
+<ol start="2">
+<li><code>[Enter]</code></li>
+</ol>
+<pre><code>...
+Your public key has been saved in /home/paalss/.ssh/id_rsa.pub
+...
+</code></pre>
+<ol start="3">
+<li><code>cat /home/paalss/.ssh/id_rsa.pub</code></li>
+</ol>
+<pre><code>ssh-rsa &lt;Hererenlanghashcode&gt; paalss@Asus-VivoBook
+</code></pre>
+<ol start="4">
+<li>
+<p>Gå til <a href="https://github.com/settings/ssh/new">Add new ssh keys</a></p>
+</li>
+<li>
+<p>Lim inn <code>ssh-rsa &lt;Hererenlanghashcode&gt;</code></p>
+</li>
+</ol>
+<p>Resten er rett frem</p>
+<p>https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html</p>
+<h2>Blir du spurt om username og password (PAT) ved <code>git push</code>?</h2>
+<p>Da bruker du sannsynligvis HTTPS:</p>
+<p>Slik bytter du til SSH:</p>
+<p><code>git remote set-url origin git@github.com:paalss/&lt;repo&gt;.git</code></p>
+<h1>Bitbucket</h1>
+<p>https://peter-whyte.com/setup-ssh-keys-in-wsl/</p>
+<pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">eval</span> <span class="token variable"><span class="token variable">$(</span>ssh-agent <span class="token parameter variable">-s</span><span class="token variable">)</span></span> <span class="token operator">&amp;&amp;</span> ssh-add <span class="token punctuation">..</span>/pw_bitbucket</code></pre>
+<p>Personal Access Token for http
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+Kan brukes til authentication i stedet for passord</p>
+<p>https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</p>
+<pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>ssh-agent <span class="token parameter variable">-s</span><span class="token variable">)</span></span>"</span>
+ssh-add ~/.ssh/id_ed25519</code></pre>
+<p>eller:</p>
+<pre class="language-sh"><code class="language-sh">ssh-add ~/.ssh/github_pw</code></pre>
+</p>
+  </article>
+</div>
+</main>
+  </body>
+</html>

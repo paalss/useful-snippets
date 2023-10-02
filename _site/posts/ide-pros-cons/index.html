@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | fordeler/ulemper med VSCode/Webstorm</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link
+      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>fordeler/ulemper med VSCode/Webstorm</h1>
+      <nav class="main-nav">
+        <a href="/index">Cards view</a>
+        <a href="/listview">List view</a>
+      </nav>
+      <nav class="tag-nav" aria-labelledby="tag">
+        <ul>
+          
+          <li>
+            <a href="/tags/bitbucket" class="tag"> # bitbucket </a>
+          </li>
+          
+          <li>
+            <a href="/tags/git" class="tag"> # git </a>
+          </li>
+          
+          <li>
+            <a href="/tags/github" class="tag"> # github </a>
+          </li>
+          
+          <li>
+            <a href="/tags/html" class="tag"> # html </a>
+          </li>
+          
+          <li>
+            <a href="/tags/javascript" class="tag"> # javascript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/npm link" class="tag"> # npm link </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ohmybash" class="tag"> # ohmybash </a>
+          </li>
+          
+          <li>
+            <a href="/tags/php" class="tag"> # php </a>
+          </li>
+          
+          <li>
+            <a href="/tags/post" class="tag"> # post </a>
+          </li>
+          
+          <li>
+            <a href="/tags/process" class="tag"> # process </a>
+          </li>
+          
+          <li>
+            <a href="/tags/python" class="tag"> # python </a>
+          </li>
+          
+          <li>
+            <a href="/tags/react" class="tag"> # react </a>
+          </li>
+          
+          <li>
+            <a href="/tags/typescript" class="tag"> # typescript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ubuntu" class="tag"> # ubuntu </a>
+          </li>
+          
+          <li>
+            <a href="/tags/vscode" class="tag"> # vscode </a>
+          </li>
+          
+          <li>
+            <a href="/tags/webstorm" class="tag"> # webstorm </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main><h1>VS Code cons</h1>
+<ul>
+<li>den raskeste måten å cycle through hver changed file er å klikke på hver fil i source control panel. Ingen mulighet for å navigere gjennom med piltastene.</li>
+<li>man må ofte reloade window på vscode når man avinstallerer/deaktiverer en plugin</li>
+<li>kan ikke stole på statuslinjen, at den alltid viser riktig branch</li>
+<li>Open recent-funksjonaliteten er litt brukken
+<ul>
+<li>hvis man prøver å åpne recent project-fuzzy-finderen umiddelbart etter at man har åpnet vscode, så vil den først åpnes, og så lukkes automatisk. Man kan jobbe rundt dette ved å åpne den ved å trykke og holde ctrl mens man trykker R, da</li>
+</ul>
+</li>
+<li>Vscodes git integrasjone er ikke så bra
+<ul>
+<li>git commit
+<ul>
+<li>kan bare skrive heading på commit messages</li>
+<li>kan ikke begynne på commit message øyeblikkelig etter at man har addet med vscodes git add knapp / snarvei</li>
+</ul>
+</li>
+<li>git add
+<ul>
+<li>funker ikke for å markere solved merge conflicts, for en eller annen grunn</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>live evaluering, (linting/suggestions) tar tid
+<ul>
+<li>TS bruker tid på å slå inn</li>
+<li>unused variables (eslint?) bruker også tid...</li>
+<li>code suggestions/completions bruker også litt tid...</li>
+</ul>
+</li>
+<li>feilaktig linting
+<ul>
+<li>noen ganger så tror TS/eslint eller noe at noen packages ikke er installert. Når de virkelig ER det. Man må restarte VSCode for å se effekten</li>
+</ul>
+</li>
+<li>reload window forårsaker noen ganger at kommandolinjen hopper til det andre prosjektet du har åpent. F.eks. om du driver og jobber i med et bibliotek-prosjekt og et app-prosjekt, og må reloade vscode vinduet for appen, så kan kommandolinjen finne på å cd-e til biblioteket. Sykt!</li>
+<li>hvis man prøver vim extension må man gi slipp på tastatursnarveier som
+<ul>
+<li>ctrl+pageUp/Down (noen ganger, ellers så funker det, bare at det er litt tregt. Kanskje forårsaket av vim extension, kanskje ikke)</li>
+<li>close tabs (ctrl w) (!!! veldig irriterende)</li>
+<li>noen ganger så føkker det opp angrefunksjonaliteten. jeg klikker på u og den bare sletter linjer under cursor WTF!</li>
+<li></li>
+<li>Man kan i hvert fall skru av og på vim (deactivated mode (oftest, noen ganger klikker den))</li>
+</ul>
+</li>
+</ul>
+<p>Kanskje du bør prøve webstorm</p>
+<h1>Webstorm</h1>
+<h2>Pros</h2>
+<ul>
+<li>bedre git diff (bilde)</li>
+<li>className får curly braces</li>
+<li>kan lime inn filer fra windows explorer til webstorm explorer</li>
+<li>leser classes i css og bringer auto-complete til jsx/html</li>
+<li>automatisk sync mellom starting &amp; ending tag</li>
+</ul>
+<h2>Cons:</h2>
+<ul>
+<li>hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)</li>
+<li>uvant!</li>
+</ul>
+</main>
+  </body>
+</html>

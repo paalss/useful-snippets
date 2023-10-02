@@ -1,0 +1,110 @@
+html {
+  --main-color: #333;
+  --button-color: rgb(108, 50, 27);
+  color: var(--main-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+}
+
+main {
+  margin-top: 10px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #959595;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+code {
+  color: rgb(9, 9, 9);
+  background-color: #c5c5c5;
+}
+
+h2 a {
+  color: #000;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.date {
+  display: block;
+  color: #4d4d4d;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+header nav.main-nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav.main-nav a:link,
+header nav.main-nav a:active,
+header nav.main-nav a:visited {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+header nav.main-nav a:focus,
+header nav.main-nav a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+main a button {
+  display: inline-block;
+  color: inherit;
+  border: inherit;
+  background-color: inherit;
+}
+
+nav ul {
+  list-style-type: none;
+  column-gap: 10px;
+  row-gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+nav li a,
+nav.page-nav li span.disabled {
+  border-radius: 5px;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+nav li a {
+  color: #000;
+  background-color: #f3f3f3;
+  border: 1px solid #b8b8b8;
+}
+
+nav.page-nav li span.disabled {
+  color: #a4a4a4;
+  background-color: #c7c7c7;
+}
+
+nav.page-nav li a[aria-current] {
+  font-weight: bold;
+}
