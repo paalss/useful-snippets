@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | </title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Useful snippets</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/tags">Tags</a>
+    </header>
+    <main>
+<nav class="main-nav" aria-labelledby="pagination">
+  <ul>
+    <li><a href="/">Page 1</a></li>
+    <li><a href="/1/">Page 2</a></li>
+    <li><a href="/2/">Page 3</a></li>
+    <li><a href="/3/">Page 4</a></li>
+    <li><a href="/4/">Page 5</a></li>
+    <li><a href="/5/">Page 6</a></li>
+    <li><a href="/6/">Page 7</a></li>
+    <li><a href="/7/">Page 8</a></li>
+    <li><a href="/8/" aria-current="page">Page 9</a></li>
+    <li><a href="/9/">Page 10</a></li>
+    <li><a href="/10/">Page 11</a></li>
+    <li><a href="/11/">Page 12</a></li>
+    <li><a href="/12/">Page 13</a></li>
+    <li><a href="/13/">Page 14</a></li>
+    <li><a href="/14/">Page 15</a></li>
+  </ul>
+</nav>
+<div class="cards">
+  
+  <article class="card">
+    <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
+    <span class="date">Sun Sep 24 2023 20:04:57 GMT+0200 (Central European Summer Time)</span>
+    <p><pre class="language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">f</span> <span class="token keyword">in</span> *.js<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> -- <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">${f<span class="token operator">%</span>.js}</span>.tsx"</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code></pre>
+<p><a href="https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files">https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files</a></p>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/php-white-screen/">PHP White screen</a></h2>
+    <span class="date">Sun Sep 24 2023 20:04:25 GMT+0200 (Central European Summer Time)</span>
+    <p><pre class="language-php"><code class="language-php"><span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;pre>"</span><span class="token punctuation">;</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'display_errors'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'On'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'html_errors'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Skal kanskje være <code>ini_set('html_errors', 'On');</code>?</p>
+</p>
+  </article>
+  
+</div>
+</main>
+  </body>
+</html>

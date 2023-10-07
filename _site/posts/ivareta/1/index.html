@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Ivareta git historikk ved file renaming</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Ivareta git historikk ved file renaming</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/kohrongying-index">kohrongying</a>
+    </header>
+    <main><p>Ifølge <a href="https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7">https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7</a></p>
+<p>Hvis du vil være sikker på at file history blir ivaretatt i en fil om du renamer den (eller flytter den), så må du bruke commando-linja og kjøre</p>
+<pre><code>git mv mycoolclass.cs myCoolClass.cs
+</code></pre>
+<p>eller</p>
+<pre><code>git mv layout/CardList common/List
+</code></pre>
+<p>Hvis du renamer direkte i editor-en, så kan du ikke være sikker på at git skjønner at det er samme fil.</p>
+<p>Når du ivaretar git history så kan du bruke ting som <code>git log -p --follow -- path/to/filename</code>. Se gist: <a href="https://gist.github.com/paalss/7127b421ff7f3a862ae8d76c772aeb6a">https://gist.github.com/paalss/7127b421ff7f3a862ae8d76c772aeb6a</a></p>
+<p><strong>Kommentarer:</strong></p>
+<p>Mulig det er unødvendig å bruke <code>mv</code>. Da jeg renamet og flyttet layout/CardList til common/List så skjønte git at disse to filene var 74% like.</p>
+<p><code>git log -p --follow components/common/List/List.tsx</code> funker fjell. Historikken strekker seg tilbake til før renamingen</p>
+</main>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Paged</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Paged</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/tags">Tags</a>
+      <a href="/paged">Paged</a>
+    </header>
+    <main>
+<a href="1">First page</a>
+
+<div class="cards">
+  
+  <article class="card">
+    <h2><a href="/posts/nextjs-image/">preserve aspect ratio for Nextjs images</a></h2>
+    <span class="date">Sun Oct 01 2023 15:44:43 GMT+0200 (Central European Summer Time)</span>
+    <p><p><a href="https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed">https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed</a></p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+  <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token string">"relative"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token string">"566px"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">"425px"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+<span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Image</span></span>
+    <span class="token attr-name">src</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>currCommit<span class="token punctuation">.</span>image<span class="token punctuation">.</span>url<span class="token punctuation">}</span></span>
+    <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Current Image<span class="token punctuation">"</span></span>
+    <span class="token attr-name">layout</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token string">"fill"</span><span class="token punctuation">}</span></span>
+    <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token literal-property property">objectFit</span><span class="token operator">:</span> <span class="token string">"cover"</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+  <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/logvar/">log variable with key</a></h2>
+    <span class="date">Sun Oct 01 2023 15:44:43 GMT+0200 (Central European Summer Time)</span>
+    <p><h1>VS Code snippet</h1>
+<pre class="language-js"><code class="language-js">  <span class="token string-property property">"Print variable to console"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"scope"</span><span class="token operator">:</span> <span class="token string">"javascript,typescript"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"prefix"</span><span class="token operator">:</span> <span class="token string">"logvar"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"body"</span><span class="token operator">:</span> <span class="token string">"console.log('$1', $1)"</span>
+  <span class="token punctuation">}</span></code></pre>
+</p>
+  </article>
+  
+</div>
+</main>
+  </body>
+</html>

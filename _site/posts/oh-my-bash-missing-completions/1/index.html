@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Oh my bash adding missing code completions</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Oh my bash adding missing code completions</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/kohrongying-index">kohrongying</a>
+    </header>
+    <main><pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">source</span> /usr/share/bash-completion/completions/git
+__git_complete gco _git_checkout
+__git_complete gb _git_branch
+__git_complete gbs _git_bisect
+__git_complete ga _git_add
+__git_complete gcmsg _git_commit
+__git_complete gcs _git_commit
+__git_complete gd _git_diff
+__git_complete gl _git_pull
+__git_complete gp _git_push
+__git_complete gm _git_merge</code></pre>
+</main>
+  </body>
+</html>

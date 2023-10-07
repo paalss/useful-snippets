@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Prosjekt som bruker WSL? Hvordan bytte til Git Bash</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Prosjekt som bruker WSL? Hvordan bytte til Git Bash</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/kohrongying-index">kohrongying</a>
+    </header>
+    <main><p>Hvordan bytte fra wsl til git bash i et prosjekt</p>
+<p>I et prosjekt hvor du allerede har installert npm modules med wsl er det litt tricky å gå over til git bash. Har opplevd det i hvert fall.</p>
+<p>Her er et forsøk som funket, men det er sannsynigvis unødvendige steg her.</p>
+<p>Hvorfor bytte? Vel... react-snap og bruk av chromium er visst ikke helt akseptert av WSL</p>
+<p>WSL</p>
+<ol>
+<li>npm cache verify</li>
+<li>delete node_modules</li>
+<li>npm cache clean --force</li>
+</ol>
+<p>Git bash</p>
+<ol>
+<li>npm rebuild</li>
+<li>lukk VS Code og åpne som Admin</li>
+<li>npm i</li>
+<li>npm start</li>
+</ol>
+<p>Og det funker! &quot;React-scripts is not recognised&quot; – no more!</p>
+<p><a href="https://coder-coder.com/npm-clear-cache/">https://coder-coder.com/npm-clear-cache/</a><br>
+<a href="https://stackoverflow.com/questions/47928735/react-scripts-is-not-recognized-as-an-internal-or-external-command">https://stackoverflow.com/questions/47928735/react-scripts-is-not-recognized-as-an-internal-or-external-command</a></p>
+</main>
+  </body>
+</html>

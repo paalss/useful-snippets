@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | </title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Useful snippets</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/tags">Tags</a>
+    </header>
+    <main>
+<nav class="main-nav" aria-labelledby="pagination">
+  <ul>
+    <li><a href="/3/">&#10094;</a></li>
+    <li><a href="/"> &#128462; Page 1</a></li>
+    <li><a href="/1/"> &#128462; Page 2</a></li>
+    <li><a href="/2/"> &#128462; Page 3</a></li>
+    <li><a href="/3/"> &#128462; Page 4</a></li>
+    <li><a href="/4/" aria-current="page"> &#128462; Page 5</a></li>
+    <li><a href="/5/"> &#128462; Page 6</a></li>
+    <li><a href="/6/"> &#128462; Page 7</a></li>
+    <li><a href="/7/"> &#128462; Page 8</a></li>
+    <li><a href="/5/">&#10095;</a></li>
+  </ol>
+  </ul>
+</nav>
+<nav class="tag-nav" aria-labelledby="tag">
+  <ul>
+    
+    <li>
+      <a href="/tags/bitbucket" class="tag">
+         &#127991; bitbucket
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/git" class="tag">
+         &#127991; git
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/github" class="tag">
+         &#127991; github
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/javascript" class="tag">
+         &#127991; javascript
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/npm link" class="tag">
+         &#127991; npm link
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/ohmybash" class="tag">
+         &#127991; ohmybash
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/php" class="tag">
+         &#127991; php
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/post" class="tag">
+         &#127991; post
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/process" class="tag">
+         &#127991; process
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/python" class="tag">
+         &#127991; python
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/react" class="tag">
+         &#127991; react
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/typescript" class="tag">
+         &#127991; typescript
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/ubuntu" class="tag">
+         &#127991; ubuntu
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/vscode" class="tag">
+         &#127991; vscode
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/webstorm" class="tag">
+         &#127991; webstorm
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+<div class="cards">
+  
+  <article class="card">
+    <h2><a href="/posts/get-neovim/">Install Neovim</a></h2>
+    <span class="date">2023-09-24</span>
+    <p><p><a href="https://github.com/paalss/nvim/blob/master/docs/neovim-install.md">https://github.com/paalss/nvim/blob/master/docs/neovim-install.md</a></p>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/i18next/">i18next</a></h2>
+    <span class="date">2023-09-24</span>
+    <p><h1>Usage with long nested keys</h1>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword">const</span> <span class="token punctuation">{</span> t <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useTranslation</span><span class="token punctuation">(</span><span class="token string">"translation"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  keyPrefix<span class="token operator">:</span> <span class="token string">"long.nested.keys"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
+    <span class="date">2023-09-24</span>
+    <p><pre class="language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">f</span> <span class="token keyword">in</span> *.js<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> -- <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">${f<span class="token operator">%</span>.js}</span>.tsx"</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code></pre>
+<p><a href="https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files">https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files</a></p>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/php-white-screen/">PHP White screen</a></h2>
+    <span class="date">2023-09-24</span>
+    <p><pre class="language-php"><code class="language-php"><span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;pre>"</span><span class="token punctuation">;</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'display_errors'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'On'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'html_errors'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Skal kanskje være <code>ini_set('html_errors', 'On');</code>?</p>
+</p>
+  </article>
+  
+</div>
+</main>
+  </body>
+</html>

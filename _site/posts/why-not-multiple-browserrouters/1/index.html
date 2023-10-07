@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | why not multiple BrowserRouters</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>why not multiple BrowserRouters</h1>
+      <a href="/index">Cards view</a>
+      <a href="/listview">List view</a>
+      <a href="/kohrongying-index">kohrongying</a>
+    </header>
+    <main><p>why not use multiple browserrouters</p>
+<hr>
+<pre><code>React Router error - 
+    Error: You cannot render a &lt;Router&gt; inside another &lt;Router&gt;. You should never have more than one in your app.
+    at Router (/vendors-node_modules_restart_hooks_esm_useForceUpdate_js-node_modules_restart_hooks_esm_usePr-cdac26.iframe.bundle.js:6709:103)
+    at renderWithHooks (/vendors-node_modules_storybook_addon-a11y_dist_preview_mjs-node_modules_storybook_addon-essen-d391cf.iframe.bundle.js:38091:27)
+    at mountIndeterminateComponent (/vendors-node_modules_storybook_addon-a11y_dist_preview_mjs-node_modules_storybook_addon-essen-d391cf.iframe.bundle.js:41855:13)
+at beginWork (/vendors-node_modules_storybook_addon-a11y_dist_preview_mjs-node_modules_storybook_addon-essen-d391cf.iframe.bundle.js:43368:16)
+    at beginWork$1 (/vendors-node_modules_storybook
+</code></pre>
+<p>Drew Reese - . There becomes an issue when you start nesting routers within routers, or rather it's the routing contexts within other routing contexts. The contexts of &quot;outer&quot; routers are unaware of what nested &quot;inner&quot; routers have handled.</p>
+<p><a href="https://stackoverflow.com/questions/67175039/is-it-possible-to-have-multiple-browserrouter-in-react-app">https://stackoverflow.com/questions/67175039/is-it-possible-to-have-multiple-browserrouter-in-react-app</a></p>
+<p>scriptedalchemy - Dont think you want have multiple browser routers. Youd want to use switch or something else. Only hosts should implement browser router, and only once. Usually I have a standalone wrapper that has like a mini shell for each app. Then I federate the inner component. So browser router stays on the shell layer</p>
+<p>nebarf - Single source of truth: having a single &quot;component&quot; updating the browser history brings a lot of flexibility (e.g. it could really help in case you're gradually migrating a legacy system following the strangler pattern).</p>
+<p><a href="https://github.com/module-federation/module-federation-examples/issues/1986">https://github.com/module-federation/module-federation-examples/issues/1986</a></p>
+</main>
+  </body>
+</html>
