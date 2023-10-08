@@ -41,6 +41,10 @@
           </li>
           
           <li>
+            <a href="/tags/neovim" class="tag"> # neovim </a>
+          </li>
+          
+          <li>
             <a href="/tags/npm link" class="tag"> # npm link </a>
           </li>
           
@@ -90,8 +94,19 @@
     <main><!-- shows all posts related to that tag -->
 <div class="cards">
   <article class="card">
+    <h2><a href="/posts/logvar/">log variable with key</a></h2>
+    <span class="date">2023-10-07</span>
+    <p><h1>VS Code snippet</h1>
+<pre class="language-js"><code class="language-js">  <span class="token string-property property">"Print variable to console"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"scope"</span><span class="token operator">:</span> <span class="token string">"javascript,typescript"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"prefix"</span><span class="token operator">:</span> <span class="token string">"logvar"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"body"</span><span class="token operator">:</span> <span class="token string">"console.log('$1', $1)"</span>
+  <span class="token punctuation">}</span></code></pre>
+</p>
+  </article>
+  <article class="card">
     <h2><a href="/posts/ohmybash/">Ohmybash</a></h2>
-    <span class="date">2023-09-25</span>
+    <span class="date">2023-10-07</span>
     <p><p>Hvordan starte med ohmybash, velge theme og laste ned nødvendig font icons</p>
 <h2>Installasjon</h2>
 <pre><code>bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)&quot;
@@ -165,26 +180,15 @@ Please supply the message using either -m or -F option.
   </article>
   <article class="card">
     <h2><a href="/posts/webstorm-compare-with-branch/">Webstorm sin VSCode Gitlens compare working dir with branch</a></h2>
-    <span class="date">2023-09-25</span>
+    <span class="date">2023-10-07</span>
     <p><p>View &gt; show status line<br>
 view &gt; show status line widgets &gt; BRANCH<br>
 ÅPNE MENY NEDE TIL HØYRE</p>
 </p>
   </article>
   <article class="card">
-    <h2><a href="/posts/logvar/">log variable with key</a></h2>
-    <span class="date">2023-09-29</span>
-    <p><h1>VS Code snippet</h1>
-<pre class="language-js"><code class="language-js">  <span class="token string-property property">"Print variable to console"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token string-property property">"scope"</span><span class="token operator">:</span> <span class="token string">"javascript,typescript"</span><span class="token punctuation">,</span>
-    <span class="token string-property property">"prefix"</span><span class="token operator">:</span> <span class="token string">"logvar"</span><span class="token punctuation">,</span>
-    <span class="token string-property property">"body"</span><span class="token operator">:</span> <span class="token string">"console.log('$1', $1)"</span>
-  <span class="token punctuation">}</span></code></pre>
-</p>
-  </article>
-  <article class="card">
-    <h2><a href="/posts/ide-pros-cons/">fordeler/ulemper med VSCode/Webstorm</a></h2>
-    <span class="date">2023-09-29</span>
+    <h2><a href="/posts/ide-pros-cons/">fordeler/ulemper med VSCode/Webstorm/Neovim</a></h2>
+    <span class="date">2023-10-08</span>
     <p><h1>VS Code cons</h1>
 <ul>
 <li>den raskeste måten å cycle through hver changed file er å klikke på hver fil i source control panel. Ingen mulighet for å navigere gjennom med piltastene.</li>
@@ -247,6 +251,28 @@ view &gt; show status line widgets &gt; BRANCH<br>
 <ul>
 <li>hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)</li>
 <li>uvant!</li>
+</ul>
+<h1>Neovim</h1>
+<h2>Pros</h2>
+<ul>
+<li>kan bestemme selv hvordan lsp / code suggestion/completion skal funke
+<ul>
+<li>man kan bestemme at nedover-knappene ikke navigerer i listen, men flytter cursor nedover</li>
+</ul>
+</li>
+<li>vim motions funker alltid, i motsetning til vim addon i VS Code</li>
+</ul>
+<h2>Cons</h2>
+<ul>
+<li>MYE manuelt setup</li>
+<li>man MÅ sette <code>:set paste</code> før man limer inn noe som helst fra annet steds</li>
+<li>vanskelig å kopiere noe fra neovim til OS clipboard (er det i det hele tatt mulig?)</li>
+<li>ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for &quot;l&quot;. Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete</li>
+<li>å få packages til å jobbe sammen
+<ul>
+<li>problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.</li>
+</ul>
+</li>
 </ul>
 </p>
   </article>

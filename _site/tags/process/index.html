@@ -41,6 +41,10 @@
           </li>
           
           <li>
+            <a href="/tags/neovim" class="tag"> # neovim </a>
+          </li>
+          
+          <li>
             <a href="/tags/npm link" class="tag"> # npm link </a>
           </li>
           
@@ -90,8 +94,17 @@
     <main><!-- shows all posts related to that tag -->
 <div class="cards">
   <article class="card">
+    <h2><a href="/posts/list-processes/">List processes</a></h2>
+    <span class="date">2023-10-07</span>
+    <p><pre class="language-sh"><code class="language-sh"><span class="token function">netstat</span> <span class="token parameter variable">-nlp</span> <span class="token operator">|</span> <span class="token function">grep</span> tcp</code></pre>
+<p>eg: <code>tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node</code></p>
+<pre class="language-sh"><code class="language-sh"><span class="token function">killall</span> <span class="token parameter variable">-9</span> _process_id_</code></pre>
+<p>eg: <code>killall -9 1686</code></p>
+</p>
+  </article>
+  <article class="card">
     <h2><a href="/posts/quit-caddy-process/">Quit Caddy process</a></h2>
-    <span class="date">2023-09-29</span>
+    <span class="date">2023-10-07</span>
     <p><ol>
 <li>Try: <code>sudo ps -eaf | grep -i caddy</code></li>
 <li>Try: <code>sudo -s</code> (Enter sudo shell)
@@ -101,15 +114,6 @@
 </ol>
 </li>
 </ol>
-</p>
-  </article>
-  <article class="card">
-    <h2><a href="/posts/list-processes/">List processes</a></h2>
-    <span class="date">2023-09-29</span>
-    <p><pre class="language-sh"><code class="language-sh"><span class="token function">netstat</span> <span class="token parameter variable">-nlp</span> <span class="token operator">|</span> <span class="token function">grep</span> tcp</code></pre>
-<p>eg: <code>tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node</code></p>
-<pre class="language-sh"><code class="language-sh"><span class="token function">killall</span> <span class="token parameter variable">-9</span> _process_id_</code></pre>
-<p>eg: <code>killall -9 1686</code></p>
 </p>
   </article>
 </div>

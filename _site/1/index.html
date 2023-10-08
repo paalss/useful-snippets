@@ -41,6 +41,10 @@
           </li>
           
           <li>
+            <a href="/tags/neovim" class="tag"> # neovim </a>
+          </li>
+          
+          <li>
             <a href="/tags/npm link" class="tag"> # npm link </a>
           </li>
           
@@ -102,213 +106,8 @@
 <div class="cards">
   
   <article class="card">
-    <h2><a href="/posts/update-python-conda-environment/">update Python Conda environment</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><p>Lag et nytt conda environment med nyeste python versjon</p>
-</p>
-  </article>
-  
-  <article class="card">
-    <h2><a href="/posts/table-of-contents/">table of contents with IntersectionOvserver (not perfect)</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><p><strong>useScrollSpy.ts</strong></p>
-<pre class="language-ts"><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useRef<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useScrollSpy</span><span class="token punctuation">(</span>ids<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>activeId<span class="token punctuation">,</span> setActiveId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> elements <span class="token operator">=</span> ids<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token operator">=></span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    observer<span class="token punctuation">.</span>current<span class="token operator">?.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    elements<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>heading<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>heading<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        observer<span class="token punctuation">.</span>current<span class="token operator">?.</span><span class="token function">observe</span><span class="token punctuation">(</span>heading<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    observer<span class="token punctuation">.</span>current <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span>
-      <span class="token punctuation">(</span>entries<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token string">"executing intersectionobserver callback"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        entries<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>entry<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span>entry<span class="token operator">?.</span>isIntersecting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entry<span class="token punctuation">.</span>target<span class="token punctuation">.</span>id<span class="token punctuation">,</span> <span class="token string">"is intersecting"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token function">setActiveId</span><span class="token punctuation">(</span>entry<span class="token punctuation">.</span>target<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span> rootMargin<span class="token operator">:</span> <span class="token string">"0% 0% -80% 0%"</span><span class="token punctuation">,</span> threshold<span class="token operator">:</span> <span class="token number">0.1</span> <span class="token punctuation">}</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> observer<span class="token punctuation">.</span>current<span class="token operator">?.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>ids<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> activeId<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong>TableOfContents.tsx</strong></p>
-<pre class="language-tsx"><code class="language-tsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> classes <span class="token keyword">from</span> <span class="token string">"./TableOfContents.module.css"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> useScrollSpy <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@/hooks/useScrollSpy"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">interface</span> <span class="token class-name">TableOfContentsProps</span> <span class="token punctuation">{</span>
-  isLoading<span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">heading</span> <span class="token operator">=</span> <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span> id<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">TableOfContents</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> isLoading <span class="token punctuation">}</span><span class="token operator">:</span> TableOfContentsProps<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>headings<span class="token punctuation">,</span> setHeadings<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token generic-function"><span class="token function">useState</span><span class="token generic class-name"><span class="token operator">&lt;</span>heading<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">></span></span></span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> activeId <span class="token operator">=</span> <span class="token function">useScrollSpy</span><span class="token punctuation">(</span>headings<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isLoading<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> elements<span class="token operator">:</span> heading<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">Array</span><span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>
-        document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"h3"</span><span class="token punctuation">)</span>
-      <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span> text<span class="token operator">:</span> element<span class="token punctuation">.</span>textContent<span class="token punctuation">,</span> id<span class="token operator">:</span> element<span class="token punctuation">.</span>id <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token function">setHeadings</span><span class="token punctuation">(</span>elements<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>isLoading<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-      <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>classes<span class="token punctuation">.</span>root<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> d-none d-lg-block sticky-with-gutter list-group small</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
-    <span class="token punctuation">></span></span><span class="token plain-text">
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><span class="token plain-text">
-        </span><span class="token punctuation">{</span>headings<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>heading<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-          <span class="token keyword">const</span> maybeActive <span class="token operator">=</span> activeId <span class="token operator">===</span> heading<span class="token punctuation">.</span>id <span class="token operator">?</span> <span class="token string">"active"</span> <span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
-          <span class="token keyword">return</span> <span class="token punctuation">(</span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>heading<span class="token punctuation">.</span>id<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
-              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
-                <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">list-group-item list-group-item-action </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>maybeActive<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
-                <span class="token attr-name">href</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">#</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>heading<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
-              <span class="token punctuation">></span></span><span class="token plain-text">
-                </span><span class="token punctuation">{</span>heading<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token plain-text">
-              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token plain-text">
-            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-          <span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><span class="token plain-text">
-    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-</p>
-  </article>
-  
-  <article class="card">
-    <h2><a href="/posts/ssh-keys/">SSH-keys</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><p>Hvordan opprette og bruke</p>
-<h1>Github</h1>
-<p>Fint for å slippe å skrive inn brukernavn og passord hver eneste gang</p>
-<ol>
-<li><code>ssh-keygen</code></li>
-</ol>
-<pre><code>Generating public/private rsa key pair.
-Enter file in which to save the key (/home/paalss/.ssh/id_rsa):
-
-</code></pre>
-<ol start="2">
-<li><code>[Enter]</code></li>
-</ol>
-<pre><code>...
-Your public key has been saved in /home/paalss/.ssh/id_rsa.pub
-...
-</code></pre>
-<ol start="3">
-<li><code>cat /home/paalss/.ssh/id_rsa.pub</code></li>
-</ol>
-<pre><code>ssh-rsa &lt;Hererenlanghashcode&gt; paalss@Asus-VivoBook
-</code></pre>
-<ol start="4">
-<li>
-<p>Gå til <a href="https://github.com/settings/ssh/new">Add new ssh keys</a></p>
-</li>
-<li>
-<p>Lim inn <code>ssh-rsa &lt;Hererenlanghashcode&gt;</code></p>
-</li>
-</ol>
-<p>Resten er rett frem</p>
-<p>https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html</p>
-<h2>Blir du spurt om username og password (PAT) ved <code>git push</code>?</h2>
-<p>Da bruker du sannsynligvis HTTPS:</p>
-<p>Slik bytter du til SSH:</p>
-<p><code>git remote set-url origin git@github.com:paalss/&lt;repo&gt;.git</code></p>
-<h1>Bitbucket</h1>
-<p>https://peter-whyte.com/setup-ssh-keys-in-wsl/</p>
-<pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">eval</span> <span class="token variable"><span class="token variable">$(</span>ssh-agent <span class="token parameter variable">-s</span><span class="token variable">)</span></span> <span class="token operator">&amp;&amp;</span> ssh-add <span class="token punctuation">..</span>/pw_bitbucket</code></pre>
-<p>Personal Access Token for http
-https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
-Kan brukes til authentication i stedet for passord</p>
-<p>https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</p>
-<pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>ssh-agent <span class="token parameter variable">-s</span><span class="token variable">)</span></span>"</span>
-ssh-add ~/.ssh/id_ed25519</code></pre>
-<p>eller:</p>
-<pre class="language-sh"><code class="language-sh">ssh-add ~/.ssh/github_pw</code></pre>
-</p>
-  </article>
-  
-  <article class="card">
-    <h2><a href="/posts/show-commit-hash/">show commit hash</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><p>Vise kort commit hash</p>
-<pre class="language-sh"><code class="language-sh"><span class="token function">git</span> rev-parse <span class="token parameter variable">--short</span> HEAD</code></pre>
-</p>
-  </article>
-  
-  <article class="card">
-    <h2><a href="/posts/rename-react-component/">Rename React component</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><pre class="language-sh"><code class="language-sh"><span class="token comment"># ask in what path the component resides in</span>
-<span class="token comment"># if no answer is provided, use default value</span>
-<span class="token comment"># -e flag is for giving `cd`-code completion while answering the question</span>
-<span class="token assign-left variable">defaultValue</span><span class="token operator">=</span>src/stories/default/
-<span class="token builtin class-name">read</span> <span class="token parameter variable">-e</span> <span class="token parameter variable">-p</span> <span class="token string">"Where is component located? (default: <span class="token variable">$defaultValue</span>): "</span> location
-<span class="token assign-left variable">location</span><span class="token operator">=</span><span class="token variable">${location<span class="token operator">:-</span>$defaultValue}</span>
-
-<span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"Enter component name you want to rename: "</span> currentName
-
-<span class="token assign-left variable">componentPath</span><span class="token operator">=</span><span class="token variable">$location</span>/<span class="token variable">$currentName</span>
-<span class="token assign-left variable">index</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/index.ts
-<span class="token assign-left variable">component</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.tsx
-<span class="token assign-left variable">story</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.stories.tsx
-<span class="token assign-left variable">stylesheet</span><span class="token operator">=</span><span class="token variable">$componentPath</span>/<span class="token variable">$currentName</span>.module.css
-
-<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$currentName</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-    <span class="token assign-left variable">filesInThatFolder</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">cd</span> $componentPath <span class="token operator">&amp;&amp;</span> <span class="token function">ls</span><span class="token variable">)</span></span>
-    <span class="token builtin class-name">echo</span>
-    <span class="token builtin class-name">echo</span> <span class="token string">"This will affect:"</span>
-    <span class="token builtin class-name">echo</span> <span class="token string">"---- folder -----"</span>
-    <span class="token builtin class-name">echo</span> <span class="token variable">$componentPath</span>
-    <span class="token builtin class-name">echo</span>
-    <span class="token builtin class-name">echo</span> <span class="token string">"---- files -----"</span>
-    <span class="token builtin class-name">echo</span> <span class="token variable">$filesInThatFolder</span>
-    <span class="token builtin class-name">echo</span>
-    
-    <span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">"Enter new name: "</span> newName
-    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$newName</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
-        
-        <span class="token comment"># update code</span>
-        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$index</span>
-        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$component</span>
-        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$story</span>
-        <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">"s/<span class="token variable">$currentName</span>/<span class="token variable">$newName</span>/g"</span> <span class="token variable">$stylesheet</span>
-        
-        <span class="token comment"># rename files and folder</span>
-        <span class="token function">mv</span> <span class="token variable">$component</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.tsx
-        <span class="token function">mv</span> <span class="token variable">$story</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.stories.tsx
-        <span class="token function">mv</span> <span class="token variable">$stylesheet</span> <span class="token variable">$componentPath</span>/<span class="token variable">$newName</span>.module.css
-        <span class="token function">mv</span> <span class="token variable">$componentPath</span> <span class="token variable">$location</span>/<span class="token variable">$newName</span>/
-    <span class="token keyword">fi</span>
-<span class="token keyword">fi</span></code></pre>
-</p>
-  </article>
-  
-  <article class="card">
     <h2><a href="/posts/php-white-screen/">PHP White screen</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
     <p><pre class="language-php"><code class="language-php"><span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;pre>"</span><span class="token punctuation">;</span>
 <span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'display_errors'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'On'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'html_errors'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
@@ -318,7 +117,7 @@ ssh-add ~/.ssh/id_ed25519</code></pre>
   
   <article class="card">
     <h2><a href="/posts/ohmybash/">Ohmybash</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
     <p><p>Hvordan starte med ohmybash, velge theme og laste ned nødvendig font icons</p>
 <h2>Installasjon</h2>
 <pre><code>bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)&quot;
@@ -393,7 +192,7 @@ Please supply the message using either -m or -F option.
   
   <article class="card">
     <h2><a href="/posts/oh-my-bash-missing-completions/">Oh my bash adding missing code completions</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
     <p><pre class="language-sh"><code class="language-sh"><span class="token builtin class-name">source</span> /usr/share/bash-completion/completions/git
 __git_complete gco _git_checkout
 __git_complete gb _git_branch
@@ -409,28 +208,99 @@ __git_complete gm _git_merge</code></pre>
   </article>
   
   <article class="card">
-    <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><pre class="language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">f</span> <span class="token keyword">in</span> *.js<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> -- <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">${f<span class="token operator">%</span>.js}</span>.tsx"</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code></pre>
-<p><a href="https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files">https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files</a></p>
+    <h2><a href="/posts/npm-link-library/">npm link library</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><p>Hvis ting i library ikke oppdatere seg på appen gjennom npm run build  så kan du prøve å restarte app serveren. npm run dev altså
+EDIT 16.08.23
+Dette er tredje gangen dette skjer og jeg er fortsatt helt overrasket ov uvitende om hva jeg skal gjøre når jeg ser det
+EDIT 27.09.2023
+EDIT EDIT EIDT EDIT EDIT EDIT EDIT
+kan hende du må npm unlinke hele library-et også legge det til igjen først</p>
 </p>
   </article>
   
   <article class="card">
-    <h2><a href="/posts/ivareta/">Ivareta git historikk ved file renaming</a></h2>
-    <span class="date">Mon 25. September 2023 | 2023-09-25</span>
-    <p><p>Ifølge <a href="https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7">https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7</a></p>
-<p>Hvis du vil være sikker på at file history blir ivaretatt i en fil om du renamer den (eller flytter den), så må du bruke commando-linja og kjøre</p>
-<pre><code>git mv mycoolclass.cs myCoolClass.cs
+    <h2><a href="/posts/nextjs-image/">preserve aspect ratio for Nextjs images</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><p><a href="https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed">https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed</a></p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+  <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token string">"relative"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token string">"566px"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">"425px"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+<span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Image</span></span>
+    <span class="token attr-name">src</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>currCommit<span class="token punctuation">.</span>image<span class="token punctuation">.</span>url<span class="token punctuation">}</span></span>
+    <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Current Image<span class="token punctuation">"</span></span>
+    <span class="token attr-name">layout</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token string">"fill"</span><span class="token punctuation">}</span></span>
+    <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token literal-property property">objectFit</span><span class="token operator">:</span> <span class="token string">"cover"</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+  <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/nano-commits-syntax-diff-highlighting/">Syntax highlighting i Nano commit diff</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><p>nano ~/.nanorc</p>
+<p>sett inn</p>
+<p><a href="https://gist.github.com/keithamus/736220/5e069767b22841610ee18fd2f92bd6026f5eb41d">https://gist.github.com/keithamus/736220/5e069767b22841610ee18fd2f92bd6026f5eb41d</a></p>
+<pre><code>syntax &quot;gitcommit&quot; &quot;COMMIT_EDITMSG$&quot;
+color white &quot;#.*&quot;
+color green &quot;#.(modified|added|deleted|unmerged|copy-edit|rename).*&quot;
+color yellow start=&quot;# Changes.*&quot; end=&quot;# Changed.*&quot;
+color brightgreen &quot;^\+.*&quot;
+color brightred &quot;^-.*&quot;
+color brightyellow &quot;(diff|index|---|\+\+\+).*&quot;
+color brightmagenta &quot;@@.*&quot;
+color white &quot;# Changes .*&quot;
+color white &quot;# Changed .*&quot;
+color white &quot;#.*\(use .*&quot;
+color white &quot;#$&quot;
 </code></pre>
-<p>eller</p>
-<pre><code>git mv layout/CardList common/List
-</code></pre>
-<p>Hvis du renamer direkte i editor-en, så kan du ikke være sikker på at git skjønner at det er samme fil.</p>
-<p>Når du ivaretar git history så kan du bruke ting som <code>git log -p --follow -- path/to/filename</code>. Se gist: <a href="https://gist.github.com/paalss/7127b421ff7f3a862ae8d76c772aeb6a">https://gist.github.com/paalss/7127b421ff7f3a862ae8d76c772aeb6a</a></p>
-<p><strong>Kommentarer:</strong></p>
-<p>Mulig det er unødvendig å bruke <code>mv</code>. Da jeg renamet og flyttet layout/CardList til common/List så skjønte git at disse to filene var 74% like.</p>
-<p><code>git log -p --follow components/common/List/List.tsx</code> funker fjell. Historikken strekker seg tilbake til før renamingen</p>
+<p>=</p>
+<p>farger i git commit vinduet!</p>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/logvar/">log variable with key</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><h1>VS Code snippet</h1>
+<pre class="language-js"><code class="language-js">  <span class="token string-property property">"Print variable to console"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"scope"</span><span class="token operator">:</span> <span class="token string">"javascript,typescript"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"prefix"</span><span class="token operator">:</span> <span class="token string">"logvar"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"body"</span><span class="token operator">:</span> <span class="token string">"console.log('$1', $1)"</span>
+  <span class="token punctuation">}</span></code></pre>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/list-processes/">List processes</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><pre class="language-sh"><code class="language-sh"><span class="token function">netstat</span> <span class="token parameter variable">-nlp</span> <span class="token operator">|</span> <span class="token function">grep</span> tcp</code></pre>
+<p>eg: <code>tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node</code></p>
+<pre class="language-sh"><code class="language-sh"><span class="token function">killall</span> <span class="token parameter variable">-9</span> _process_id_</code></pre>
+<p>eg: <code>killall -9 1686</code></p>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/links/">Links</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><h1>Links</h1>
+<ul>
+<li><a href="https://codesandbox.io/dashboard/recent">https://codesandbox.io/dashboard/recent</a></li>
+</ul>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/js-to-ts/">Convert all JS files in folder to TS</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><pre class="language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">f</span> <span class="token keyword">in</span> *.js<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> -- <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">${f<span class="token operator">%</span>.js}</span>.tsx"</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code></pre>
+<p><a href="https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files">https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files</a></p>
 </p>
   </article>
   

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Useful snippets | fordeler/ulemper med VSCode/Webstorm</title>
+    <title>Useful snippets | fordeler/ulemper med VSCode/Webstorm/Neovim</title>
     <link rel="stylesheet" href="/bundle.css" />
     <link
       href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <h1>fordeler/ulemper med VSCode/Webstorm</h1>
+      <h1>fordeler/ulemper med VSCode/Webstorm/Neovim</h1>
       <nav class="main-nav">
         <a href="/index">Cards view</a>
         <a href="/listview">List view</a>
@@ -38,6 +38,10 @@
           
           <li>
             <a href="/tags/javascript" class="tag"> # javascript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/neovim" class="tag"> # neovim </a>
           </li>
           
           <li>
@@ -149,6 +153,28 @@
 <ul>
 <li>hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)</li>
 <li>uvant!</li>
+</ul>
+<h1>Neovim</h1>
+<h2>Pros</h2>
+<ul>
+<li>kan bestemme selv hvordan lsp / code suggestion/completion skal funke
+<ul>
+<li>man kan bestemme at nedover-knappene ikke navigerer i listen, men flytter cursor nedover</li>
+</ul>
+</li>
+<li>vim motions funker alltid, i motsetning til vim addon i VS Code</li>
+</ul>
+<h2>Cons</h2>
+<ul>
+<li>MYE manuelt setup</li>
+<li>man MÅ sette <code>:set paste</code> før man limer inn noe som helst fra annet steds</li>
+<li>vanskelig å kopiere noe fra neovim til OS clipboard (er det i det hele tatt mulig?)</li>
+<li>ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for &quot;l&quot;. Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete</li>
+<li>å få packages til å jobbe sammen
+<ul>
+<li>problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.</li>
+</ul>
+</li>
 </ul>
 </main>
   </body>

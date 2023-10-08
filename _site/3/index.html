@@ -41,6 +41,10 @@
           </li>
           
           <li>
+            <a href="/tags/neovim" class="tag"> # neovim </a>
+          </li>
+          
+          <li>
             <a href="/tags/npm link" class="tag"> # npm link </a>
           </li>
           
@@ -102,15 +106,119 @@
 <div class="cards">
   
   <article class="card">
-    <h2><a href="/posts/html-jsx-difference/">HTML/JSX forskjell</a></h2>
-    <span class="date">Mon 02. October 2023 | 2023-10-02</span>
-    <p><ul>
-<li>class -&gt; className</li>
-<li>for -&gt; htmlFor</li>
-<li>how to set default value for <code>&lt;select&gt;</code></li>
-<li>onchange -&gt; onBlur</li>
-<li><code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code> -&gt; <code>&lt;br/&gt;</code>, <code>&lt;hr/&gt;</code> (all elements must have closing tag / be self closing)</li>
+    <h2><a href="/posts/ide-pros-cons/">fordeler/ulemper med VSCode/Webstorm/Neovim</a></h2>
+    <span class="date">Sun 08. October 2023 | 2023-10-08</span>
+    <p><h1>VS Code cons</h1>
+<ul>
+<li>den raskeste måten å cycle through hver changed file er å klikke på hver fil i source control panel. Ingen mulighet for å navigere gjennom med piltastene.</li>
+<li>man må ofte reloade window på vscode når man avinstallerer/deaktiverer en plugin</li>
+<li>kan ikke stole på statuslinjen, at den alltid viser riktig branch</li>
+<li>Open recent-funksjonaliteten er litt brukken
+<ul>
+<li>hvis man prøver å åpne recent project-fuzzy-finderen umiddelbart etter at man har åpnet vscode, så vil den først åpnes, og så lukkes automatisk. Man kan jobbe rundt dette ved å åpne den ved å trykke og holde ctrl mens man trykker R, da</li>
 </ul>
+</li>
+<li>Vscodes git integrasjone er ikke så bra
+<ul>
+<li>git commit
+<ul>
+<li>kan bare skrive heading på commit messages</li>
+<li>kan ikke begynne på commit message øyeblikkelig etter at man har addet med vscodes git add knapp / snarvei</li>
+</ul>
+</li>
+<li>git add
+<ul>
+<li>funker ikke for å markere solved merge conflicts, for en eller annen grunn</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>live evaluering, (linting/suggestions) tar tid
+<ul>
+<li>TS bruker tid på å slå inn</li>
+<li>unused variables (eslint?) bruker også tid...</li>
+<li>code suggestions/completions bruker også litt tid...</li>
+</ul>
+</li>
+<li>feilaktig linting
+<ul>
+<li>noen ganger så tror TS/eslint eller noe at noen packages ikke er installert. Når de virkelig ER det. Man må restarte VSCode for å se effekten</li>
+</ul>
+</li>
+<li>reload window forårsaker noen ganger at kommandolinjen hopper til det andre prosjektet du har åpent. F.eks. om du driver og jobber i med et bibliotek-prosjekt og et app-prosjekt, og må reloade vscode vinduet for appen, så kan kommandolinjen finne på å cd-e til biblioteket. Sykt!</li>
+<li>hvis man prøver vim extension må man gi slipp på tastatursnarveier som
+<ul>
+<li>ctrl+pageUp/Down (noen ganger, ellers så funker det, bare at det er litt tregt. Kanskje forårsaket av vim extension, kanskje ikke)</li>
+<li>close tabs (ctrl w) (!!! veldig irriterende)</li>
+<li>noen ganger så føkker det opp angrefunksjonaliteten. jeg klikker på u og den bare sletter linjer under cursor WTF!</li>
+<li></li>
+<li>Man kan i hvert fall skru av og på vim (deactivated mode (oftest, noen ganger klikker den))</li>
+</ul>
+</li>
+</ul>
+<p>Kanskje du bør prøve webstorm</p>
+<h1>Webstorm</h1>
+<h2>Pros</h2>
+<ul>
+<li>bedre git diff (bilde)</li>
+<li>className får curly braces</li>
+<li>kan lime inn filer fra windows explorer til webstorm explorer</li>
+<li>leser classes i css og bringer auto-complete til jsx/html</li>
+<li>automatisk sync mellom starting &amp; ending tag</li>
+</ul>
+<h2>Cons:</h2>
+<ul>
+<li>hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)</li>
+<li>uvant!</li>
+</ul>
+<h1>Neovim</h1>
+<h2>Pros</h2>
+<ul>
+<li>kan bestemme selv hvordan lsp / code suggestion/completion skal funke
+<ul>
+<li>man kan bestemme at nedover-knappene ikke navigerer i listen, men flytter cursor nedover</li>
+</ul>
+</li>
+<li>vim motions funker alltid, i motsetning til vim addon i VS Code</li>
+</ul>
+<h2>Cons</h2>
+<ul>
+<li>MYE manuelt setup</li>
+<li>man MÅ sette <code>:set paste</code> før man limer inn noe som helst fra annet steds</li>
+<li>vanskelig å kopiere noe fra neovim til OS clipboard (er det i det hele tatt mulig?)</li>
+<li>ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for &quot;l&quot;. Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete</li>
+<li>å få packages til å jobbe sammen
+<ul>
+<li>problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.</li>
+</ul>
+</li>
+</ul>
+</p>
+  </article>
+  
+  <article class="card">
+    <h2><a href="/posts/wsl-to-gitbash/">Prosjekt som bruker WSL? Hvordan bytte til Git Bash</a></h2>
+    <span class="date">Sat 07. October 2023 | 2023-10-07</span>
+    <p><p>Hvordan bytte fra wsl til git bash i et prosjekt</p>
+<p>I et prosjekt hvor du allerede har installert npm modules med wsl er det litt tricky å gå over til git bash. Har opplevd det i hvert fall.</p>
+<p>Her er et forsøk som funket, men det er sannsynigvis unødvendige steg her.</p>
+<p>Hvorfor bytte? Vel... react-snap og bruk av chromium er visst ikke helt akseptert av WSL</p>
+<p>WSL</p>
+<ol>
+<li>npm cache verify</li>
+<li>delete node_modules</li>
+<li>npm cache clean --force</li>
+</ol>
+<p>Git bash</p>
+<ol>
+<li>npm rebuild</li>
+<li>lukk VS Code og åpne som Admin</li>
+<li>npm i</li>
+<li>npm start</li>
+</ol>
+<p>Og det funker! &quot;React-scripts is not recognised&quot; – no more!</p>
+<p><a href="https://coder-coder.com/npm-clear-cache/">https://coder-coder.com/npm-clear-cache/</a><br>
+<a href="https://stackoverflow.com/questions/47928735/react-scripts-is-not-recognized-as-an-internal-or-external-command">https://stackoverflow.com/questions/47928735/react-scripts-is-not-recognized-as-an-internal-or-external-command</a></p>
 </p>
   </article>
   
