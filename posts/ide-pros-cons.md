@@ -1,9 +1,10 @@
 ---
-title: fordeler/ulemper med VSCode/Webstorm
+title: fordeler/ulemper med VSCode/Webstorm/Neovim
 ranking: 4
 tags:
 - webstorm
 - vscode
+- neovim
 ---
 
 # VS Code cons
@@ -46,5 +47,23 @@ Kanskje du bør prøve webstorm
 - automatisk sync mellom starting & ending tag
 
 ## Cons:
+
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
 - uvant!
+
+# Neovim
+
+## Pros
+
+- kan bestemme selv hvordan lsp / code suggestion/completion skal funke
+  - man kan bestemme at nedover-knappene ikke navigerer i listen, men flytter cursor nedover
+- vim motions funker alltid, i motsetning til vim addon i VS Code
+
+## Cons
+
+- MYE manuelt setup
+- man MÅ sette `:set paste` før man limer inn noe som helst fra annet steds
+- vanskelig å kopiere noe fra neovim til OS clipboard (er det i det hele tatt mulig?)
+- ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for "l". Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete
+- å få packages til å jobbe sammen
+  - problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.
