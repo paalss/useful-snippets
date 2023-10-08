@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful snippets | Use functions as children</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <link
+      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Use functions as children</h1>
+      <nav class="main-nav">
+        <a href="/index">Cards view</a>
+        <a href="/listview">List view</a>
+      </nav>
+      <nav class="tag-nav" aria-labelledby="tag">
+        <ul>
+          
+          <li>
+            <a href="/tags/bitbucket" class="tag"> # bitbucket </a>
+          </li>
+          
+          <li>
+            <a href="/tags/git" class="tag"> # git </a>
+          </li>
+          
+          <li>
+            <a href="/tags/github" class="tag"> # github </a>
+          </li>
+          
+          <li>
+            <a href="/tags/html" class="tag"> # html </a>
+          </li>
+          
+          <li>
+            <a href="/tags/javascript" class="tag"> # javascript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/npm link" class="tag"> # npm link </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ohmybash" class="tag"> # ohmybash </a>
+          </li>
+          
+          <li>
+            <a href="/tags/php" class="tag"> # php </a>
+          </li>
+          
+          <li>
+            <a href="/tags/post" class="tag"> # post </a>
+          </li>
+          
+          <li>
+            <a href="/tags/process" class="tag"> # process </a>
+          </li>
+          
+          <li>
+            <a href="/tags/python" class="tag"> # python </a>
+          </li>
+          
+          <li>
+            <a href="/tags/react" class="tag"> # react </a>
+          </li>
+          
+          <li>
+            <a href="/tags/typescript" class="tag"> # typescript </a>
+          </li>
+          
+          <li>
+            <a href="/tags/ubuntu" class="tag"> # ubuntu </a>
+          </li>
+          
+          <li>
+            <a href="/tags/vscode" class="tag"> # vscode </a>
+          </li>
+          
+          <li>
+            <a href="/tags/webstorm" class="tag"> # webstorm </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main><p>Hvordan kan man lage et komponent som exposer en dataverdi som parent kan få tak i?</p>
+<p>I.e. hvordan kan ChildComponent her gjøre dette lov?</p>
+<pre class="language-jsx"><code class="language-jsx">          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ChildComponent</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+            </span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>idFromChild<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span>
+                  <span class="token attr-name">href</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">link/to/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>idFromChild<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
+                <span class="token punctuation">></span></span><span class="token plain-text">
+					click here
+                </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">></span></span>
+              <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ChildComponent</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Slik:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">ChildComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>id<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span><span class="token function">children</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">id</span><span class="token operator">:</span> id<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+</main>
+  </body>
+</html>
