@@ -4,12 +4,13 @@ pagination:
   data: collections.post
   size: 10
   alias: posts
+  reverse: true
 ---
 
 <nav class="page-nav" aria-labelledby="pagination">
   <ul>
     <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&#10094;</a>{% else %}<span class="disabled">&#10094;</span>{% endif %}</li>
-      {%- for pageEntry in pagination.pages reversed %}
+      {%- for pageEntry in pagination.pages %}
         <li>
           <a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>
             &#128462; Page {{ forloop.index }}
@@ -21,7 +22,7 @@ pagination:
   </ul>
 </nav>
 <div class="cards">
-  {% for post in posts reversed %}
+  {% for post in posts %}
   <article class="card">
     <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
     <span class="date">{{ post.date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
