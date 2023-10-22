@@ -1,0 +1,73 @@
+---
+title: Kule porteføljer
+---
+
+- https://gregives.co.uk/ (bilde av fyren som byttes ut etter musebevegelser, slik at det ser ut som han ser på musepekeren!!)
+- https://brittanychiang.com/(et kult design som mange har stjålet koden til)
+- https://lynnandtonic.com/
+- https://lynnandtonic.com/archive/2020/
+- https://ashleighsimonelli.co.uk/ (innovativt, koselig og terminal UI)
+- https://pehaa.com/ (stilig typografi, stilig scroll-effect som gør alt skrått)
+- https://arsalanshakil.github.io/ (stilig typografi, scroll styling)
+- https://gherciu.github.io/portfolio/ (veldig levende desgin. innhold som virkelig popper frem. Nydelig design)
+- https://danny-garcia.com/ (kul boblebakgrunn)
+- https://sarah.dev/ (roseorigimai lignende greier som blir helt forvridd når man hoverer-over blomstene)
+- https://www.ilithya.rocks/ (råstilig flygende 3d-tekst og 3d-objekter)
+- https://jolienhoop.com/ (kul reaktiv bakgrunn!!!)
+- https://www.dalelarroder.com/ (rå oppstilling av tekst, stilig mus-effekt i bakgrunnen)
+- https://gabrielthecode.com/ (stilig bg med firkanter, skrå linjer. Unikt, men fortsatt oversiktlig. Men litt lang loading på siden)
+- https://ahmedzougari.netlify.app/ (squiggly effect på profilbilde ved hover)
+- https://vivek9patel.github.io/ (linux UI)
+- https://www.abdusamad.uz/ (stilig navigasjon med ctrl + k)
+- https://yodkwtf.com/ (skøy bg, oversiktlig og stilig)
+- https://www.hafidziti.dev/ (fine inngangs-animasjoner på elementer, ikke for sakte, som mange av de andre animasjonene er)
+- https://developer-portfolio-1hanzla100.vercel.app/ (helt rå animasjoner)
+- https://harshgoel.me/ (steam hover card aktig-effekt på project cards)
+- http://v1.kaisermann.me/ (arbeidspult UI)
+- https://turnerj.com/ (fin gradient effect ved hover)
+- https://garvnanwani.netlify.app/ (en fryd å se på. som å se i et magasin. fin typografi)
+- https://nachocaiafa.com.ar/ (woooooooooooooooooooooooooooooooowww!!! Ser akkurat ut som en nettside for et spill eller noe)
+- https://j471n.in/ (veldig fine inngangsanimasjoner, alt kommer sammen veldig pent)
+- https://jayantgoel001.github.io/ (Ganske stilige inngangsanimasjoner. Har også en slags vtuber person? veldig unikt)
+- https://moustapha.me/ (wooooooooooooow! animasjonene, designet, logoen)
+- https://romanisthere.github.io/ (man tegner på bakgrunnen og det er et visittkort der som automatisk utfyller teksten sin)
+- https://iantrent.com/
+- https://karkipramesh.com.np/ (stilig bakgrunn av en wireframe-skjelett-3d-kule som roterer)
+- https://jahir.dev/
+- https://leewarrick.com/ (litt fine animasjoner)
+- https://louayhamada.com/ (code editor UI)
+- https://matteolobello.com/ (en sirkel som følger musepekeren, og når den komme rover lenker, så forvandles den til en firkant som markerer hele det lenkede ordet. Stilig, unikt)
+- https://mayank0255.github.io/ (pent design. Godt håndtert scroll hijjacking)
+- https://maramsaiharsha.netlify.app/ (litt gøy, bare)
+- https://migu.es/ (elementer i designet popper fram)
+- https://nicovanzyl.com/portfolio
+- https://olepetterstokke.no/
+- https://olaolu.dev/
+- https://ogaston.com/ (flygeanimasjon på twitter-fuglen!!)
+- https://bluexguardian.com/
+- https://pazindushane.github.io/ (veldig proft utseende. UI og animasjoner spiller så godt sammen)
+- https://priya180975.github.io/portfolio/ (kul minimalistisk stil, tør å bruke grid)
+- https://www.juliacodes.com/ 
+- http://danielsternlicht.com/po
+- https://www.pirhoo.com/
+- https://evander.vercel.app/
+- https://kuldar.com
+- https://robertandradejr.dev/
+- https://fossheim.io/
+
+
+MEST UKONVENSJONELLE PORTEFØLJER
+- https://lynnandtonic.com/ (viewport resizing zoomer inn og ut)
+- https://mutuku.me/ (et digert bilde av et maleri pluss litt tekst under)
+- https://moritzkornher.de/ (spesiell navigasjon verden ikke har sett maken til)
+- Terminal-baserte porteføljer
+  - https://ashleighsimonelli.co.uk/ (veldig bra utført)
+  - https://lizlam.github.io/ (funker ikke å skrive noe, da)
+- https://jayantgoel001.github.io/ (det er en V-tuber greie nede til venstre???)
+- https://leonardoliveira.com/ (dameansikt i bakgrunnen. Når dyu er på en underside åpnes øynene hennes og pupillene følger musepekeren)
+- https://sirlisko.com/ (et slags spill i header)
+- https://www.banguismv.me/ (VELDIG unik navigasjon)
+- https://jasonrubenste.in/
+- https://bluexguardian.com/index.html
+- http://danielsternlicht.com/
+- https://www.youandigraphics.com/

@@ -1,0 +1,12 @@
+---
+title: Tech pronunciation
+---
+
+- Sql (S Q L / Sequel / Squeel )
+- xampp (Shamp)
+- Zsh (Zash)
+- C# (See sharp, see hash)
+- LaTeX (Lateck)
+- SCSS (Sass)
+- Vite (French word for "quick", pronounced /vit/, like "veet")
+- Deno ("Dino", ikke "Deno")
