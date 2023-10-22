@@ -7,7 +7,7 @@ tags:
 
 # HTML
 
-## with data attributes :heavy_check_mark:
+## with data attributes ✔
 
 {%raw%}
 ```html
@@ -114,7 +114,7 @@ tags:
 ```
 {%endraw%}
 
-## with JS :x:
+## with JS ❌
 
 Highlight only goes down
 
@@ -220,7 +220,7 @@ Highlight only goes down
 {%endraw%}
 
 
-## With JS :heavy_check_mark:
+## With JS ✔
 
 {%raw%}
 
@@ -464,11 +464,11 @@ Highlight only goes down
 
 # React
 
-## With data attributes :x:
+## With data attributes ❌
 
 not working at all
 
-## With JS 1: :heavy_check_mark:
+## With JS 1: ✔
 
 {%raw%}
 
@@ -606,7 +606,7 @@ export default function App() {
 {%endraw%}
 
 
-## With JS 2: :x:
+## With JS 2 ❌
 
 Highlight only goes down
 
