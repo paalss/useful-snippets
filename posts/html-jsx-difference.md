@@ -1,5 +1,5 @@
 ---
-title: HTML/JSX forskjell
+title: HTML/JSX forskjeller
 tags:
 - react
 - html
@@ -9,4 +9,8 @@ tags:
 - for -> htmlFor
 - how to set default value for `<select>`
 - onchange -> onBlur
-- `<br>`, `<hr>` -> `<br/>`, `<hr/>` (all elements must have closing tag / be self closing)
+- `<br>`, `<img>`, `<hr>` -> `<hr/>` (all elements must have closing tag / be self closing)
+
+JSX
+- Må ha ett root element
+- syntaxhighlihgting og emmet support: Man må bare legge til en javascriptreact ting i en innstillingsfil. Emmet virker stort sett.
