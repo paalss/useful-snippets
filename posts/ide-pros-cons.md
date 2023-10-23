@@ -20,10 +20,11 @@ tags:
     - kan ikke begynne på commit message øyeblikkelig etter at man har addet med vscodes git add knapp / snarvei
   - git add
     - funker ikke for å markere solved merge conflicts, for en eller annen grunn
-- live evaluering, (linting/suggestions) tar tid
+- live evaluering, (linting/suggestions) tar tid / er tregt
   - TS bruker tid på å slå inn
   - unused variables (eslint?) bruker også tid...
   - code suggestions/completions bruker også litt tid...
+    - f.eks. for å skrive console.log kan man begynne å skrive prefixet: "log". Men da må man først vente litt før suggestions-ene kommer opp
 - feilaktig linting
   - noen ganger så tror TS/eslint eller noe at noen packages ikke er installert. Når de virkelig ER det. Man må restarte VSCode for å se effekten
 - reload window forårsaker noen ganger at kommandolinjen hopper til det andre prosjektet du har åpent. F.eks. om du driver og jobber i med et bibliotek-prosjekt og et app-prosjekt, og må reloade vscode vinduet for appen, så kan kommandolinjen finne på å cd-e til biblioteket. Sykt!

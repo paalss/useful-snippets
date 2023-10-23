@@ -15,5 +15,5 @@ tags:
 
 JSX
 - Må ha ett root element
-- syntaxhighlihgting og emmet support: Man må bare legge til en javascriptreact ting i en innstillingsfil. Emmet virker stort sett.
+- ekstra setup nødvendig i VS Code: syntaxhighlihgting og emmet support: Må legge til en javascriptreact ting i en innstillingsfil. Emmet virker stort sett.
 
