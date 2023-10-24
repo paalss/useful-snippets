@@ -53,17 +53,17 @@ Slik bytter du til SSH:
 
 # Bitbucket
 
-https://peter-whyte.com/setup-ssh-keys-in-wsl/
+<https://peter-whyte.com/setup-ssh-keys-in-wsl/>
 
 ```sh
 eval $(ssh-agent -s) && ssh-add ../pw_bitbucket
 ```
 
 Personal Access Token for http
-https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>  
 Kan brukes til authentication i stedet for passord
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>
 
 ```sh
 eval "$(ssh-agent -s)"
