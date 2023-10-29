@@ -6,6 +6,7 @@ module.exports = function (collection) {
     this.addField("title")
     this.addField("ranking")
     this.addField("tags")
+    this.addField("content")
     this.setRef("id")
   })
 
@@ -16,7 +17,8 @@ module.exports = function (collection) {
       id: page.url,
       title: page.template.frontMatter.data.title,
       ranking: page.template.frontMatter.data.ranking,
-      tags: page.template.frontMatter.data.tags
+      tags: page.template.frontMatter.data.tags,
+      content: page.template.frontMatter.content
     })
   })
 
