@@ -8,5 +8,21 @@ Færre antall branches i code completion suggestion når du skriver `git checkou
 
 Slett alle branches som ikke finnes på remote:
 
-`git fetch -p` (prune)
+```
+git fetch -p
+``````
+
+(git fetch prune)
+
+Også, sørg for å slette unødvendige tags
+
+List tags
+
+````
+git tag
+``````
+
+````
+git tag -d tagName
+``````
 
