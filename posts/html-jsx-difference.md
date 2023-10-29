@@ -10,7 +10,6 @@ tags:
 - how to set default value for `<select>`
 - onchange -> onBlur
 - `<br>`, `<img>`, `<hr>` -> `<hr/>` (all elements must have closing tag / be self closing)
-- innerHTML -> dangerouslySetInnerHTML
 
 
 JSX
