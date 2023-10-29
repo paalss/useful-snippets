@@ -1,5 +1,6 @@
 ---
 title: npm link library
+ranking: 2
 tags:
 - npm link
 ---

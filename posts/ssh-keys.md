@@ -1,5 +1,6 @@
 ---
 title: SSH-keys
+ranking: 4
 tags:
 - github
 - bitbucket

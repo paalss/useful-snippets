@@ -1,5 +1,6 @@
 ---
 title: Use functions as children
+ranking: 3
 tags:
 - react
 - javascript

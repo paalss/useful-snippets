@@ -1,5 +1,6 @@
 ---
 title: Content editable
+ranking: 2
 tags:
 - html
 - dom

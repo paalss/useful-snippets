@@ -1,5 +1,6 @@
 ---
 title: Test storybook krasj
+ranking: 3
 ---
 
 krasjer npm run test-storybook ? Får du error-meldinger som folk på internettet sier betyr at du har gått tom for RAM?

@@ -1,5 +1,6 @@
 ---
 title: Convert all JS files in folder to TS
+ranking: 4
 tags:
 - typescript
 - javascript

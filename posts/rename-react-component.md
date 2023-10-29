@@ -1,5 +1,6 @@
 ---
 title: Rename React component
+ranking: 5
 tags:
 - react
 - javascript
