@@ -1,11 +1,17 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const searchFilter = require("./filters/searchFilter")
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPlugin(syntaxHighlight);
+module.exports = function (config) {
+  config.addPassthroughCopy("bundle.css");
+  config.addPlugin(syntaxHighlight);
 
-  // Enable us to iterate over all the tags, excluding posts and all
-  eleventyConfig.addCollection('tagList', collection => {
+  config.addFilter("search", searchFilter)
+  config.addCollection("posts", collection=>{
+    return [...collection.getFilteredByGlob("./posts/*.md")]
+  })
+
+  // Enable us to iterate over all the tags, excluding 'posts' and 'all'
+  config.addCollection('tagList', collection => {
     const tagsSet = new Set()
     collection.getAll().forEach(item => {
       if (!item.data.tags) return
