@@ -23,26 +23,21 @@ title: Useful snippets | search
         expand: true,
       });
 
-      const resElement = document.getElementById("searchResults");
+      const resultsElement = document.getElementById("searchResults");
       const noResultsElement = document.getElementById("noResultsFound");
 
-      resElement.innerHTML = "";
+      resultsElement.innerHTML = "";
 
       if (results) {
         noResultsElement.style.display = "none";
         results.map((r) => {
           console.log(r);
-          const { id, title } = r.doc;
-          const el = document.createElement("li");
-          resElement.appendChild(el);
+          const { id, title, ranking } = r.doc;
 
-          const h3 = document.createElement("h3");
-          el.appendChild(h3);
-
-          const a = document.createElement("a");
-          a.setAttribute("href", id);
-          a.textContent = title;
-          h3.appendChild(a);
+          const listItem = document.createElement("li");
+          const rankingText = ranking !== undefined ? `(ranked: ${ranking})` : ""
+          listItem.innerHTML = `<h3><a href="${id}">${title}</a> ${rankingText}</h3>`;
+          resultsElement.appendChild(listItem);
         });
       } else {
         noResultsElement.style.display = "block";
@@ -59,4 +54,3 @@ title: Useful snippets | search
     );
   })(window, document);
 </script>
-<!-- <script src="./search.js"></script> -->
