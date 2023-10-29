@@ -12,6 +12,15 @@ html {
   row-gap: 15px;
 }
 
+.post-tags {
+  display: flex;
+}
+
+.post-tags a {
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(237, 237, 237);
 }
