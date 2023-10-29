@@ -23,17 +23,18 @@ title: Useful snippets | search
         expand: true,
       });
 
-      const resEl = document.getElementById("searchResults");
-      const noResultsEl = document.getElementById("noResultsFound");
+      const resElement = document.getElementById("searchResults");
+      const noResultsElement = document.getElementById("noResultsFound");
 
-      resEl.innerHTML = "";
+      resElement.innerHTML = "";
 
       if (results) {
-        noResultsEl.style.display = "none";
+        noResultsElement.style.display = "none";
         results.map((r) => {
+          console.log(r);
           const { id, title } = r.doc;
           const el = document.createElement("li");
-          resEl.appendChild(el);
+          resElement.appendChild(el);
 
           const h3 = document.createElement("h3");
           el.appendChild(h3);
@@ -44,7 +45,7 @@ title: Useful snippets | search
           h3.appendChild(a);
         });
       } else {
-        noResultsEl.style.display = "block";
+        noResultsElement.style.display = "block";
       }
     };
 
