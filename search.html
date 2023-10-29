@@ -35,7 +35,10 @@ title: Useful snippets | search
           const { id, title, ranking } = r.doc;
 
           const listItem = document.createElement("li");
-          const rankingText = ranking !== undefined ? `(ranked: ${ranking})` : ""
+          const rankingText =
+            ranking !== undefined
+              ? `<sl-rating label="Rating" readonly value="${ranking}"></sl-rating>`
+              : "";
           listItem.innerHTML = `<h3><a href="${id}">${title}</a> ${rankingText}</h3>`;
           resultsElement.appendChild(listItem);
         });
