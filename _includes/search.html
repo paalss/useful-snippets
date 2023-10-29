@@ -1,6 +1,5 @@
 ---
-layout: layout.html
-title: Useful snippets | search
+layout: htmlWrapper.html
 ---
 
 <div class="field">
@@ -31,7 +30,6 @@ title: Useful snippets | search
       if (results) {
         noResultsElement.style.display = "none";
         results.map((r) => {
-          console.log(r);
           const { id, title, ranking } = r.doc;
 
           const listItem = document.createElement("li");
@@ -57,3 +55,4 @@ title: Useful snippets | search
     );
   })(window, document);
 </script>
+{{ content }}
