@@ -1,5 +1,5 @@
 ---
-title: search text apperance in a file's git history
+title: search for text appearance in a file's git history
 ranking: 5
 tags:
 - git
