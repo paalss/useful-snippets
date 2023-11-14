@@ -10,24 +10,30 @@ tags:
 # ask in what path the component resides in
 # if no answer is provided, use default value
 # -e flag is for giving `cd`-code completion while answering the question
-defaultValue=src/stories/default/
+
+defaultValue=src/components/
+
 read -e -p "Where is component located? (default: $defaultValue): " location
 location=${location:-$defaultValue}
 
-read -p "Enter component name you want to rename: " currentName
+cd $location
 
-componentPath=$location/$currentName
-index=$componentPath/index.ts
-component=$componentPath/$currentName.tsx
-story=$componentPath/$currentName.stories.tsx
-stylesheet=$componentPath/$currentName.module.css
+read -e -p "Enter component name you want to rename: " currentName
+
+cd $currentName
+
+indexFile=index.ts
+componentFile=$currentName.tsx
+storyFile=$currentName.stories.tsx
+stylesheetFile=$currentName.module.css
+stylesheetScssFile=$currentName.module.scss
 
 if [[ $currentName != "" ]]; then
-    filesInThatFolder=$(cd $componentPath && ls)
+    filesInThatFolder=$(ls)
     echo
     echo "This will affect:"
     echo "---- folder -----"
-    echo $componentPath
+    echo $currentName
     echo
     echo "---- files -----"
     echo $filesInThatFolder
@@ -35,18 +41,29 @@ if [[ $currentName != "" ]]; then
     
     read -p "Enter new name: " newName
     if [[ $newName != "" ]]; then
+        echo
+        echo "search replace in files"
+        echo
         
-        # update code
-        sed -i "s/$currentName/$newName/g" $index
-        sed -i "s/$currentName/$newName/g" $component
-        sed -i "s/$currentName/$newName/g" $story
-        sed -i "s/$currentName/$newName/g" $stylesheet
+        sed -i "s/$currentName/$newName/g" $indexFile
+        sed -i "s/$currentName/$newName/g" $componentFile
+        sed -i "s/$currentName/$newName/g" $storyFile
+        sed -i "s/$currentName/$newName/g" $stylesheetFile
+        sed -i "s/$currentName/$newName/g" $stylesheetScssFile
         
-        # rename files and folder
-        mv $component $componentPath/$newName.tsx
-        mv $story $componentPath/$newName.stories.tsx
-        mv $stylesheet $componentPath/$newName.module.css
-        mv $componentPath $location/$newName/
+        echo
+        echo "rename files and folders"
+        echo
+        
+        mv $componentFile $newName.tsx
+        mv $storyFile $newName.stories.tsx
+        mv $stylesheetFile $newName.module.css
+        mv $stylesheetScssFile $newName.module.scss
+
+        cd ..
+
+        mv $currentName $newName/
     fi
 fi
+
 ```
