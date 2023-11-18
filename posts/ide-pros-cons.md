@@ -45,12 +45,13 @@ Kanskje du bør prøve webstorm
 - className får curly braces
 - kan lime inn filer fra windows explorer til webstorm explorer
 - leser classes i css og bringer auto-complete til jsx/html
-- automatisk sync mellom starting & ending tag
+- automatisk sync mellom starting & ending tag renaming
 
 ## Cons:
 
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
 - uvant!
+- Kan ikke duplisere linje over caret!! HVORFOR???????????? Mulig jeg må bruke Vim her
 
 # Neovim
 
