@@ -51,7 +51,9 @@ Kanskje du bør prøve webstorm
 
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
 - uvant!
-- Kan ikke duplisere linje over caret!! HVORFOR???????????? Mulig jeg må bruke Vim her
+- Kan ikke duplisere linje over caret!! HVORFOR????????????
+  - Mulig jeg må bruke Vim her
+  - Eller autohotkey/autokey
 
 # Neovim
 
