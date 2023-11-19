@@ -7,6 +7,5 @@ title: Tech pronunciation
 - Zsh (Zash)
 - C# (See sharp, see hash)
 - LaTeX (Lateck)
-- SCSS (Sass)
 - Vite (French word for "quick", pronounced /vit/, like "veet")
 - Deno ("Dino", ikke "Deno")

@@ -5,6 +5,6 @@ tags:
 - vscode
 ---
 
-View > show status bar  
+View > Appearance > show status bar  
 View > show status bar widgets > BRANCH  
-ÅPNE MENY NEDE TIL HØYRE  
+ÅPNE MENY NEDE TIL HØYRE > Velg branch du vil sammenligne med
