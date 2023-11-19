@@ -46,6 +46,8 @@ Kanskje du bør prøve webstorm
 - kan lime inn filer fra windows explorer til webstorm explorer
 - leser classes i css og bringer auto-complete til jsx/html
 - automatisk sync mellom starting & ending tag renaming
+- sier i fra om du endrer på noe i node_modules
+- sier i fra om node_modules er i usync med package.json (npm ls)
 
 ## Cons:
 
