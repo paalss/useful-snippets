@@ -52,6 +52,7 @@ Kanskje du bør prøve webstorm
 - log prefix funker bra. Man trenger ikke vente på at LSP skal komme med forslag, man kan bare klikke Enter med én gang
 - bedre bookmarks enn noe bookmark-extension jeg har funnet til VS Code
 - Prettifyer TypeScript errors automatisk. Ingen nødvendighet for Prettier TypeScript Errors Addon slik som i VS Code.
+- Hopp-til-linje har en dialog boks som man må klikke enter i for å hoppe til linje, da slipper man å hoppe til nr. 1 og 0 når man skal hoppe til linje nr. 100
 
 ## Cons:
 

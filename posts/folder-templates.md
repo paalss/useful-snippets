@@ -7,7 +7,7 @@ tags:
 
 ## File and Code Templates
 
-<https://www.jetbrains.com/help/webstorm/templates-with-multiple-files.html#ws_template_for_component_files>
+[templates with multiple files](https://www.jetbrains.com/help/webstorm/templates-with-multiple-files.html#ws_template_for_component_files)
 
 - Opprett template files. Én hovedfil med noen sub-files
 
@@ -33,3 +33,5 @@ Create a child template file
 ```ts
 export {${NAME}} from './${NAME}';
 ```
+
+![Alt text](/images/file-and-code-templates.png)
