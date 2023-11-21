@@ -48,14 +48,21 @@ Kanskje du bør prøve webstorm
 - automatisk sync mellom starting & ending tag renaming
 - sier i fra om du endrer på noe i node_modules
 - sier i fra om node_modules er i usync med package.json (npm ls)
+- lettere å klikke på uncommited changes markøren i venstremargen. Den som viser at noe er fjernet, endret eller lagt til
+- log prefix funker bra. Man trenger ikke vente på at LSP skal komme med forslag, man kan bare klikke Enter med én gang
+- bedre bookmarks enn noe bookmark-extension jeg har funnet til VS Code
+- Prettifyer TypeScript errors automatisk. Ingen nødvendighet for Prettier TypeScript Errors Addon slik som i VS Code.
 
 ## Cons:
 
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
-- uvant!
 - Kan ikke duplisere linje over caret!! HVORFOR????????????
   - Mulig jeg må bruke Vim her
   - Eller autohotkey/autokey
+- Man MÅ markere hele comment block for å uncommente
+- Esc by default returnerer markøren tilbake til editoren. Litt plagsomt når du holder på med vim i terminalen
+- By default masse overwhelming squiggly lines og symboler over alt
+  - squiggly lines for eslint prettier stuff
 
 # Neovim
 
