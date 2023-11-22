@@ -35,3 +35,7 @@ export {${NAME}} from './${NAME}';
 ```
 
 ![Alt text](/images/file-and-code-templates2.png)
+
+Stygg error med nested template files: Navn forsvinner helt uten videre!!
+
+Issue: <https://youtrack.jetbrains.com/issue/IDEA-279811/File-template-file-name-is-removed>
