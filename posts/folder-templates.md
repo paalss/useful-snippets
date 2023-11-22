@@ -34,4 +34,4 @@ Create a child template file
 export {${NAME}} from './${NAME}';
 ```
 
-![Alt text](/images/file-and-code-templates.png)
+![Alt text](/images/file-and-code-templates2.png)
