@@ -49,13 +49,14 @@ Kanskje du bør prøve webstorm
 - sier i fra om du endrer på noe i node_modules
 - sier i fra om node_modules er i usync med package.json (npm ls)
 - lettere å klikke på uncommited changes markøren i venstremargen. Den som viser at noe er fjernet, endret eller lagt til
-- log prefix funker bra. Man trenger ikke vente på at LSP skal komme med forslag, man kan bare klikke Enter med én gang
+- ~~log prefix funker bra. Man trenger ikke vente på at LSP skal komme med forslag, man kan bare klikke Enter med én gang~~
 - bedre bookmarks enn noe bookmark-extension jeg har funnet til VS Code
 - Prettifyer TypeScript errors automatisk. Ingen nødvendighet for Prettier TypeScript Errors Addon slik som i VS Code.
 - Hopp-til-linje har en dialog boks som man må klikke enter i for å hoppe til linje, da slipper man å hoppe til nr. 1 og 0 når man skal hoppe til linje nr. 100
 
 ## Cons:
 
+- Man kan ikke hitte "format" og så få single quotes til double quotes i JSON
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
 - Kan ikke duplisere linje over caret!! HVORFOR????????????
   - Mulig jeg må bruke Vim her
