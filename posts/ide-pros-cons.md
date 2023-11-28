@@ -61,8 +61,9 @@ Kanskje du bør prøve webstorm
 - Kan ikke duplisere linje over caret!! HVORFOR????????????
   - Mulig jeg må bruke Vim her
   - Eller autohotkey/autokey
-- Man MÅ markere hele comment block for å uncommente
+- ~~Man MÅ markere hele comment block for å uncommente~~
 - Esc by default returnerer markøren tilbake til editoren. Litt plagsomt når du holder på med vim i terminalen
+- Toggle comment flytter markøren ett hakk ned. Og det er ingen måte å fikse det på
 - By default masse overwhelming squiggly lines og symboler over alt
   - squiggly lines for eslint prettier stuff
 
