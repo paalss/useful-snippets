@@ -25,3 +25,7 @@ npm uninstall @scope/library
 ```sh
 npm i @scope/librayr@latest --save-exact
 ```````
+
+try deleting package.json
+
+try restarting servers???
