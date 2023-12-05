@@ -1,5 +1,6 @@
 ---
 title: npm link refuses to go away
+ranking: 3
 tags:
 - npm link
 ---
