@@ -16,3 +16,12 @@ killall -9 _process_id_
 ```
 
 eg: `killall -9 1686`
+
+
+
+Eller
+
+```sh
+fuser -k 8080/tcp
+```````
+
