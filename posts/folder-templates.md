@@ -1,5 +1,5 @@
 ---
-title:Folder templates for VS Code and Webstorm
+title: Folder templates for VS Code and Webstorm
 tags:
 - vscode
 - webstorm
