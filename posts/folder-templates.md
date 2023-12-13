@@ -1,5 +1,6 @@
 ---
 title: Folder templates for VS Code and Webstorm
+ranking: 4
 tags:
 - vscode
 - webstorm
@@ -10,6 +11,12 @@ tags:
 [templates with multiple files](https://www.jetbrains.com/help/webstorm/templates-with-multiple-files.html#ws_template_for_component_files)
 
 - Opprett template files. Én hovedfil med noen sub-files
+
+Create main file
+
+**Name**: `component folder` \
+**Extension**: `tsx` \
+**File name**: empty
 
 ```ts
 import React from 'react';
@@ -30,9 +37,24 @@ export const ${NAME} = ({  }: ${NAME}Props) => {
 
 Create a child template file
 
+**File name**: `$NAME/$NAME` \
+**Extension**: `ts`
+
+
 ```ts
 export {${NAME}} from './${NAME}';
 ```
+
+And a css file
+
+**File name**: `${NAME}/{NAME}.module` \
+**Extension**: `css`
+
+```ts
+.root {
+
+}
+```````
 
 ![Alt text](/images/file-and-code-templates2.png)
 
