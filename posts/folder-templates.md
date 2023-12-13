@@ -6,7 +6,11 @@ tags:
 - webstorm
 ---
 
-## File and Code Templates
+## VScode - Folder templates
+
+[folder templates extension](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure&ssr=false#review-details)
+
+## Webstorm - File and Code Templates
 
 [templates with multiple files](https://www.jetbrains.com/help/webstorm/templates-with-multiple-files.html#ws_template_for_component_files)
 
@@ -16,7 +20,7 @@ Create main file
 
 **Name**: `component folder` \
 **Extension**: `tsx` \
-**File name**: empty
+**File name**: `$NAME/$NAME`
 
 ```ts
 import React from 'react';
@@ -37,7 +41,7 @@ export const ${NAME} = ({  }: ${NAME}Props) => {
 
 Create a child template file
 
-**File name**: `$NAME/$NAME` \
+**File name**: `$NAME/index` \
 **Extension**: `ts`
 
 
@@ -47,7 +51,7 @@ export {${NAME}} from './${NAME}';
 
 And a css file
 
-**File name**: `${NAME}/{NAME}.module` \
+**File name**: `${NAME}/${NAME}.module` \
 **Extension**: `css`
 
 ```ts
