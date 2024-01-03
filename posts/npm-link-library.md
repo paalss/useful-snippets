@@ -5,7 +5,7 @@ tags:
 - npm link
 ---
 
-If stuff doesn't update in app, try
+### If stuff doesn't update in app, try
 
 - restarting servers
 - `npm unlink @scope/library` on both sides and re-link
@@ -17,3 +17,19 @@ npm install --cache /tmp/empty-cache
 ```````
 
 Then restart everything
+
+### If css can't be found
+
+attempting to import css from app (like with bootstrap css) does not always work for some reason
+
+inject css into js so that the package imports css by itself
+
+### Reference
+
+When npm link works, `npm ls @scope/package` should return:
+
+```sh
+app@0.1.0 /home/user/code/app
+└── @scope/package@0.1.0 extraneous -> ./../packages/package-components-project
+
+```````
