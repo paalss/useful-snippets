@@ -7,7 +7,9 @@ tags:
 - neovim
 ---
 
-# VS Code cons
+# VS Code 
+
+## Cons
 
 - den raskeste måten å cycle through hver changed file er å klikke på hver fil i source control panel. Ingen mulighet for å navigere gjennom med piltastene.
 - man må ofte reloade window på vscode når man avinstallerer/deaktiverer en plugin
@@ -42,6 +44,7 @@ Kanskje du bør prøve webstorm
 ## Pros
 
 - bedre git diff (bilde)
+- bedre find code in files & search replace (untatt preview)
 - className får curly braces
 - kan lime inn filer fra windows explorer til webstorm explorer
 - ~~leser classes i css og bringer auto-complete til jsx/html~~
@@ -53,19 +56,39 @@ Kanskje du bør prøve webstorm
 - bedre bookmarks enn noe bookmark-extension jeg har funnet til VS Code
 - Prettifyer TypeScript errors automatisk. Ingen nødvendighet for Prettier TypeScript Errors Addon slik som i VS Code.
 - Hopp-til-linje har en dialog boks som man må klikke enter i for å hoppe til linje, da slipper man å hoppe til nr. 1 og 0 når man skal hoppe til linje nr. 100
+- terminal
+  - navn lagres til neste gang man åpner programmet
+- kan forutse hva en ny variabel kan hete i code suggestion, basert på udefinerte variabler nedenfor
 
 ## Cons:
 
-- Man kan ikke hitte "format" og så få single quotes til double quotes i JSON
+- LSP code suggestion på 'npm link'-ed library funker ikke!
+- settings og 'file and code templates' kan resettes av seg selv!!
+- kan ikke slå av auto-save helt
+- litt slow, generelt
+  - slow project panel update
+    - og ingen 'refresh'-button
+    - man må KLIKKE på filene for at ting skal begynne å oppdateres
+  - typescript linting
+- ingen search history i "search in all files"
+- kan ikke lime inn i terminal med høyre museklikk
+- terminal
+  - return to normal mode legger igjen en grønn markør og usynliggjør tegnet som er bak markøren
+  - ctrl backspace sletter ikke ord for ord (som i vanlig terminal, altså)
+- Esc by default returnerer markøren tilbake til editoren. Litt plagsomt når du holder på med vim i terminalen
+- babysitter og prøver å gjøre git-operasjoner for deg (kan enkelt slås av)
+  - spør om du vil stage
+  - spør om du vil npm install
+- ~~Man kan ikke hitte "format" og så få single quotes til double quotes i JSON~~
 - hvordan lage tastatursnarvei for en enkelt bokstav?? (curly braces = shift alt 8)
 - Kan ikke duplisere linje over caret!! HVORFOR????????????
   - Mulig jeg må bruke Vim her
   - Eller autohotkey/autokey
 - ~~Man MÅ markere hele comment block for å uncommente~~
-- Esc by default returnerer markøren tilbake til editoren. Litt plagsomt når du holder på med vim i terminalen
 - Toggle comment flytter markøren ett hakk ned. Og det er ingen måte å fikse det på
 - By default masse overwhelming squiggly lines og symboler over alt
   - squiggly lines for eslint prettier stuff
+- vanskelig å se om en fil er lagt til / endret / fjernet i source control (commit) panel
 
 # Neovim
 
