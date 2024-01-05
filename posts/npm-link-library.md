@@ -7,7 +7,7 @@ tags:
 
 ### If stuff doesn't update in app, try
 
-- Try restaring app dev servers
+- Try restaring app dev server
 - Try as suggested in response from `npm cache clean`:
 
 ```sh
