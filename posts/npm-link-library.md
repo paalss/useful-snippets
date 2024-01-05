@@ -9,9 +9,10 @@ tags:
 
 - Try restaring app dev servers
 - Try as suggested in response from `npm cache clean`:
+
 ```sh
 npm install --cache /tmp/empty-cache
-```````
+```
 Then restart app dev servers
 
 - `npm unlink @scope/library` on both sides and re-link
@@ -30,4 +31,4 @@ When npm link works, `npm ls @scope/package` should return:
 app@0.1.0 /home/user/code/app
 └── @scope/package@0.1.0 extraneous -> ./../packages/package-components-project
 
-```````
+```
