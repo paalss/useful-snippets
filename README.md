@@ -1,7 +1,5 @@
 TODO
 
-- [ ] ranking posts
-- [ ] search
 - [ ] display post tags in card, link to tag view results
 - [ ] collapse cards
 - [ ] emoji support?
