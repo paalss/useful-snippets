@@ -2,6 +2,8 @@
 layout: layout
 title: Authorized note
 ranking: 1
+tags:
+- test
 ---
 lalalalalalaalalalalalalalaalalalalalala
 
