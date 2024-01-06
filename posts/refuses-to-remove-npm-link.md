@@ -5,7 +5,24 @@ tags:
 - npm link
 ---
 
-try uninstalling globally and reinstalling dependency:
+1. Try
+
+Maybe unlink package?
+
+```sh
+npm unlink @scope/package
+```````
+
+clear / swap out cache on either project
+
+```sh
+npm install --cache /tmp/empty-cache
+```````
+
+restart all servers
+
+
+2. try uninstalling globally and reinstalling dependency:
 
 ```sh
 sudo npm rm --global @scope/library

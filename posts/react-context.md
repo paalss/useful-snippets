@@ -24,6 +24,7 @@ export const AppContext = createContext<ContextProps>({
 
 App
 
+{%raw%}
 ```ts
 const Context2 = Context as React.Context<ContextProps>;
 
@@ -31,3 +32,4 @@ return (
   <AppContext2.Provider value={{darkTheme: false}}>
     {/* -- content -- */}
 ```
+{%endraw%}
