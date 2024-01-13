@@ -1,5 +1,8 @@
 ---
 title: Prosjekt som bruker WSL? Hvordan bytte til Git Bash
+date: 2024-01-13T19:08:24.699Z
+tags:
+  - wsl
 ---
 
 Hvordan bytte fra wsl til git bash i et prosjekt
