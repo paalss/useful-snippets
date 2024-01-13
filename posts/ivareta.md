@@ -1,5 +1,6 @@
 ---
 title: Ivareta git historikk ved file renaming
+date: 2023-10-22
 tags:
 - git
 ---

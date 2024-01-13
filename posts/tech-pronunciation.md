@@ -1,5 +1,6 @@
 ---
 title: Tech pronunciation
+date: 2023-11-26
 ---
 
 - Sql (S Q L / Sequel / Squeel )

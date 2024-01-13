@@ -1,5 +1,6 @@
 ---
 title: Webstorm sin VSCode Gitlens compare working dir with branch
+date: 2023-11-26
 tags:
 - webstorm
 - vscode

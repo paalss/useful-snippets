@@ -1,5 +1,6 @@
 ---
 title: Oh my bash adding missing code completions
+date: 2023-10-22
 tags:
 - ohmybash
 ---

@@ -1,5 +1,6 @@
 ---
 title: Use functions as children
+date: 2023-10-29
 ranking: 3
 tags:
 - react

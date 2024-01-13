@@ -1,5 +1,6 @@
 ---
 title: Ohmybash
+date: 2023-10-22
 tags:
 - ohmybash
 - vscode

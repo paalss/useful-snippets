@@ -1,5 +1,6 @@
 ---
 title: create context
+date: 2024-01-06
 tags:
 - react
 - javascript

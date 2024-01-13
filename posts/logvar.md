@@ -1,5 +1,6 @@
 ---
 title: log variable with key
+date: 2023-10-22
 tags: 
 - vscode
 - javascript

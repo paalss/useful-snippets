@@ -1,5 +1,6 @@
 ---
 title: Debug in Pycharm
+date: 2023-11-18
 tags:
 - debug
 - python

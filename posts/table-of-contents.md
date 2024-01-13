@@ -1,5 +1,6 @@
 ---
 title: table of contents with IntersectionOvserver (not perfect)
+date: 2023-10-22
 tags:
 - react
 - javascript

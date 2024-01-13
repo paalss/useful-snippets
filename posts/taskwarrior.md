@@ -1,5 +1,8 @@
 ---
 title: Task warrior (CLI todo app)
+date: 2023-10-22
+tags:
+- productivity
 ---
 
 ## Installer på Ubuntu (WSL)

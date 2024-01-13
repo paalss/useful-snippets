@@ -1,5 +1,6 @@
 ---
 title: i18next
+date: 2023-10-22
 tags:
 - react
 - javascript

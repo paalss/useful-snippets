@@ -1,5 +1,6 @@
 ---
 title: IDE bruker ikke prettierrc
+date: 2023-12-08
 tags:
 - webstorm
 - vscode

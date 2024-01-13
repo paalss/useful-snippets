@@ -1,5 +1,6 @@
 ---
 title: Generate CSS module classnames in Vite
+date: 2023-12-08
 tags:
 - vite
 - css

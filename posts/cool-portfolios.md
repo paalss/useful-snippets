@@ -1,5 +1,6 @@
 ---
 title: Kule porteføljer
+date: 2023-10-22
 ---
 
 - <https://gregives.co.uk/> (bilde av fyren som byttes ut etter musebevegelser, slik at det ser ut som han ser på musepekeren!!)

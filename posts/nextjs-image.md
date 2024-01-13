@@ -1,5 +1,6 @@
 ---
 title: preserve aspect ratio for Nextjs images
+date: 2023-10-22
 ---
 
 <https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed>

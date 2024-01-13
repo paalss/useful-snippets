@@ -1,5 +1,6 @@
 ---
 title: HTML/JSX forskjeller
+date: 2023-10-29
 tags:
 - react
 - html

@@ -1,5 +1,6 @@
 ---
 title: Quick test Netlify
+date: 2023-10-22
 tags:
  - netlify
 ---

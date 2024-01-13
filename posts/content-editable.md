@@ -1,5 +1,6 @@
 ---
 title: Content editable
+date: 2023-10-29
 ranking: 2
 tags:
 - html
