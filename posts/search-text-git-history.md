@@ -1,5 +1,6 @@
 ---
 title: search for text appearance in a file's git history
+date: 2023-11-05
 ranking: 5
 tags:
 - git

@@ -1,5 +1,6 @@
 ---
 title: Folder templates for VS Code and Webstorm
+date: 2023-12-25
 ranking: 4
 tags:
 - vscode

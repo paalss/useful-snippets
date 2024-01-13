@@ -1,5 +1,6 @@
 ---
 title: Rename React component
+date: 2024-01-13
 ranking: 5
 tags:
   - react

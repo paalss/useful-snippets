@@ -1,5 +1,6 @@
 ---
 title: Convert React Prop Types to TS type annotations
+date: 2023-10-22
 tags:
 - typescript
 - react

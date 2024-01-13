@@ -1,5 +1,6 @@
 ---
 title: eleventy stuff
+date: 2023-10-22
 tags:
 - javascript
 ---

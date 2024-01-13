@@ -1,5 +1,7 @@
 ---
 title: graphql fetch using multiple IDs
+date: 2023-11-05
+ranking: 2
 tags:
 - graphql
 ---

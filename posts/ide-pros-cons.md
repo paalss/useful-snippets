@@ -1,5 +1,6 @@
 ---
 title: fordeler/ulemper med VSCode/Webstorm/Neovim
+date: 2023-12-25
 ranking: 4
 tags:
 - webstorm

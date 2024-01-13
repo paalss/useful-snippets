@@ -1,5 +1,6 @@
 ---
 title: npm link library
+date: 2024-01-06
 ranking: 4
 tags:
 - npm link
