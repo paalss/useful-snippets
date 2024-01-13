@@ -6,14 +6,14 @@ tags:
 ---
 ### GitHub
 
-- https://github.com/SwitchbackTech/compass
+- <https://github.com/SwitchbackTech/compass>
 
 ### Docs
 
-- https://docs.compasscalendar.com/
-  - https://docs.compasscalendar.com/docs/getting-started/install
+- <https://docs.compasscalendar.com/>
+  - <https://docs.compasscalendar.com/docs/getting-started/install>
 
 ### Prod
 
-- https://app.compasscalendar.com/login
+- <https://app.compasscalendar.com/login>
 
