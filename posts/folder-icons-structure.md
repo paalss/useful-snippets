@@ -1,5 +1,7 @@
 ---
 title: ee
+tags:
+- image
 ---
 
  📂my-component-library
