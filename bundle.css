@@ -29,6 +29,12 @@ main {
   margin-top: 10px;
 }
 
+.cards .card {
+  max-height: 500px;
+  width: 430px;
+  overflow: hidden;
+}
+
 .card {
   padding: 20px;
   background-color: #f1f1f1;
@@ -36,9 +42,6 @@ main {
   border: 1px solid #959595;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  max-height: 500px;
-  width: 430px;
-  overflow: hidden;
 }
 
 code {
@@ -119,4 +122,16 @@ nav.page-nav li span.disabled {
 
 nav.page-nav li a[aria-current] {
   font-weight: bold;
+}
+
+
+/* postlayout */
+
+.post-details {
+  border: 1px dashed #000;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
 }

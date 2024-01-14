@@ -1,0 +1,34 @@
+---
+layout: layout.html
+---
+
+<div class="post-details">
+  <ul>
+    <li>
+      <b>title</b>: {{title}}
+    </li>
+    {% if ranking != undefined %}
+    <li>
+      <b>Rating</b>: <sl-rating label="Rating" readonly value="{{ranking}}"></sl-rating>
+    </li>
+    {% endif %}
+    <li>
+      <b>Tags</b>: <div class="post-tags">
+        {% for tag in tags %}
+        <sl-badge variant="neutral">
+          <a href="/tags/{{tag}}">
+            {{tag}}
+          </a>
+        </sl-badge>
+        {% endfor %}
+      </div>
+    </li>
+    <li>
+      <b>Date</b>: <span class="date">{{ date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
+    </li>
+  </ul>
+</div>
+<div class="card">
+  <h2>{{title}}</h2>
+  {{content}}
+</div>
