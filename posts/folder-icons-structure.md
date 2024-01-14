@@ -2,7 +2,7 @@
 title: Folder icons structure
 date: 2023-12-25
 tags:
-- image
+- art
 ---
 
  📂my-component-library
