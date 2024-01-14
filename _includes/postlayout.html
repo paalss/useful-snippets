@@ -5,15 +5,15 @@ layout: layout.html
 <div class="post-details">
   <ul>
     <li>
-      <b>title</b>: {{title}}
+      <b>title:</b> {{title}}
     </li>
     {% if ranking != undefined %}
     <li>
-      <b>Rating</b>: <sl-rating label="Rating" readonly value="{{ranking}}"></sl-rating>
+      <b>Rating:</b> <sl-rating label="Rating" readonly value="{{ranking}}"></sl-rating>
     </li>
     {% endif %}
     <li>
-      <b>Tags</b>: <div class="post-tags">
+      <b>Tags:</b> <div class="post-tags">
         {% for tag in tags %}
         <sl-badge variant="neutral">
           <a href="/tags/{{tag}}">
@@ -24,7 +24,7 @@ layout: layout.html
       </div>
     </li>
     <li>
-      <b>Date</b>: <span class="date">{{ date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
+      <b>Date:</b> <span class="date">{{ date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
     </li>
   </ul>
 </div>

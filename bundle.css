@@ -135,3 +135,12 @@ nav.page-nav li a[aria-current] {
   right: 0;
   float: right;
 }
+
+.post-details ul {
+  padding-left: 15px;
+}
+
+.post-details li {
+  display: flex;
+  column-gap: 10px;
+}
