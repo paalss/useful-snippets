@@ -1,5 +1,4 @@
 ---
-layout: layout.html
 date: 2024-01-13
 title: IDE functionalities deactivated by Vim
 ranking: 3
