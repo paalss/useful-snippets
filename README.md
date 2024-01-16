@@ -1,9 +1,9 @@
 TODO
 
-- [ ] fix ide-functionalities-deactivated-by-vim/ not having metadata
 - [ ] create 'edit' button. link to admin panelfor that particulat post
-- [ ] collapse cards
-- [ ] emoji support?
+- [ ] responsive. mobile view
+  - [ ] flytt detaljer boks ned, inn i dokumentflyten igjen
+- [ ] rename date label til created date
 
 ## Serve
 
