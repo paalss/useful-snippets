@@ -4,8 +4,10 @@ layout: layout.html
 
 <div class="post-details">
   <ul>
+    <li><b>Edit:</b> <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Admin</a></li>
+    <li><b>File:</b> {{page.fileSlug}}.md</li>
     <li>
-      <b>title:</b> {{title}}
+      <b>Title:</b> {{title}}
     </li>
     {% if ranking != undefined %}
     <li>
