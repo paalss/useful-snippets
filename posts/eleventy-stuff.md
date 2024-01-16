@@ -2,13 +2,13 @@
 title: eleventy stuff
 date: 2023-10-22
 tags:
-- javascript
+  - javascript
 ---
 
 # Eleventy stuff
 
-- <https://glitch-hello-eleventy.glitch.me/> glitch has web editor for markdown with preview
-  - <https://glitch.com/edit/#!/classy-zesty-bird?path=README.md%3A1%3A0> 
+- ~~<https://glitch-hello-eleventy.glitch.me/> glitch has web editor for markdown with preview~~
+  - ~~<https://glitch.com/edit/#!/classy-zesty-bird?path=README.md%3A1%3A0>~~
 -  <https://github.com/kohrongying/11ty-blog-starter> has a `create` bash script
 
 ## eleventy.js
