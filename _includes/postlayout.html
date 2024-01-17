@@ -4,7 +4,6 @@ layout: layout.html
 
 <div class="post-details">
   <ul>
-    <li><b>Edit:</b> <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Admin</a></li>
     <li><b>File:</b> {{page.fileSlug}}.md</li>
     <li>
       <b>Title:</b> {{title}}
@@ -15,7 +14,8 @@ layout: layout.html
     </li>
     {% endif %}
     <li>
-      <b>Tags:</b> <div class="post-tags">
+      <b>Tags:</b>
+      <div class="post-tags">
         {% for tag in tags %}
         <sl-badge variant="neutral">
           <a href="/tags/{{tag}}">
@@ -30,7 +30,11 @@ layout: layout.html
     </li>
   </ul>
 </div>
-<div class="card">
+<article class="card">
   <h2>{{title}}</h2>
+
+  <nav class="main-nav">
+    <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Edit</a>
+  </nav>
   {{content}}
-</div>
+</article>
