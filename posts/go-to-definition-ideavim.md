@@ -9,6 +9,7 @@ tags:
 - Go to definition `gd`
   - might need to ctrl click the regular way on beforehand
 - Go back to where you where you came from `ctrl o`
+- Save all files `wa`
 
 ## Webstorm keyboard shortcuts
 - Show error `ctrl F1`
