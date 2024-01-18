@@ -16,5 +16,7 @@ tags:
 - delete including delimeter `da*`
 - search replace incl. slash <https://useful-snippets.netlify.app/posts/search-replace-slash-in-vim/>
 
+<h/posts/search-replace-slash-in-vim/>
+
 ## Webstorm keyboard shortcuts
 - Show error `ctrl F1`
