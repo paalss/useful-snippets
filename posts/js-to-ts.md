@@ -1,9 +1,10 @@
 ---
 title: Convert all JS files in folder to TS
+date: 2024-01-01T14:44:55.729Z
 ranking: 4
 tags:
-- typescript
-- javascript
+  - typescript
+  - javascript
 ---
 
 ```bash
