@@ -7,5 +7,7 @@ tags:
 ---
 <https://ubuntu.com/server/docs/upgrade-introduction>
 
+```sh
 sudo apt update
 sudo apt upgrade
+```
