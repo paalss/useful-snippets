@@ -7,7 +7,7 @@ tags:
   - vim
 ---
 
-
+<https://useful-snippets.netlify.app/posts/vim/>
 
 ## Webstorm keyboard shortcuts
 - Show error `ctrl F1`
