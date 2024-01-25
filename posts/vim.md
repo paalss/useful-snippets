@@ -5,6 +5,7 @@ ranking: 4
 tags:
   - vim
   - webstorm
+  - neovim
 ---
 <https://vim.rtorr.com/>
 
