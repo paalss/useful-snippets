@@ -1,13 +1,12 @@
 ---
 title: Vim
 date: 2024-01-24T15:46:29.381Z
+ranking: 4
 tags:
   - vim
+  - webstorm
 ---
 <https://vim.rtorr.com/>
-
-da" / ca" delete/change everything in qotes icluding quotes \
-"0p paste from yank register
 
 - Go to definition `gd`
   - IdeaVim: might need to ctrl click the regular way on beforehand
