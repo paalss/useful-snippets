@@ -13,6 +13,7 @@ hvor mye er deaktivert/ufordel i Webstorm/VSCode når du har på Vim plugin?
 
 - Annoying to save file that is edited in commit changes window
   - pressing "Esc" to go to normal mode exits commit changes window
+  - unlike when terminal is focused, you can't disable the "Esc-> focus normal file view"
 - ~~paste from OS registry (copy paste from UI app into Webstorm in IdeaVim)~~ Kan fikses ved å registrere `ctrl C` og `ctrl V` som IDE-shortcuts (se <https://useful-snippets.netlify.app/posts/webstorm-ideavim-shortcut-settings/>)
 - vim search not as good as built-in search
   - vim won't highlight/preview as you search/replace
