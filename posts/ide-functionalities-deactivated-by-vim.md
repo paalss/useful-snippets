@@ -11,6 +11,8 @@ hvor mye er deaktivert/ufordel i Webstorm/VSCode når du har på Vim plugin?
 
 ### Webstorm IdeaVim
 
+- IDE's multi-select with Ctrl D doesn't work with entering insert mode using eg. using `a`
+ - but `c` works
 - Annoying to save file that is edited in commit changes window
   - pressing "Esc" to go to normal mode exits commit changes window
   - unlike when terminal is focused, you can't disable the "Esc-> focus normal file view"
