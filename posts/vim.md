@@ -13,9 +13,10 @@ tags:
   - IdeaVim: might need to ctrl click the regular way on beforehand
 - Go back to where you where you came from `ctrl o`
 - Save all files `wa`
-- Show definition (eg. typescript) `vim.lsp.buf.hover()`
+- Show definition (eg. typescript) `sd` -> `vim.lsp.buf.hover()`
+  - IdeaVim: <https://stackoverflow.com/questions/21018400/ideavim-in-intellij-is-there-a-shortcut-to-goto-next-error>
+  - `:x` to exit
 - delete until delimeter `dt*` https://stackoverflow.com/questions/10658230/how-to-delete-until-end-of-delimiter
 - delete including delimeter `da*`
 - search replace incl. slash <https://useful-snippets.netlify.app/posts/search-replace-slash-in-vim/>
-
-</posts/search-replace-slash-in-vim/>
+- more stuff in <https://github.com/paalss/nvim/blob/master/README.md>
