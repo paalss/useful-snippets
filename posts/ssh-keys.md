@@ -3,13 +3,13 @@ title: SSH-keys
 date: 2023-10-29
 ranking: 4
 tags:
-- github
-- bitbucket
+  - github
+  - bitbucket
 ---
 
 Hvordan opprette og bruke
 
-# Github
+# Github / Gitlab
 
 Fint for å slippe å skrive inn brukernavn og passord hver eneste gang
 
@@ -35,7 +35,9 @@ Your public key has been saved in /home/paalss/.ssh/id_rsa.pub
 ssh-rsa <Hererenlanghashcode> paalss@Asus-VivoBook
 ```
 
-4. Gå til [Add new ssh keys](https://github.com/settings/ssh/new)
+4. Gå til SSH-siden:
+- Github: [Add new ssh keys](https://github.com/settings/ssh/new)
+- Gitlab: [SSH keys](https://gitlab.com/-/profile/keys)
 
 5. Lim inn `ssh-rsa <Hererenlanghashcode>`
 
