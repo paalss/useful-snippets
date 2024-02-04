@@ -11,6 +11,8 @@ Hvordan opprette og bruke
 
 # Github / Gitlab
 
+[Create SSH-keys & upload to Gitlab](https://docs.gitlab.com/ee/user/ssh.html)
+
 Fint for å slippe å skrive inn brukernavn og passord hver eneste gang
 
 
