@@ -11,6 +11,7 @@ tags:
 
 - Go to definition `gd`
   - IdeaVim: might need to ctrl click the regular way on beforehand
+- Ideavim: surround with delimeters <https://stackoverflow.com/questions/48438208/how-to-surround-a-line-with-parentheses-in-intellij-ideavim>
 - Go back to where you where you came from `ctrl o`
 - Save all files `wa`
 - Show definition (eg. typescript) `sd` -> `vim.lsp.buf.hover()`
