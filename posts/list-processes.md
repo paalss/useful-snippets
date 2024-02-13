@@ -1,28 +1,56 @@
 ---
-title: List processes
+title: List & kill processes
 date: 2023-12-08
 ranking: 4
 tags:
-- process
+  - process
 ---
+## List processes
+
+### All
 
 ```sh
-netstat -nlp | grep tcp
+sudo netstat -nlp | grep tcp
 ```
 
-eg: `tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node`
+Sudo gives more info on process id & stuff
+
+### One specific port
 
 ```sh
-killall -9 _process_id_
+sudo lsof -i:3000
 ```
 
-eg: `killall -9 1686`
+`sudo lsof -i:80` \
+`sudo lsof -i:443`
 
+## Kill process
 
-
-Eller
+### Kill Caddy process
 
 ```sh
-fuser -k 8080/tcp
+sudo killall -9 caddy
+```
+
+### Killall
+
+eg: `tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node` \
+`__________________________________^^______`
+
+```sh
+killall -9 1686
+```
+
+Eller med
+
+### Fuser
+
+
+eg: `tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node` \
+`________________^^________________________`
+
+
+```sh
+fuser -k 3000/tcp
 ```````
 
