@@ -22,7 +22,8 @@ sudo lsof -i:3000
 ```
 
 `sudo lsof -i:80` \
-`sudo lsof -i:443`
+`sudo lsof -i:443` \
+`sudo lsof -i:4173`
 
 ## Kill process
 
@@ -39,6 +40,11 @@ eg: `tcp6       0      0 :::3000                 :::*                    LISTEN 
 
 ```sh
 killall -9 1686
+```
+
+Eller
+```sh
+sudo killall $(lsof -t -i:3000)
 ```
 
 Eller med
