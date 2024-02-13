@@ -27,7 +27,11 @@ sudo lsof -i:3000
 
 ## Kill process
 
-### Kill Caddy process
+### Kill Node/caddy process
+
+```sh
+killall -9 node
+```
 
 ```sh
 sudo killall -9 caddy
