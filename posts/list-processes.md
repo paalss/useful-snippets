@@ -33,7 +33,7 @@ sudo lsof -i:3000
 killall -9 node
 ```
 
-`sudo killall -9 caddy` \
+`sudo killall -9 caddy` related: <https://useful-snippets.netlify.app/posts/quit-caddy-process/> \
 `sudo killall -9 http-server`
 
 ### By PID
