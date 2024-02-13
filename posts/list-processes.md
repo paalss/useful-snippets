@@ -27,17 +27,16 @@ sudo lsof -i:3000
 
 ## Kill process
 
-### Kill Node/caddy process
+### By name
 
 ```sh
 killall -9 node
 ```
 
-```sh
-sudo killall -9 caddy
-```
+`sudo killall -9 caddy` \
+`sudo killall -9 http-server`
 
-### Killall
+### By PID
 
 eg: `tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node` \
 `__________________________________^^______`
@@ -46,19 +45,18 @@ eg: `tcp6       0      0 :::3000                 :::*                    LISTEN 
 killall -9 1686
 ```
 
-Eller
-```sh
-sudo killall $(lsof -t -i:3000)
-```
-
-Eller med
-
-### Fuser
+### By port
 
 
 eg: `tcp6       0      0 :::3000                 :::*                    LISTEN      1686/node` \
 `________________^^________________________`
 
+
+```sh
+sudo killall $(lsof -t -i:3000)
+```
+
+Eller med
 
 ```sh
 fuser -k 3000/tcp
