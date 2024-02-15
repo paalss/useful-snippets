@@ -1,6 +1,8 @@
 ---
 title: Vim macros
 date: 2024-02-14T16:06:45.724Z
+tags:
+  - vim
 ---
 - s -> turn snake_case to camelCase
 - w -> add line break between >_abc_<
