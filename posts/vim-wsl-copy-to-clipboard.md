@@ -1,15 +1,16 @@
 ---
-title: Vim WSL copy to OS clipboard
+title: Vim WSL copy to OS system clipboard
 date: 2024-02-13T09:01:05.897Z
 tags:
   - vim
   - wsl
+  - ubuntu
 ---
 
-1. normal / writing mode / visual mode
-2. shift click where you want selection to begin
-3. shift click where you want selection to end
-3. `ctrl C`
+## In Neovim
+1. `:set mouse=`
+2. Click & drag
+3. Ctrl C
 
 Should be able to paste text content anywhere else
 
@@ -21,6 +22,5 @@ Image: Copy paste "  - Javascript" to OS system clipboard
 
 
 ---
-Også interessant
 
-set clipboard+=unnamed funker i .ideavimrc i hvert fall. men det er kanskje ikke det man alltid vil ha. Et clipboard som deles med system.
+set clipboard+=unnamed funker for Ideavim (.ideavimrc). Neovim gjennom WSL trenger kanskje mer verktøy for å funke
