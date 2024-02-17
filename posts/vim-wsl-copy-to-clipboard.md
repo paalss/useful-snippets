@@ -6,6 +6,23 @@ tags:
   - wsl
   - ubuntu
 ---
+### See if Neovim lacks Clipboard
+
+```
+:CheckHealth
+```
+
+```
+Clipboard (optional) ~
+- WARNING No clipboard tool found. Clipboard registers (`"+` and `"*`) will not work.
+  - ADVICE:
+    - :help |clipboard|
+```
+
+Clipboard help: <https://useful-snippets.netlify.app/posts/neovim-reference-manual/>
+
+
+
 ### Copy entire line
 
 1. Select entire line visual mode
