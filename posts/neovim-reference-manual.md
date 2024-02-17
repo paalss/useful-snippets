@@ -79,6 +79,7 @@ g:clipboard can also use functions (see |lambda|) instead of strings.
 For example this configuration uses the g:foo variable as a fake clipboard:
 >vim
 
+```
     let g:clipboard = {
           \   'name': 'myClipboard',
           \   'copy': {
@@ -90,6 +91,7 @@ For example this configuration uses the g:foo variable as a fake clipboard:
           \      '*': {-> get(g:, 'foo', [])},
           \   },
           \ }
+```
 
 The "copy" function stores a list of lines and the register type. The "paste"
 function returns the clipboard as a `[lines, regtype]` list, where `lines` is
@@ -98,6 +100,8 @@ a list of lines and `regtype` is a register type conforming to |setreg()|.
 							      *clipboard-wsl*
 For Windows WSL, try this g:clipboard definition:
 >vim
+
+```
     let g:clipboard = {
                 \   'name': 'WslClipboard',
                 \   'copy': {
@@ -110,6 +114,8 @@ For Windows WSL, try this g:clipboard definition:
                 \   },
                 \   'cache_enabled': 0,
                 \ }
+```
+
 
 ==============================================================================
 Paste							*provider-paste* *paste*
