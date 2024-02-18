@@ -35,7 +35,7 @@ Clipboard help: <https://useful-snippets.netlify.app/posts/neovim-reference-manu
 
 ### Click & drag method
 
-1. `:set mouse=`
+1. ~~`:set mouse=`~~ Neovim config already has this set as default
 2. Click & drag
 3. Ctrl C
 
