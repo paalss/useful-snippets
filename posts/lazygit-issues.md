@@ -7,3 +7,4 @@ tags:
 ---
 - kan ikke alltid pulle eller pushe fra branch window.
 - rename branch usynliggjør tekst mens man beveger markøren bakover, men kommer tilbake igjen når man skriver igjen
+- åpne lazygit stash og så klikke _ (underscore). Så ser man ikke innholdet i den stashen. MAn må bevege seg ned og opp igjen først
