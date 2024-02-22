@@ -8,4 +8,4 @@ tags:
 - w -> add line break between >_abc_<
 - e -> convert className{classes.root} til template literal
 - d -> convert className{`${classes.root}`} til vanlig (gjenstår å lages)
-- a -> copy all
+- a -> mark all - visual gg-G
