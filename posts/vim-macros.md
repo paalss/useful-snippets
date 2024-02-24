@@ -8,3 +8,5 @@ tags:
 - e -> convert className{classes.root} til template literal
 - d -> convert className{`${classes.root}`} til vanlig (gjenstår å lages)
 - a -> mark all - visual gg-G
+
+Neovim: hard coded macros: <https://github.com/paalss/nvim/blob/develop/after/plugin/which-key.lua>
