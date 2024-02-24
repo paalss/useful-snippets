@@ -5,7 +5,6 @@ tags:
   - vim
 ---
 - s -> turn snake_case to camelCase
-- w -> add line break between >_abc_<
 - e -> convert className{classes.root} til template literal
 - d -> convert className{`${classes.root}`} til vanlig (gjenstår å lages)
 - a -> mark all - visual gg-G
