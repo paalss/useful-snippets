@@ -4,9 +4,13 @@ date: 2024-01-24T15:48:37.780Z
 tags:
   - tmux
 ---
-### Quit scrolling mode
+### Enter copy mode
 
-har du klikket ctrl b og piltast/pgUp for å scrolle? Kommer ikke tilbake til vanlig skrivemodus?: `q`
+`Ctrl [` eller begynn å scrolle
+
+### Quit copy mode
+
+`Ctrl c` eller `q`
 
 <https://stackoverflow.com/questions/67360866/tmux-exit-ctrl-b-and-stay-observing-the-session>
 
@@ -23,6 +27,8 @@ Ctrl b s
 #### Just list sessions
 
 `tmux ls`
+
+Med `christoomey/vim-tmux-navigator` package og instrukser fra <https://www.josean.com/posts/tmux-setup> / <https://www.youtube.com/watch?v=U-omALWIBos&t=584s>
 
 ### Resize pane
 
