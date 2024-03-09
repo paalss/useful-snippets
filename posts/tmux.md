@@ -23,3 +23,11 @@ Ctrl b s
 #### Just list sessions
 
 `tmux ls`
+
+### Resize pane
+
+`Ctrl b h` eller `j` eller `k` eller `l`
+
+### Move between panes
+
+`Ctrl h` eller `j` eller `k` eller `l`
