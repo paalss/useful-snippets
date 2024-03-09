@@ -6,6 +6,12 @@ tags:
   - wsl
   - ubuntu
 ---
+
+EDIT:
+
+unnamedplus funker for WSL. men bare ikke i windows 11 ser det ut som?
+---
+
 ### See if Neovim lacks Clipboard
 
 ```
