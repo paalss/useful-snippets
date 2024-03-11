@@ -6,5 +6,5 @@ tags:
   - linux
 ---
 ```
-sudo chmod 0775 -R media/
+sudo chmod 0775 -R mappe/
 ```
