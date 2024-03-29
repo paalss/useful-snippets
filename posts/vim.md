@@ -22,3 +22,4 @@ tags:
 - delete including delimeter `da*`
 - search replace incl. slash <https://useful-snippets.netlify.app/posts/search-replace-slash-in-vim/>
 - more stuff in <https://github.com/paalss/nvim/blob/master/README.md>
+- Change content of html `<li>foo</li>` -> citbar -> `<li>bar</li>`
