@@ -11,3 +11,4 @@ date: 2023-11-26
 - Vite (French word for "quick", pronounced /vit/, like "veet")
 - Deno ("Dino", ikke "Deno")
 - JWTs (JSON Web Token, pronounced 'jot')
+- Lua (pronounced LOO-ah)
