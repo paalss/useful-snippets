@@ -118,15 +118,15 @@ Kanskje du bør prøve webstorm
 ## Cons
 
 * MYE manuelt setup
+* mangel på ordentlig terminal
+  * FTerm, Toggleterm ol. krasjer ofte
+  * multiple tmux-panes kan ødelegge hele UI-et om man forminsker WSL-app-skjermbredden
 * ukonsistent behavior
-
   * telescope er litt ukonsistent
-
     * noen ganger MÅ man esc før man kan velge en fil
   * ikke alltid codesuggestions kan velges med \[tab] (uten å ha endret på lsp.lua eller noe)
 * man MÅ sette `:set paste` før man limer inn noe som helst fra annet steds
 * vanskelig å kopiere noe fra neovim til OS clipboard (er det i det hele tatt mulig?)
 * ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for "l". Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete
 * å få packages til å jobbe sammen
-
   * problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.
