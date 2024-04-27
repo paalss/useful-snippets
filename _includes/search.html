@@ -30,7 +30,7 @@ layout: htmlWrapper.html
       if (results) {
         noResultsElement.style.display = "none";
         results.map((r) => {
-          const { id, title, ranking } = r.doc;
+          const {id, title, ranking} = r.doc;
 
           const listItem = document.createElement("li");
           const rankingText =

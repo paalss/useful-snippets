@@ -1,12 +1,12 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const searchFilter = require("./filters/searchFilter")
 
-module.exports = function (config) {
+module.exports = function(config) {
   config.addPassthroughCopy("bundle.css");
   config.addPlugin(syntaxHighlight);
 
   config.addFilter("search", searchFilter)
-  config.addCollection("posts", collection=>{
+  config.addCollection("posts", collection => {
     return [...collection.getFilteredByGlob("./posts/*.md")]
   })
 
