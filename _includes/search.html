@@ -35,7 +35,7 @@ layout: htmlWrapper.html
           const listItem = document.createElement("li");
           const rankingText =
             ranking !== undefined
-              ? `<sl-rating label="Rating" readonly value="${ranking} tabindex="-1"></sl-rating>`
+              ? `<sl-rating label="Rating" readonly value="${ranking}" inert></sl-rating>`
               : "";
           listItem.innerHTML = `<h3><a href="${id}">${title}</a> ${rankingText}</h3>`;
           resultsElement.appendChild(listItem);
