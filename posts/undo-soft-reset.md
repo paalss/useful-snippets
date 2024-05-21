@@ -7,10 +7,10 @@ tags:
 ```bash
 git reflog
 ```
+
 copy hash (ex: 56e2f8f)
 
-```
+```bash
 git checkout main/develop
 git merge 56e2f8f
 ```
-
