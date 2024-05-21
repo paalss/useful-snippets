@@ -5,6 +5,8 @@ ranking: 4
 tags:
   - github
   - bitbucket
+  - https
+  - ssh
 ---
 
 Hvordan opprette og bruke
