@@ -1,9 +1,9 @@
 ---
-title: npm link refuses to go away
+title: npm link refuses to go away | clear npm cache
 date: 2024-01-06
 ranking: 3
 tags:
-- npm link
+  - npm link
 ---
 
 1. Try
