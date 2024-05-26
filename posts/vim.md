@@ -13,6 +13,9 @@ tags:
   - tab `Ctrl t`
   - vertical split `Ctrl v`
   - horizontal split `Ctrl x`
+- Open help pages in new tab
+  - Telescope help_tags -> `Ctrl t`
+  - `:tab h lualine`
 - Seach replace all
   - telescope
   - ctrl Q to add results to quick fix list
