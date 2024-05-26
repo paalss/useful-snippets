@@ -9,6 +9,18 @@ tags:
 ---
 <https://vim.rtorr.com/>
 
+- Telescope - open selected result in new...
+  - tab `Ctrl t`
+  - vertical split `Ctrl v`
+  - horizontal split `Ctrl x`
+- Seach replace all
+  - telescope
+  - ctrl Q to add results to quick fix list
+  - `:cdo s/blaba/blaba/g`
+- Marks
+  - Add mark: `m[bokstav]`
+  - Navigate away
+  - Return to mark: `'[bokstav]`
 - Go to definition `gd`
   - IdeaVim: might need to ctrl click the regular way on beforehand
 - Ideavim: surround with delimeters <https://stackoverflow.com/questions/48438208/how-to-surround-a-line-with-parentheses-in-intellij-ideavim>
