@@ -9,6 +9,18 @@ tags:
 ---
 <https://vim.rtorr.com/>
 
+- HTML attribute code omni-completion
+  - `Ctrl x`
+  - `Ctrl o`
+- Return to last opened window (buffer)
+  - `Ctrl 6`
+- Indent line
+  - i
+    - `Ctrl t` / `Ctrl d`
+  - v
+    - mark selection
+    - `<` / `>`
+    - `.` to repeat
 - Telescope - open selected result in new...
   - tab `Ctrl t`
   - vertical split `Ctrl v`
