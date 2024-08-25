@@ -1,7 +1,6 @@
 ---
 title: Rocket
 date: 2024-01-13T18:09:38.803Z
-ranking: ""
 tags:
   - art
 ---
