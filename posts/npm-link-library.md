@@ -3,12 +3,16 @@ title: npm link library
 date: 2024-01-06
 ranking: 4
 tags:
-- npm link
+  - npm link
 ---
+### See if npm link works
+
+Run `npm run build` in the library. See if it updates the app.
+
 
 ### If stuff doesn't update in app, try
 
-- Try restaring app dev server
+- Restart app's dev server
 - Try as suggested in response from `npm cache clean`:
 
 ```sh
