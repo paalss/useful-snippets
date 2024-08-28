@@ -7,6 +7,8 @@ tags:
 ---
 ## List processes
 
+Relatert: https://useful-snippets.netlify.app/posts/finne-prog-med-port/
+
 ### All
 
 ```sh
