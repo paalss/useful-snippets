@@ -41,13 +41,13 @@ ssh-rsa <Hererenlanghashcode> paalss@Asus-VivoBook
 
 4. Gå til SSH-siden:
 - Github: [Add new ssh keys](https://github.com/settings/ssh/new)
-- Gitlab: [SSH keys](https://gitlab.com/-/profile/keys)
+- Gitlab: [SSH keys](https://gitlab.com/-/profile/keys) [SSH keys 2](https://gitlab.com/-/user_settings/ssh_keys)
 
 5. Lim inn `ssh-rsa <Hererenlanghashcode>`
 
 Resten er rett frem
 
-https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html
+<https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html>
 
 
 ## Blir du spurt om username og password (PAT) ved `git push`?
