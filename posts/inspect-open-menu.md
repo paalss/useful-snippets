@@ -5,12 +5,13 @@ tags:
   - inspect
   - menu
 ---
-```
+```ts
 import {ComboboxItem, NativeSelect, Select} from '@mantine/core';            
 
-             <Select
-              id={'Flavor'}
-              onDropdownOpen={() => {
-                debugger;
-              }}
+<Select
+  id={'Flavor'}
+  onDropdownOpen={() => {
+    debugger;
+  }}
+/>
 ```
