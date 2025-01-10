@@ -9,6 +9,12 @@ tags:
 ---
 <https://vim.rtorr.com/>
 
+- Delete word
+  - n
+    - `daw`
+- "Ctrl Backspace" sletting
+  - i
+    - `Ctrl w`
 - HTML attribute code omni-completion
   - `Ctrl x`
   - `Ctrl o`
