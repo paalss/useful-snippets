@@ -130,3 +130,5 @@ Kanskje du bør prøve webstorm
 * ekstremt vanskelig/umulig å bruke tastatursnarveier med ctrl og alt. For en eller annen grunn funker ikke ctrl+ø, men alt+ø funker. Men både ctrl og alt funker for "l". Kan gjøre noe magi med Autohotkey/autokey, men det er veldig plundrete
 * å få packages til å jobbe sammen
   * problem med merge conflict highlight packagen blir helt upåvirket av colorscheme. Det gjør at conflict marker får STYGGE farger. Man må eksplisitt sette :colorscheme tokyonight-night for å få colorscheme til å overskrive de stygge fargene igjen. Men hele pakken brekker når man åpner lazygit. Så ja.
+* cit fungerer ikke på `<></>`
+* dat fungerer ikke på self closed tags
