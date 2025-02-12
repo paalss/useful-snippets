@@ -2,7 +2,7 @@
 title: Task warrior (CLI todo app)
 date: 2023-10-22
 tags:
-- productivity
+  - productivity
 ---
 
 ## Installer på Ubuntu (WSL)
@@ -66,4 +66,10 @@ https://taskwarrior.org/docs/best-practices/
 
 
 ## Interessant
-- visual interactive taskwarrior - https://gothenburgbitfactory.org/vit/
+- Tools https://taskwarrior.org/tools/
+- TUI
+  - https://github.com/kdheepak/taskwarrior-tui
+  - visual interactive taskwarrior - https://gothenburgbitfactory.org/vit/
+- GUI
+  - https://github.com/DCsunset/taskwarrior-webui
+  - https://github.com/theunraveler/taskwarrior-web
