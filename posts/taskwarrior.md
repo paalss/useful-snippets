@@ -69,6 +69,8 @@ https://taskwarrior.org/docs/best-practices/
 - Tools <https://taskwarrior.org/tools/>
 - TUI
   - <https://github.com/kdheepak/taskwarrior-tui>
+    - taskwarrior-tui-x86_64-unknown-linux-gnu.tar.gz - Best for Ubuntu/WSL
+    - Se post om taskwarrior-tui: <https://useful-snippets.netlify.app/posts/taskwarrior-tui/>
   - visual interactive taskwarrior - <https://gothenburgbitfactory.org/vit/>
 - GUI
   - <https://github.com/DCsunset/taskwarrior-webui>
