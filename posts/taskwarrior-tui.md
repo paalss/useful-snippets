@@ -6,7 +6,7 @@ tags:
 ---
 Install taskwarrior: 
 
-Install Taskwarrior-tui:
+Install Taskwarrior-tui: <https://useful-snippets.netlify.app/posts/taskwarrior/>
 
 1. https://github.com/kdheepak/taskwarrior-tui/releases/tag/v0.26.3
 2. Ubuntu/WSL: taskwarrior-tui-x86_64-unknown-linux-gnu.tar.gz
