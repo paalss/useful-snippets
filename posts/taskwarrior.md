@@ -66,10 +66,10 @@ https://taskwarrior.org/docs/best-practices/
 
 
 ## Interessant
-- Tools https://taskwarrior.org/tools/
+- Tools <https://taskwarrior.org/tools/>
 - TUI
-  - https://github.com/kdheepak/taskwarrior-tui
-  - visual interactive taskwarrior - https://gothenburgbitfactory.org/vit/
+  - <https://github.com/kdheepak/taskwarrior-tui>
+  - visual interactive taskwarrior - <https://gothenburgbitfactory.org/vit/>
 - GUI
-  - https://github.com/DCsunset/taskwarrior-webui
-  - https://github.com/theunraveler/taskwarrior-web
+  - <https://github.com/DCsunset/taskwarrior-webui>
+  - <https://github.com/theunraveler/taskwarrior-web>
