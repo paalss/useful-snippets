@@ -8,7 +8,7 @@ tags:
 ### Start
 
 - `npm link` in library
-- `npm link libraryname` in app
+- `npm link @scope/library` in app
 
 ### See if npm link works
 
@@ -23,9 +23,21 @@ Run `npm run build` in the library. See if it updates the app.
 ```sh
 npm install --cache /tmp/empty-cache
 ```
-Then restart app dev servers
+Then restart app dev server
 
-- `npm unlink @scope/library` on both sides and re-link
+Maybe try this on the app side
+
+- `npm unlink @scope/library`
+- `npm @scope/library`
+
+Maybe also try this on the library side
+
+- `npm unlink @scope/library`
+- `npm link`
+
+I don't think it's necessary to uninstall library from node modules.
+
+ again on both sides and re-link
 
 ### If app cant find css
 
