@@ -5,6 +5,11 @@ ranking: 4
 tags:
   - npm link
 ---
+### Start
+
+- `npm link` in library
+- `npm link libraryname` in app
+
 ### See if npm link works
 
 Run `npm run build` in the library. See if it updates the app.
