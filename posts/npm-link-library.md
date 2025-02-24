@@ -28,7 +28,7 @@ Then restart app dev server
 Maybe try this on the app side
 
 - `npm unlink @scope/library`
-- `npm @scope/library`
+- `npm link @scope/library`
 
 Maybe also try this on the library side
 
