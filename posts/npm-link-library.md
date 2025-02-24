@@ -37,8 +37,6 @@ Maybe also try this on the library side
 
 I don't think it's necessary to uninstall library from node modules.
 
- again on both sides and re-link
-
 ### If app cant find css
 
 attempting to import css from app (like with bootstrap css) does not always work for some reason
