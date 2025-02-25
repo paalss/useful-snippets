@@ -7,6 +7,8 @@ tags:
 ---
 ### Start
 
+_tror_ det er viktig å uninstalle @scope/library først?
+
 - `npm link` in library
 - `npm link @scope/library` in app
 
