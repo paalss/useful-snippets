@@ -54,3 +54,6 @@ app@0.1.0 /home/user/code/app
 └── @scope/package@0.1.0 extraneous -> ./../packages/package-components-project
 
 ```
+
+
+Useful information about npm link and cleaning up and stuff, see README!: https://github.com/jasonsturges/vite-typescript-npm-package
