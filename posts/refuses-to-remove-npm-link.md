@@ -5,6 +5,18 @@ ranking: 3
 tags:
   - npm link
 ---
+> If you mistakenly forget to unlink, you can manually clean up artifacts from yarn or npm.
+> 
+> For npm, the link command creates global packages which can be removed by executing:
+> 
+> ```sh
+> sudo npm rm --global "mylib"
+> ```
+
+- https://github.com/jasonsturges/vite-typescript-npm-package
+
+---
+
 
 1. Try
 
