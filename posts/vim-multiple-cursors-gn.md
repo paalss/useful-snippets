@@ -1,6 +1,8 @@
 ---
 title: Vim multiple cursors / gn
 date: 2025-03-17T13:18:00.000Z
+tags:
+  - vim
 ---
 # multi cursor addons
 
@@ -19,3 +21,10 @@ date: 2025-03-17T13:18:00.000Z
 1. `/` search for word
 2. `cgn` change word
 3. `.` repeat for next word
+
+
+---
+
+Search navigate stuff
+
+- <https://stackoverflow.com/questions/50097790/search-for-word-under-cursor-without-moving-the-cursor>
