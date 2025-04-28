@@ -36,6 +36,10 @@ Shortcut app may be closed
 
 ## pn1 to print 29090816894
 
+<https://altitudemarketing.com/blog/text-macros-macos/>
+
+--- image? ----
+
 
 
 
