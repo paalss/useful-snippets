@@ -20,12 +20,15 @@ date: 2025-04-28T10:07:00.000Z
 :*:pn1::29090816894 
 ```
 
-## Alt 3 to print backtick ~ (keyboard shortcut)
+## keyboard shortcut to print characters
+
+backtick (`) and tilde (~)
 
 **script.ahk**
 
 ```
-!3::Send "~ "
+!1::SendText "``"
+!2::Send "~ "
 ```
 
 # Mac
@@ -48,15 +51,16 @@ Shortcut app may be closed
 
 ![Settings app](/images/mac-macros.png)
 
-## Alt 3 to print backtick ~
+## keyboard shortcut to print characters
+
+backtick (`) and tilde (~)
 
 **.config/skhd/skhdrc**
 
 ```
-lalt - 3: skhd -t "~"
+lalt - 1: skhd -t "\`"
+lalt - 2: skhd -t "~"
 ```
-
-not sure about how to print backtick (`)
 
 ### SKHD links
 
