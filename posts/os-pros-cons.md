@@ -3,8 +3,9 @@ title: fordeler/ulemper med Windows/MacOS
 date: 2023-10-22
 ranking: 4
 tags:
-- windows
-- macos
+  - windows
+  - macos
+  - autohotkey
 ---
 
 ## mislikte/misliker med mac:
