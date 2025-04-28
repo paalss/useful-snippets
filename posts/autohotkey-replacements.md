@@ -32,13 +32,13 @@ date: 2025-04-28T10:07:00.000Z
 
 Shortcut app may be closed
 
---- image? ----
+![Shortcut app](/images/open-website.png)
 
 ## pn1 to print 29090816894
 
 <https://altitudemarketing.com/blog/text-macros-macos/>
 
---- image? ----
+![Settings app](/images/mac-macros.png)
 
 
 
