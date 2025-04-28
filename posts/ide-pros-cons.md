@@ -7,6 +7,7 @@ tags:
   - vscode
   - neovim
   - pros-and-cons
+  - autohotkey
 ---
 # VS Code
 
