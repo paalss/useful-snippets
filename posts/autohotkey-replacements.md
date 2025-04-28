@@ -12,12 +12,20 @@ date: 2025-04-28T10:07:00.000Z
 +F1::Run "http://localhost:5173/"
 ```
 
-## pn1 to print 29090816894
+## pn1 to print 29090816894 (macro)
 
 **script.ahk**
 
 ```
 :*:pn1::29090816894 
+```
+
+## Alt 3 to print backtick ~ (keyboard shortcut)
+
+**script.ahk**
+
+```
+!3::Send "~ "
 ```
 
 # Mac
@@ -40,6 +48,18 @@ Shortcut app may be closed
 
 ![Settings app](/images/mac-macros.png)
 
+## Alt 3 to print backtick ~
 
+**.config/skhd/skhdrc**
 
+```
+lalt - 3: skhd -t "~"
+```
+
+not sure about how to print backtick (`)
+
+### SKHD links
+
+- documentation: <https://github.com/koekeishiya/skhd>
+- blog tutorial example: <https://www.danielcorin.com/til/skhd/intro/>
 
