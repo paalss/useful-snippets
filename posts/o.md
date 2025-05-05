@@ -3,6 +3,7 @@ title: Rocket
 date: 2024-01-13T18:09:38.803Z
 tags:
   - art
+  - ascii
 ---
 
 <p style="text-align:center">
