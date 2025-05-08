@@ -21,6 +21,8 @@ Active window title color
 setw -g window-status-current-style fg=black,bg=white
 ```
 
+<https://unix.stackexchange.com/questions/210174/set-the-active-tmux-tab-color>
+
 ## Panel
 
-https://stackoverflow.com/questions/4889724/how-can-you-tell-which-pane-in-tmux-is-focused
+<https://stackoverflow.com/questions/4889724/how-can-you-tell-which-pane-in-tmux-is-focused>
