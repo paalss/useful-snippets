@@ -5,14 +5,32 @@ tags:
   - vim
 ---
 
-Yank / delete to 'w' register
+Yank / delete to 's' register
 
-prepend with `"w`
+prepend with `"s`
 
-```
-"wyy
-```
+**yank**
 
 ```
-"wdd
+"sy*
 ```
+
+**delete**
+
+```
+"sd*
+```
+
+**paste**
+
+```
+"sp
+```
+
+insert mode:
+
+```
+<C-r>*
+```
+
+
