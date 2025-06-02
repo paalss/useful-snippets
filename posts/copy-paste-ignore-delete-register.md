@@ -11,5 +11,12 @@ How to paste using the yank register instead of delete register
 ```sh
 "0p
 ```
+---
+
+Or skip delete register with black hole:
+
+```
+"_d
+```
 
 <https://stackoverflow.com/questions/11993851/how-to-delete-not-cut-in-vim>
