@@ -1,6 +1,9 @@
 ---
 title: Autohotkey & replacements
 date: 2025-04-28T10:07:00.000Z
+tags:
+  - autohotkey
+  - skhd
 ---
 # Windows
 
