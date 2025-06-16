@@ -67,9 +67,9 @@ Kanskje du bør prøve webstorm
 * Prettifyer TypeScript errors automatisk. Ingen nødvendighet for Prettier TypeScript Errors Addon slik som i VS Code.
 * Hopp-til-linje har en dialog boks som man må klikke enter i for å hoppe til linje, da slipper man å hoppe til nr. 1 og 0 når man skal hoppe til linje nr. 100
 * terminal
-
   * navn lagres til neste gang man åpner programmet
 * kan forutse hva en ny variabel kan hete i code suggestion, basert på udefinerte variabler nedenfor
+* tabs lagres og restoreres basert på hvilken branch du er på. Du kan bytte mellom to stk. og ha forskjellig sett av tabs lagret permanent på dem.
 
 ## Cons:
 
