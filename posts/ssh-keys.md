@@ -8,6 +8,33 @@ tags:
   - https
   - ssh
 ---
+## Generate an SSH key pair
+
+<https://docs.gitlab.com/user/ssh/#generate-an-ssh-key-pair>
+
+ssh-keygen -t ed25519 -C "<comment>"
+
+## Add an SSH key to your GitLab account
+
+<https://docs.gitlab.com/user/ssh/#add-an-ssh-key-to-your-gitlab-account>
+
+linux
+
+```
+xclip -sel clip < ~/.ssh/id_ed25519.pub
+```
+
+## verify that you can connect
+
+<https://docs.gitlab.com/user/ssh/#verify-that-you-can-connect>
+
+instance url for ssh
+
+```
+ssh -T git@gitlab.com
+```
+
+---
 
 Hvordan opprette og bruke
 
