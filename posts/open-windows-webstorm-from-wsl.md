@@ -1,9 +1,13 @@
 ---
-title: open windows Webstorm from WSL
+title: Open Webstorm from terminal (Windows + WSL & Mac)
 date: 2023-12-08
+ranking: 3
 tags:
   - webstorm
   - wsl
+  - ubuntu
+  - bash
+  - mac
 ---
 
 
