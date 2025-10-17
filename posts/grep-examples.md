@@ -6,6 +6,14 @@ tags:
   - ubuntu
   - bash
 ---
+Grep:
+
 ```sh
 grep -4 \"peerDependencies\" node_modules/stylelint-config-standard-scss/package.json
+```
+
+Ripgrep:
+
+```
+rg peerDependencies
 ```
