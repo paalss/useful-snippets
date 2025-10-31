@@ -3,6 +3,7 @@ const searchFilter = require("./filters/searchFilter")
 
 module.exports = function(config) {
   config.addPassthroughCopy("bundle.css");
+  config.addPassthroughCopy("images");
   config.addPlugin(syntaxHighlight);
 
   config.addFilter("search", searchFilter)
