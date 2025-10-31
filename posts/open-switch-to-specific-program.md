@@ -5,6 +5,7 @@ tags:
   - autohotkey
   - skhd
 ---
+
 ## Windows AHK
 
 - <https://www.autohotkey.com/board/topic/107450-switch-to-or-open-application/>

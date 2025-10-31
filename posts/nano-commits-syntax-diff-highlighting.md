@@ -1,6 +1,8 @@
 ---
 title: Syntax highlighting i Nano commit diff
 date: 2023-10-22
+tags:
+  - nano
 ---
 
 nano ~/.nanorc

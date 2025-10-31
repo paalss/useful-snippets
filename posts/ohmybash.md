@@ -4,6 +4,7 @@ date: 2023-10-22
 tags:
 - ohmybash
 - vscode
+- cli
 ---
 
 Hvordan starte med ohmybash, velge theme og laste ned nødvendig font icons

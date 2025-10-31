@@ -3,6 +3,7 @@ title: Ivareta git historikk ved file renaming
 date: 2023-10-22
 tags:
 - git
+- cli
 ---
 
 Ifølge <https://koukia.ca/rename-or-move-files-in-git-e7259bf5a0b7>

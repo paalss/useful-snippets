@@ -5,6 +5,7 @@ ranking: 4
 tags:
   - ubuntu
   - wsl
+  - cli
   - mac
 ---
 # WSL

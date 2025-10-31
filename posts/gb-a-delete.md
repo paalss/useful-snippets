@@ -3,6 +3,7 @@ title: Delete all branches listed by `git branch -a`
 date: 2023-10-29
 tags:
 - git
+- cli
 ---
 
 Færre antall branches i code completion suggestion når du skriver `git checkout feat`-[Tab].

@@ -2,6 +2,8 @@
 title: Lazygit git log --all
 date: 2024-12-16T10:21:00.000Z
 ranking: 3
+tags:
+  - lazygit
 ---
 ### Naviger til commits pane
 

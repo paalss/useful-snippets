@@ -1,6 +1,8 @@
 ---
 title: Finne prog med port
 date: 2021-03-26T14:47:12.117Z
+tags:
+  - cli
 ---
 Eksempel
 

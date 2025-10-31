@@ -1,6 +1,8 @@
 ---
 title: install multiple versions of same dependency
 date: 2023-10-29
+tags:
+  - cli
 ---
 
 ```

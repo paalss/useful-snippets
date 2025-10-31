@@ -5,6 +5,7 @@ ranking: 4
 tags:
   - typescript
   - javascript
+  - cli
 ---
 
 ```bash

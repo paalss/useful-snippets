@@ -4,6 +4,7 @@ date: 2023-12-08
 ranking: 4
 tags:
   - process
+  - cli
 ---
 ## List processes
 

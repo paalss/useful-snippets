@@ -4,6 +4,7 @@ date: 2025-06-06T13:23:00.000Z
 tags:
   - wsl
   - ubuntu
+  - cli
 ---
 ```
 stat filename
