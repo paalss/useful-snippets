@@ -3,6 +3,7 @@ title: Quit Caddy process
 date: 2023-12-25
 tags:
 - process
+- cli
 ---
 
 ```sh

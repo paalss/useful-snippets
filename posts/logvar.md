@@ -5,6 +5,7 @@ tags:
 - vscode
 - javascript
 - typescript
+- neovim
 ---
 
 # VS Code snippet
@@ -15,4 +16,12 @@ tags:
     "prefix": "logvar",
     "body": "console.log('$1', $1)"
   }
+```
+
+# Neovim Luasnippet
+
+se nvim lua snippets for inspirasjon
+
+```lua
+
 ```

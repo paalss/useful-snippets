@@ -3,13 +3,14 @@ title: Task warrior (CLI todo app)
 date: 2023-10-22
 tags:
   - productivity
+  - cli
 ---
 
 ## Installer på Ubuntu (WSL)
 ```
 sudo apt-get install taskwarrior
 ```
-https://taskwarrior.org/download/
+<https://taskwarrior.org/download/>
 
 ## Oppstart
 ```
@@ -45,7 +46,7 @@ task X done
 task X delete
 ```
 
-https://taskwarrior.org/docs/30second/
+<https://taskwarrior.org/docs/30second/>
 
 💬🗨 Se og rediger alle detalljer
 ```
@@ -62,7 +63,7 @@ task add project:Kitchen Select and order counter-top material
 task add project:Kitchen Talk to the Electrician about when the work can start
 ```
 
-https://taskwarrior.org/docs/best-practices/
+<https://taskwarrior.org/docs/best-practices/>
 
 
 ## Interessant

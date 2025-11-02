@@ -9,4 +9,4 @@ krasjer npm run test-storybook ? Får du error-meldinger som folk på internette
 Prøv:
 - lukk alle andre programmer
 - lukk IDE-en og kjør testen i wsl-terminalen?
-- prøv noe av det som blir foreslått her: https://github.com/storybookjs/storybook/issues/12348
+- prøv noe av det som blir foreslått her: <https://github.com/storybookjs/storybook/issues/12348>

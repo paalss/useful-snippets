@@ -3,6 +3,7 @@ title: Repeatedly run same command
 date: 2024-02-06T15:27:00.684Z
 tags:
   - bash
+  - cli
 ---
 Run "npm run build" 10 times
 
