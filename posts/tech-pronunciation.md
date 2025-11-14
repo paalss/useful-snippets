@@ -12,3 +12,4 @@ date: 2023-11-26
 - Deno ("Dino", ikke "Deno")
 - JWTs (JSON Web Token, pronounced 'jot')
 - Lua (pronounced LOO-ah)
+- RKT (pronounced like a "rocket")
