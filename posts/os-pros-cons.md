@@ -4,7 +4,7 @@ date: 2023-10-22
 ranking: 4
 tags:
   - windows
-  - macos
+  - mac
   - autohotkey
 ---
 

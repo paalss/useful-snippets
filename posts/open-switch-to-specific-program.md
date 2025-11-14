@@ -4,6 +4,8 @@ date: 2025-05-02T12:39:00.000Z
 tags:
   - autohotkey
   - skhd
+  - mac
+  - windows
 ---
 
 ## Windows AHK

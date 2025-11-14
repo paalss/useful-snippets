@@ -5,6 +5,7 @@ tags:
 - webstorm
 - vscode
 - cli
+- prettier
 ---
 
 Prøv å kjøre `npx prettier filenamepath --write`før du formatterer i webstorm/VSCode
