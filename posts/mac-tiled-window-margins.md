@@ -7,11 +7,14 @@ tags:
 
 <https://appleinsider.com/inside/macos-sequoia/tips/how-to-turn-off-the-gaps-in-macos-sequoias-window-tiling>
 
+margins (default):
 
-![blalal](/images/tiled-windows-margins-settings.png)
+![margins](/images/tiled-no-margins.png)
 
-![blalal](/images/tiled-margins.png)
+## set "no margins"
 
-![blalal](/images/tiled-no-margins.png)
+![settings window](/images/tiled-windows-margins-settings.png)
 
+no margins:
 
+![no margins](/images/tiled-margins.png)
