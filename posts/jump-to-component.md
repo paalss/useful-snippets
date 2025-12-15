@@ -29,4 +29,8 @@ added together
 
 # Ideavim
 
-....
+Copy file name to + register and search for it. Do not execute immediately (<CR>) as CopyFileName also includes the file extension
+
+```
+:action CopyFileName<CR>/const <c-r>+
+```
