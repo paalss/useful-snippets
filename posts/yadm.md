@@ -10,3 +10,9 @@ date: 2025-11-02
 ```bash
 yadm add -u
 ```
+
+## Open Lazygit for Yadm
+
+```bash
+yadm enter lazygit
+```
