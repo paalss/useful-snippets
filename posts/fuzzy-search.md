@@ -5,8 +5,11 @@ tags:
   - neovim
   - vim
   - telescope
+  - fzf.vim
   - fzf
 ---
+
+# Telescope & Fzf.vim
 
 <table align="left" border="1">
     <tr>
@@ -30,7 +33,13 @@ tags:
 More on Telescope: <https://useful-snippets.netlify.app/posts/vim/>
 
 
-# Nice usage of fzf
+# Fzf use cases
+
+Edit a file
+
+```bash
+nvim $(fzf)
+```
 
 Restore a file from another branch (here: `main`)
 
