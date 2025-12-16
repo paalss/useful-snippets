@@ -8,7 +8,7 @@ tags:
   - fzf
 ---
 
-<table>
+<table align="left" border="1">
     <tr>
         <th>Action</th>
         <th>Telescope</th>
@@ -18,6 +18,11 @@ tags:
         <td>Open all items in quickfixlist</td>
         <td>[Q]</td>
         <td>Select all items with [Tab] and hit [Enter]</td>
+    </tr>
+    <tr>
+        <td>List all vim keymaps</td>
+        <td>require('telescope.builtin').keymaps</td>
+        <td>:Maps</td>
     </tr>
 </table>
 
