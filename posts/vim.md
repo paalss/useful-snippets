@@ -6,6 +6,7 @@ tags:
   - vim
   - webstorm
   - neovim
+  - telescope
 ---
 <https://vim.rtorr.com/>
 
@@ -38,6 +39,7 @@ tags:
   - telescope
   - ctrl Q to add results to quick fix list
   - `:cdo s/blaba/blaba/g`
+- Fuzzy search note: <https://useful-snippets.netlify.app/posts/fuzzy-search/>
 - Marks
   - Add mark: `m[bokstav]`
   - Navigate away
