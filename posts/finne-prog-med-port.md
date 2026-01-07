@@ -4,6 +4,10 @@ date: 2021-03-26T14:47:12.117Z
 tags:
   - cli
 ---
+
+Relatert
+- list processes: <https://useful-snippets.netlify.app/posts/list-processes/>
+
 Eksempel
 
 ## Scenario

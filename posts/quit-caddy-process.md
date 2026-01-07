@@ -12,6 +12,8 @@ sudo caddy stop
 
 ---
 
+related
+- list & kill processes: <https://useful-snippets.netlify.app/posts/list-processes/>
 
 1. Try: `sudo ps -eaf | grep -i caddy`
 2. Try: `sudo -s` (Enter sudo shell)
