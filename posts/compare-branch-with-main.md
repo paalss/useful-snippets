@@ -24,9 +24,11 @@ git diff develop..$(git branch --show-current)
 
 # Webstorm
 
-1. GitToolBox
+1. GitToolBox?
 
 <https://useful-snippets.netlify.app/posts/webstorm-compare-with-branch/>
+
+![image](/images/compare-with-main.png)
 
 # VS Code
 
