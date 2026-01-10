@@ -14,8 +14,7 @@ tags:
   - <https://git-how.com/>
 - Vim
   - <https://profkuperman.com/help/vim/home.html>
-  - learningvimthehardway
-    - start - <https://learnvimscriptthehardway.stevelosh.com/chapters/01.html>
+  - [learningvimthehardway](https://learnvimscriptthehardway.stevelosh.com/)
     - $MYVIMRC edit & source - <https://learnvimscriptthehardway.stevelosh.com/chapters/07.html>
     - execute normal! - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
 - html
