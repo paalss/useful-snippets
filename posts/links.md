@@ -14,7 +14,10 @@ tags:
   - <https://git-how.com/>
 - Vim
   - <https://profkuperman.com/help/vim/home.html>
-  - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
+  - learningvimthehardway
+    - start - <https://learnvimscriptthehardway.stevelosh.com/chapters/01.html>
+    - $MYVIMRC edit & source - <https://learnvimscriptthehardway.stevelosh.com/chapters/07.html>
+    - execute normal! - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
 - html
   - [autocomplete html.spec.watwg.org](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html)
 - [fontawesome list](https://www.fontawesome.cc/)
