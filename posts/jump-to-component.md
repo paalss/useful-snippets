@@ -11,19 +11,19 @@ tags:
 
 yank filename without extension to 'f'-registry
 
-```vimrc
+```
 :let @f = expand('%:t:r')<CR>
 ```
 
 search for "const [contents in 'f'-registry]"
 
-```vimrc
+```
 :execute '/const ' . @f<CR>:nohlsearch<CR>
 ```
 
 added together
 
-```vimrc
+```
 :let @f = expand('%:t:r')<CR>:execute '/const ' . @f<CR>:nohlsearch<CR>
 ```
 
