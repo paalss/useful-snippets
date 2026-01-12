@@ -19,3 +19,13 @@ Exec bash i Dockerfile / docker run:
 - <https://codesignal.com/learn/courses/diving-deeper-into-images-containers/lessons/explore-interactive-container-mode-with-docker>
 - <https://www.baeldung.com/ops/docker-interactive-after-script>
 
+Start interactive shell on container:
+
+`docker run -it`?
+
+Already running container:
+
+```bash
+docker exec -it [container-name] /bin/bash
+```
+
