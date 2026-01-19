@@ -46,3 +46,9 @@ Restore a file from another branch (here: `main`)
 ```bash
 git checkout main $(fzf)
 ```
+
+Run a specific test in Jest
+
+```bash
+npx jest --runTestsByPath $(fzf)
+```
