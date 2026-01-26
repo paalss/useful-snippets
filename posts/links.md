@@ -17,6 +17,9 @@ tags:
   - [learningvimthehardway](https://learnvimscriptthehardway.stevelosh.com/)
     - $MYVIMRC edit & source - <https://learnvimscriptthehardway.stevelosh.com/chapters/07.html>
     - execute normal! - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
+  - [Learn vim the smart way](https://learnvim.irian.to/)
+- Neovim
+  - <https://vonheikemen.github.io/learn-nvim/>
 - html
   - [autocomplete html.spec.watwg.org](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html)
 - [fontawesome list](https://www.fontawesome.cc/)
