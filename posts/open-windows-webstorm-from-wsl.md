@@ -10,9 +10,11 @@ tags:
   - mac
 ---
 
+## WSL
 
-.bashrc-file
-```bash
+.bashrc
+
+```sh
 webstorm()
 {
      # /mnt/c/Program\ Files/JetBrains/WebStorm\ 2022.1.2/bin/webstorm64.exe "$1" > /dev/null 2>&1 &!
@@ -22,11 +24,20 @@ webstorm()
 
 Usage: Run `webstorm` in terminal
 
-```zsh
-open -na "WebStorm.app" --args "$@"
+## Mac
+
+.zshrc
+
+```sh
+webstorm() {
+#   open "/Applications/WebStorm.app" .
+    open -na "WebStorm.app" --args "$@"
+}
 ```
 
 Usage: Run `webstorm .` in terminal
+
+## Docs WSL & Mac
 
 <https://www.jetbrains.com/help/webstorm/working-with-the-ide-features-from-command-line.html>
 
