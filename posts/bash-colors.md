@@ -1,5 +1,6 @@
 ---
 title: bash colors
+date: 2026-01-09
 tags:
   - bash
 ---
