@@ -18,6 +18,7 @@ tags:
     - $MYVIMRC edit & source - <https://learnvimscriptthehardway.stevelosh.com/chapters/07.html>
     - execute normal! - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
   - [Learn vim the smart way](https://learnvim.irian.to/)
+  - <https://www.vimfromscratch.com/articles/using-git-from-vim>
 - Neovim
   - <https://vonheikemen.github.io/learn-nvim/>
 - html
