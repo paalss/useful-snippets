@@ -14,6 +14,7 @@ tags:
   - <https://git-how.com/>
 - Vim
   - <https://vimdoc.sourceforge.net/htmldoc/>
+  - <https://vimhelp.org/>
   - <https://profkuperman.com/help/vim/home.html>
   - [learningvimthehardway](https://learnvimscriptthehardway.stevelosh.com/)
     - $MYVIMRC edit & source - <https://learnvimscriptthehardway.stevelosh.com/chapters/07.html>
