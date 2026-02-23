@@ -21,6 +21,7 @@ tags:
     - execute normal! - <https://learnvimscriptthehardway.stevelosh.com/chapters/29.html>
   - [Learn vim the smart way](https://learnvim.irian.to/)
   - <https://www.vimfromscratch.com/articles/using-git-from-vim>
+  - <https://vimtricks.com/>
 - Neovim
   - <https://vonheikemen.github.io/learn-nvim/>
 - html
