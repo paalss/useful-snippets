@@ -1,4 +1,4 @@
- ---
+---
 title: Snippets
 date: 2026-01-26
 tags:
@@ -25,6 +25,6 @@ tags:
 console.log("$VAR$", $VAR$)
 ```
 
-## Nevim - luasnippets / iabbrev ...
+## Neovim - luasnippets / iabbrev ...
 
 se neovim config
