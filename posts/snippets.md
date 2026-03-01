@@ -15,10 +15,12 @@ tags:
 
 [live templates](https://www.jetbrains.com/help/idea/using-live-templates.html#live_templates_configure)
 
+(remove hyphens)
+
 ```html
-{% for $ITEM$ in $LIST$ %}
+{%- for $ITEM$ in $LIST$ -%}
   $END$
-{% endfor %}
+{%- endfor -%}
 ```
 
 ```js
