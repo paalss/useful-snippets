@@ -48,7 +48,7 @@ Shortcut app may be closed
 
 ![Shortcut app](/images/open-website.png)
 
-## pn1 to print 29090816894
+## pn1 to print 11113306361
 
 <https://altitudemarketing.com/blog/text-macros-macos/>
 
@@ -64,6 +64,10 @@ backtick (`) and tilde (~)
 lalt - 1: skhd -t "\`"
 lalt - 2: skhd -t "~"
 ```
+
+## Ctrl Shift d to print 11113306361
+
+Follow same approach as printing current date: <https://useful-snippets.netlify.app/posts/print-current-date/>
 
 ### SKHD links
 
