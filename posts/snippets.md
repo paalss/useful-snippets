@@ -18,9 +18,9 @@ tags:
 (remove hyphens)
 
 ```html
-{%- for $ITEM$ in $LIST$ -%}
+{-% for $ITEM$ in $LIST$ %-}
   $END$
-{%- endfor -%}
+{-% endfor %-}
 ```
 
 ```js
