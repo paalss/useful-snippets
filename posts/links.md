@@ -12,6 +12,7 @@ tags:
 
 - Git & lazygit
   - <https://git-how.com/>
+  - <https://git-scm.com/book/en/v2>
 - Vim
   - <https://vimdoc.sourceforge.net/htmldoc/>
   - <https://vimhelp.org/>
