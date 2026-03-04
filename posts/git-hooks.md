@@ -3,6 +3,7 @@ title: git hooks
 date: 2026-02-25
 tags:
   - git
+  - git-hooks
 ---
 
 To activate pre-push, rename `.git/hooks/pre-push.sample` to `.git/hooks/pre-push`
@@ -17,7 +18,7 @@ branch_name=$(git symbolic-ref HEAD 2>/dev/null)
 echo "$branch_name"
 
 if [ "$branch_name" != "refs/heads/min-branch" ]; then
-  echo "You can't push this branch."
+  echo "You can't push this branch." # also prevents git push --force-with-lease
   exit 1
 fi
 

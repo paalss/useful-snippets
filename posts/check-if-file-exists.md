@@ -1,10 +1,11 @@
 ---
-title: Bash: check if a file exists
+title: Bash. check if a file exists
 date: 2026-03-03
 tags:
   - sh
   - bash
   - zsh
+  - git-hooks
 ---
 
 # Check if prepush is activated or not
