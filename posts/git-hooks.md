@@ -4,6 +4,7 @@ date: 2026-02-25
 tags:
   - git
   - git-hooks
+  - pre-push
 ---
 
 To activate pre-push, rename `.git/hooks/pre-push.sample` to `.git/hooks/pre-push`

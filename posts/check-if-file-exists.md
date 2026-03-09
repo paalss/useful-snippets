@@ -6,6 +6,7 @@ tags:
   - bash
   - zsh
   - git-hooks
+  - pre-push
 ---
 
 # Check if prepush is activated or not
@@ -26,3 +27,21 @@ lsprepush() {
   fi
 }
 ```
+
+```bash
+nprepush() {
+  if [[ -f ".git/hooks/pre-push" ]]; then
+    echo ".git/hooks/pre-push was found:"
+    nvim .git/hooks/pre-push
+  else
+    if [[ -f ".git/hooks/pre-push.sample" ]]; then
+      echo ".git/hooks/pre-push was not found:"
+      echo "but .git/hooks/pre-push.sample was found:"
+      nvim .git/hooks/pre-push.sample
+    else
+      echo "Hmmmmm"
+    fi
+  fi
+}
+```
+
