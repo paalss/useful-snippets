@@ -12,7 +12,7 @@ tags:
 # Check if prepush is activated or not
 
 ```bash
-lsprepush() {
+lsprep() {
   if [[ -f ".git/hooks/pre-push" ]]; then
     echo ".git/hooks/pre-push was found:"
     echo "pre-push is activated"
@@ -29,7 +29,7 @@ lsprepush() {
 ```
 
 ```bash
-nprepush() {
+nprep() {
   if [[ -f ".git/hooks/pre-push" ]]; then
     echo ".git/hooks/pre-push was found:"
     nvim .git/hooks/pre-push
