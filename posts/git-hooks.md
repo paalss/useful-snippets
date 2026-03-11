@@ -16,14 +16,17 @@ Example script:
 ```sh
 branch_name=$(git symbolic-ref HEAD 2>/dev/null)
 
-echo "$branch_name"
+allowed_branch_name="refs/heads/"
 
-if [ "$branch_name" != "refs/heads/min-branch" ]; then
-  echo "You can't push this branch." # also prevents git push --force-with-lease
+allowed_branch_name+="min-branch"
+
+if [ "$branch_name" != "$allowed_branch_name" ]; then
+  echo "Current branch: ${branch_name}"
+  echo "Allowed branch: ${allowed_branch_name}"
+  echo
+  echo "You can't push directly to this branch."
   exit 1
 fi
-
-exit 0
 ```
 
 should work given that this command:
