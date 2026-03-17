@@ -24,7 +24,7 @@ if [ "$branch_name" != "$allowed_branch_name" ]; then
   echo "Current branch: ${branch_name}"
   echo "Allowed branch: ${allowed_branch_name}"
   echo
-  echo "You can't push directly to this branch."
+  echo "You can't push directly to this branch." # also prevents --force-with-lease pushes
   exit 1
 fi
 ```
