@@ -10,9 +10,18 @@ tags:
   - neovim
 ---
 
+# CLI
+
 ```bash
-git diff develop..$(git branch --show-current)
+git show $(git branch --show-current)
 ```
+
+---
+
+```bash
+git diff main..$(git branch --show-current)
+```
+---
 
 `git branch --show-current` is current branch
 
@@ -24,7 +33,7 @@ git diff develop..$(git branch --show-current)
 
 # Webstorm
 
-1. GitToolBox?
+1. GitToolBox? Should not be necessary I think
 
 <https://useful-snippets.netlify.app/posts/webstorm-compare-with-branch/>
 
