@@ -9,6 +9,7 @@ tags:
 2. `git checkout <commit>`
 3. `git log` verify that this commit includes the resetted commit
 4. `git branch --force <original-branch-name>`
+5. `git checkout <original-branch-name>`
 
 References
 
