@@ -18,5 +18,9 @@ tags:
 > En note
 
 > [!WARNING]
-> If you already have a `.config/nvim`-directory with important files, make sure to create a backup of them first!
+> Warning!!
+
+> [!IMPORTANT]
+> !!!!!!
+
 
