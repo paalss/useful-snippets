@@ -118,6 +118,9 @@ Kanskje du bør prøve webstorm
 
 ## Cons
 
+* diffview.nvim krasher av og til
+  * når man åpner den (får error melding)
+  * når man går tilbake i historikken (fryser fast av og til)
 * MYE manuelt setup
 * mangel på ordentlig terminal
   * FTerm, Toggleterm ol. krasjer ofte
