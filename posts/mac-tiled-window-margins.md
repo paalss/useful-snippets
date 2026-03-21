@@ -3,6 +3,7 @@ title: tiled window margins
 date: 2025-11-25
 tags:
   - mac
+  - ui
 ---
 
 <https://appleinsider.com/inside/macos-sequoia/tips/how-to-turn-off-the-gaps-in-macos-sequoias-window-tiling>
