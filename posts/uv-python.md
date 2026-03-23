@@ -7,7 +7,7 @@ date: 2026-01-22
 
 
 ```sh
-uv python install <version>
+uv python install <package>
 ```
 
 ```sh
