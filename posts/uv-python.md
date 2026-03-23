@@ -5,10 +5,21 @@ tags:
 date: 2026-01-22
 ---
 
+Install
 
 ```sh
-uv python install <package>
+uv python add <package>
 ```
+
+Run package command
+
+```sh
+uv run <command> 
+```
+
+---
+
+Initialize project
 
 ```sh
 uv init
