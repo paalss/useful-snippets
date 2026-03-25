@@ -8,10 +8,18 @@ date: 2026-01-22
 
 Docs: <https://docs.astral.sh/uv/>
 
-Install Python
+---
+
+Install Python version: <https://docs.astral.sh/uv/getting-started/features/#python-versions>
 
 ```sh
 uv python install <version>
+```
+
+Uninstall python version
+
+```sh
+uv python uninstall <version> 
 ```
 
 Initialize project
