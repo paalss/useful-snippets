@@ -2,8 +2,11 @@
 title: UV python
 tags:
   - python
+  - uv
 date: 2026-01-22
 ---
+
+Docs: <https://docs.astral.sh/uv/>
 
 Install Python
 
@@ -44,6 +47,7 @@ uv pip install -r requirements.txt
 ```
 
 Install one single dependency
+
 ```sh
 uv python add <package> 
 ```
