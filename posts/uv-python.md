@@ -5,19 +5,11 @@ tags:
 date: 2026-01-22
 ---
 
-Install
+Install Python
 
 ```sh
-uv python add <package>
+uv python install <version>
 ```
-
-Run package command
-
-```sh
-uv run <command> 
-```
-
----
 
 Initialize project
 
@@ -50,3 +42,15 @@ Install dependencies from requirements.txt
 ```sh
 uv pip install -r requirements.txt
 ```
+
+Install one single dependency
+```sh
+uv python add <package> 
+```
+
+Run package command
+
+```sh
+uv run <command> 
+```
+
