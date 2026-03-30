@@ -28,13 +28,18 @@ layout: layout.html
     <li>
       <b>Date:</b> <span class="date">{{ date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
     </li>
+    <li>
+      <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content">Edit with CloudCannon</a>
+    </li>
+    <li>
+      <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Edit with Decap CMS</a>
+    </li>
   </ul>
 </div>
 <article class="card">
-  <h2>{{title}}</h2>
-
   <nav class="main-nav">
-    <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Edit</a>
+    <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content">Edit</a>
   </nav>
+  <h2>{{title}}</h2>
   {{content}}
 </article>
