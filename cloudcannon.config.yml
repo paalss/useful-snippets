@@ -1,0 +1,12 @@
+paths:
+  static: ''
+  uploads: images/uploads
+timezone: Europe/Oslo
+markdown:
+  engine: commonmark
+  options:
+    html: true
+collections_config:
+  posts:
+    path: posts
+    icon: event_available
