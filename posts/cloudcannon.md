@@ -1,8 +1,8 @@
 ---
 title: Cloudcannon
 tags:
-- cms
+  - cms
+  - links
 ---
-
 - <https://app.cloudcannon.com>
 - <https://docs.astro.build/en/guides/cms/cloudcannon/>
