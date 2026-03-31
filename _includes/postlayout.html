@@ -11,6 +11,11 @@ layout: layout.html
       </a>
     </li>
     <li><b>Testing:</b> <a href="https://sassy-beet.cloudvent.net/posts/{{page.fileSlug}}">https://sassy-beet.cloudvent ...</a></li>
+    <li>
+      <b>Edit:</b>
+      <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content">https://app.cloudcannon.com ...</a>
+    </li>
+    <hr>
     <li><b>File:</b> {{page.fileSlug}}.md</li>
     <li>
       <b>Title:</b> {{title}}
@@ -36,12 +41,6 @@ layout: layout.html
     </li>
     <li>
       <b>Date:</b> <span class="date">{{ date | date: "%a %d. %B %Y | %Y-%m-%d" }}</span>
-    </li>
-    <li>
-      <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content">Edit with CloudCannon</a>
-    </li>
-    <li>
-      <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Edit with Decap CMS</a>
     </li>
   </ul>
 </div>
