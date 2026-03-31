@@ -17,11 +17,13 @@ layout: layout.html
       <b>Tags:</b>
       <div class="post-tags" data-editable="array" data-prop="tags">
         {% for tag in tags %}
+        {% if tag != "post" %}
         <sl-badge variant="neutral" data-editable="array-item">
           <a href="/tags/{{tag}}">
             {{tag}}
           </a>
         </sl-badge>
+        {% endif %}
         {% endfor %}
       </div>
     </li>
