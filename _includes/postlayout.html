@@ -15,9 +15,9 @@ layout: layout.html
     {% endif %}
     <li>
       <b>Tags:</b>
-      <div class="post-tags">
+      <div class="post-tags" data-editable="array" data-prop="tags">
         {% for tag in tags %}
-        <sl-badge variant="neutral">
+        <sl-badge variant="neutral" data-editable="array-item">
           <a href="/tags/{{tag}}">
             {{tag}}
           </a>
