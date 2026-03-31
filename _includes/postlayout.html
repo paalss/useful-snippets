@@ -48,6 +48,10 @@ layout: layout.html
     </a>
   </nav>
   <h2 data-editable="text" data-prop="title">{{title}}</h2>
+  <!--
+    @content: special value: https://cloudcannon.com/documentation/developer-guides/set-up-visual-editing/visually-edit-text/
+    for content that is not saved in the markdown file's frontmatter
+  -->
   <editable-text data-prop="@content">
     {{content}}
   </editable-text>
