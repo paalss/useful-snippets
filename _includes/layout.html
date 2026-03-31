@@ -8,6 +8,11 @@ layout: search.html
     <a href="/listview">List view</a>
     <a href="/admin">Admin panel</a>
   </nav>
+</header>
+<main>
+  {{ content }}
+</main>
+<footer>
   <nav class="tag-nav" aria-labelledby="tag">
     <ul>
       {% for tag in collections.tagList %}
@@ -17,7 +22,4 @@ layout: search.html
       {% endfor %}
     </ul>
   </nav>
-</header>
-<main>
-  {{ content }}
-</main>
+</footer>
