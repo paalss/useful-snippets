@@ -1,6 +1,6 @@
 ---
 title: Uninstall node & reinstall with nvm
-date: 2024-02-17T20:58:37.786Z
+date: 2024-02-17T20:58:37Z
 tags:
   - ubuntu
   - wsl
@@ -13,12 +13,18 @@ sudo apt-get remove nodejs
 sudo apt-get remove npm
 ```
 
+Kanskje:
+
+```sh
+sudo apt autoremove
+```
+
 ```sh
 rm -rf ~/.npm
 rm -rf ~/.node
 ```
 
-<https://stackoverflow.com/questions/32426601/how-can-i-completely-uninstall-nodejs-npm-and-node-in-ubuntu>
+[https://stackoverflow.com/questions/32426601/how-can-i-completely-uninstall-nodejs-npm-and-node-in-ubuntu](https://stackoverflow.com/questions/32426601/how-can-i-completely-uninstall-nodejs-npm-and-node-in-ubuntu)
 
 ### Confirm uninstallation
 
@@ -26,8 +32,8 @@ rm -rf ~/.node
 node --version
 ```
 
-
 ## Nvm install
+
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
