@@ -35,8 +35,10 @@ node --version
 ## Nvm install
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
+
+<https://www.nvmnode.com/guide/download.html>
 
 Quit WSL
 
