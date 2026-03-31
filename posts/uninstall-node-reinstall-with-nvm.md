@@ -45,8 +45,10 @@ Quit WSL
 Reopen
 
 ```sh
-nvm install 20
+nvm install 24
 ```
+
+Latest Node version: <https://nodejs.org/en/download>
 
 ```sh
 nvm use 20
