@@ -4,7 +4,7 @@ paths:
 collections_config:
   posts:
     path: posts
-    icon: event_available
+    icon: newspaper
     disable_url: false
     add_options:
       - name: title
