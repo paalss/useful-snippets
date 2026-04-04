@@ -1,5 +1,5 @@
 paths:
-  uploads: images/uploads
+  uploads: images
   static: ''
 collections_config:
   posts:
@@ -26,6 +26,16 @@ collections_config:
       extra_data:
       publish_to:
       _inputs:
+        title:
+          type: text
+        date:
+          type: date
+          instance_value: NOW
+        updated:
+          type: date
+          instance_value: NOW
+        tags:
+          type: array
       _select_data:
       _structures:
     disable_add: false
