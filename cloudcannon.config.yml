@@ -7,20 +7,13 @@ collections_config:
     icon: newspaper
     disable_url: false
     add_options:
-      - name: title
-        icon: title
+      - name: Default note
+        icon: ad
         editor:
         base_path:
         collection:
         schema:
-        default_content_file:
-      - name: Teste-option
-        icon: abc
-        editor:
-        base_path:
-        collection:
-        schema: schema-test
-        default_content_file: content-test
+        default_content_file: posts/blueprint.md
     create:
       path:
       extra_data:
@@ -28,14 +21,18 @@ collections_config:
       _inputs:
         title:
           type: text
+          cascade: true
         date:
           type: date
           instance_value: NOW
+          cascade: true
         updated:
           type: date
           instance_value: NOW
+          cascade: true
         tags:
           type: array
+          cascade: true
       _select_data:
       _structures:
     disable_add: false
