@@ -1,0 +1,13 @@
+---
+title: Scroll in Tmux
+date: 2026-04-09
+tags:
+- tmux
+---
+
+If scrolling with mouse does not work:
+
+1. <prefix>[ # enter copy-mode
+2. <C-u> # scroll up
+
+
