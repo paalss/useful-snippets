@@ -14,8 +14,6 @@ To activate pre-push, rename `.git/hooks/pre-push.sample` to `.git/hooks/pre-pus
 Example script:
 
 ```sh
-branch_name=$(git symbolic-ref HEAD 2>/dev/null)
-
 GREEN='\033[0;32m'
 RED='\033[1;91m'
 RESET='\033[0m'
