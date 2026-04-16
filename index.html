@@ -29,11 +29,13 @@ pagination:
     {% endif %}
     <div class="post-tags">
       {% for tag in post.data.tags %}
+        {% if tag != "post" %}
         <sl-badge variant="neutral">
           <a href="/tags/{{tag}}">
             {{tag}}
           </a>
         </sl-badge>
+        {% endif %}
       {% endfor %}
     </div>
     <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>

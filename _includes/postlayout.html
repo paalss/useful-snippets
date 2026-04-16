@@ -4,6 +4,18 @@ layout: layout.html
 
 <div class="post-details">
   <ul>
+    <li>
+      <b>Deployed:</b>
+      <a href="https://useful-snippets.netlify.app/posts/{{page.fileSlug}}/">
+        https://useful-snippets ...
+      </a>
+    </li>
+    <li><b>Testing:</b> <a href="https://sassy-beet.cloudvent.net/posts/{{page.fileSlug}}">https://sassy-beet.cloudvent ...</a></li>
+    <li>
+      <b>Edit:</b>
+      <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content">https://app.cloudcannon.com ...</a>
+    </li>
+    <hr>
     <li><b>File:</b> {{page.fileSlug}}.md</li>
     <li>
       <b>Title:</b> {{title}}
@@ -15,13 +27,15 @@ layout: layout.html
     {% endif %}
     <li>
       <b>Tags:</b>
-      <div class="post-tags">
+      <div class="post-tags" data-editable="array" data-prop="tags">
         {% for tag in tags %}
-        <sl-badge variant="neutral">
+        {% if tag != "post" %}
+        <sl-badge variant="neutral" data-editable="array-item">
           <a href="/tags/{{tag}}">
             {{tag}}
           </a>
         </sl-badge>
+        {% endif %}
         {% endfor %}
       </div>
     </li>
@@ -30,11 +44,21 @@ layout: layout.html
     </li>
   </ul>
 </div>
+<nav class="main-nav">
+  <a
+    target="_blank"
+    href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts:/edit?collection=posts&path=%2Fposts%2F{{page.fileSlug}}.md&schema=false&editor=content"
+  >
+    Edit
+  </a>
+</nav>
 <article class="card">
-  <h2>{{title}}</h2>
-
-  <nav class="main-nav">
-    <a href="/admin/#/collections/post/entries/{{page.fileSlug}}">Edit</a>
-  </nav>
-  {{content}}
+  <h2 data-editable="text" data-prop="title">{{title}}</h2>
+  <!--
+    @content: special value: https://cloudcannon.com/documentation/developer-guides/set-up-visual-editing/visually-edit-text/
+    for content that is not saved in the markdown file's frontmatter
+  -->
+  <editable-text data-prop="@content">
+    {{content}}
+  </editable-text>
 </article>

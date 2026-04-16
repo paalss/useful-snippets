@@ -1,13 +1,18 @@
 ---
 layout: search.html
 ---
-
 <header>
-  <nav class="main-nav">
-    <a href="/index">Cards view</a>
-    <a href="/listview">List view</a>
-    <a href="/admin">Admin panel</a>
-  </nav>
+    <div class="top-bar">
+      <nav class="main-nav">
+        <a href="/index">List</a>
+        <a href="https://app.cloudcannon.com/63206/editor#sites/149703/collections/posts">Admin</a>
+      </nav>
+    </div>
+  </header>
+<main>
+  {{ content }}
+</main>
+<footer>
   <nav class="tag-nav" aria-labelledby="tag">
     <ul>
       {% for tag in collections.tagList %}
@@ -17,7 +22,4 @@ layout: search.html
       {% endfor %}
     </ul>
   </nav>
-</header>
-<main>
-  {{ content }}
-</main>
+</footer>

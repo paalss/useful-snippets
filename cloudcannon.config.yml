@@ -1,0 +1,85 @@
+paths:
+  uploads: images
+  static: ''
+collections_config:
+  posts:
+    path: posts
+    icon: newspaper
+    disable_url: false
+    add_options:
+      - name: Default note
+        icon: ad
+        editor:
+        base_path:
+        collection:
+        schema:
+        default_content_file: posts/blueprint.md
+    create:
+      path:
+      extra_data:
+      publish_to:
+      _inputs:
+        title:
+          type: text
+          cascade: true
+        date:
+          type: date
+          instance_value: NOW
+          cascade: true
+        updated:
+          type: date
+          instance_value: NOW
+          cascade: true
+        tags:
+          type: array
+          cascade: true
+      _select_data:
+      _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      post-schema:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: title
+        icon: title
+        preview:
+          text:
+          subtext:
+          icon:
+          icon_color:
+          icon_background_color:
+          image:
+          metadata:
+          gallery:
+        _editables:
+          text:
+            allow_custom_markup: true
+            remove_custom_markup: false
+            bold:
+            copyformatting:
+            italic:
+            link:
+            paths:
+            redo:
+            removeformat:
+            strike:
+            subscript:
+            superscript:
+            underline:
+            undo:
+        _enabled_editors:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
+timezone: Europe/Oslo
+markdown:
+  engine: commonmark
+  options:
+    html: true

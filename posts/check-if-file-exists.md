@@ -1,6 +1,6 @@
 ---
 title: Check if a file exists (pre-push example)
-date: 2026-03-03
+date: 2026-03-03T00:00:00Z
 tags:
   - sh
   - bash
@@ -8,7 +8,6 @@ tags:
   - git-hooks
   - pre-push
 ---
-
 # Bash
 
 ## Check existence

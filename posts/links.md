@@ -1,13 +1,13 @@
 ---
 title: Links
-date: 2023-10-22
+date: 2023-10-22T00:00:00Z
 tags:
   - lazygit
   - git
   - vim
   - html
+  - links
 ---
-
 # Links
 
 - Git & lazygit

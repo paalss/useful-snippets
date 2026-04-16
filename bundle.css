@@ -5,6 +5,12 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
