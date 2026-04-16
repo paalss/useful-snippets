@@ -16,31 +16,19 @@ Example script:
 ```sh
 branch_name=$(git symbolic-ref HEAD 2>/dev/null)
 
-allowed_branch_name="refs/heads/"
+GREEN='\033[0;32m'
+RED='\033[1;91m'
+RESET='\033[0m'
 
-allowed_branch_name+="min-branch"
+branch_name="$(git branch --show-current)"
+allowed_branch_name="my-branch"
 
 if [ "$branch_name" != "$allowed_branch_name" ]; then
-  echo "Current branch: ${branch_name}"
-  echo "Allowed branch: ${allowed_branch_name}"
+  echo "Current branch: ${RED}${branch_name}${RESET}"
+  echo "Allowed branch: ${GREEN}${allowed_branch_name}${RESET}" 
   echo
-  echo "You can't push directly to this branch." # also prevents --force-with-lease pushes
+  echo "You can't push directly to this branch."
   exit 1
 fi
 ```
 
-should work given that this command:
-
-```sh
-git symbolic-ref HEAD 2>/dev/null
-```
-
-gives: `refs/heads/min-branch`
-
-and:
-
-```sh
-git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3
-```
-
-gives `min-branch`
