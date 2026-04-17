@@ -11,6 +11,6 @@ tags:
 
 <https://plugins.jetbrains.com/plugin/14823-full-line-code-completion/documentation>
 
-[image](/images/disable-ai-1.png)
+![image](/images/disable-ai-1.png)
 
-[image](/images/disable-ai-2.png)
+![image](/images/disable-ai-2.png)
