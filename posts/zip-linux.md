@@ -33,3 +33,5 @@ ln -s ./nvim-linux-x86_64/bin/nvim ./nvim # create symbolic link
 ```
 
 Fra <https://github.com/paalss/nvim/blob/master/docs/neovim-install.md>
+
+<!-- tar xvf helix-25.07.1-x86_64-linux.tar.xz -->
