@@ -5,8 +5,18 @@ tags:
 - debug
 - python
 - pycharm
-- webstorm
 ---
+
+# Debug in Python
+
+```
+raise ValueError("custom message") 
+```
+
+- <https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python>
+- <https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code>
+
+# Debug in PyCharm
 
 Top right drop-down menu:
 
