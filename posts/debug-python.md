@@ -1,5 +1,5 @@
 ---
-title: Debug in Pycharm
+title: Debug
 date: 2023-11-18
 tags:
 - debug
@@ -7,7 +7,7 @@ tags:
 - pycharm
 ---
 
-# Debug in Python
+# In Python
 
 ```
 raise ValueError("custom message") 
@@ -16,7 +16,7 @@ raise ValueError("custom message")
 - <https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python>
 - <https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code>
 
-# Debug in PyCharm
+# In PyCharm
 
 Top right drop-down menu:
 
