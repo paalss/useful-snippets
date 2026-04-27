@@ -5,11 +5,10 @@ tags:
 - homebrew
 ---
 
-
-Create dump file (package.json)
+Create dump file (package.json, requirements.txt)
 
 ```sh
-brew bundle dump 
+brew bundle dump --force --describe 
 ```
 
 <https://docs.brew.sh/Manpage#bundle-subcommand>
