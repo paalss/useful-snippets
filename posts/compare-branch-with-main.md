@@ -14,6 +14,11 @@ tags:
 
 
 ```bash
+git diff main..HEAD # does not include uncommitted changes
+```
+---
+
+```bash
 git diff main..$(git branch --show-current) # does not include uncommitted changes
 ```
 ---
