@@ -32,6 +32,16 @@ tags:
 
 More on Telescope: <https://useful-snippets.netlify.app/posts/vim/>
 
+# Fzf lua
+
+Q for selecting all elements with fzf-lua:
+
+```
+config.defaults.keymap.fzf["ctrl-q"] = "select-all+accept"
+```
+
+From Lazyvim config: <https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/plugins/extras/editor/fzf.lua>
+
 
 # Fzf use cases
 
