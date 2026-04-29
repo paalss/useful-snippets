@@ -30,3 +30,12 @@ if [ "$branch_name" != "$allowed_branch_name" ]; then
 fi
 ```
 
+
+
+Insert the current branch into the top of the pre-push file
+
+```sh
+sed -i "" "s&An example&$(git branch --show-current)\n# An example&" .git/hooks/pre-push 
+```
+
+> Replace "An example" with current branch \n # An example
