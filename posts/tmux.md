@@ -37,3 +37,15 @@ Med `christoomey/vim-tmux-navigator` package og instrukser fra <https://www.jose
 ### Move between panes
 
 `Ctrl h` eller `j` eller `k` eller `l`
+
+### Move windows
+
+Move to index
+
+```sh
+Ctrl b . 2 
+```
+
+... Flere løsninger ...
+
+<https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows>
