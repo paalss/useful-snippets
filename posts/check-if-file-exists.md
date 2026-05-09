@@ -10,6 +10,28 @@ tags:
 ---
 # Bash
 
+## Search replace in pre-push(.sample)
+
+```
+# 1: new branch name
+function update_prepush {
+  sed -i'' -e "s/allowed_branch_name=\".*\"/allowed_branch_name=\"$1\"/g" $(gitHookFull pre-push)
+}
+
+#1: name of git hook (e.g. pre-push, post-commit)
+function gitHookFull {
+  if [[ -f ".git/hooks/$1" ]]; then
+    echo ".git/hooks/$1"
+  else
+    if [[ -f ".git/hooks/$1.sample" ]]; then
+      echo ".git/hooks/$1.sample"
+    else
+      echo "undefined"
+    fi
+  fi
+}
+```
+
 ## Check existence
 
 ```bash
