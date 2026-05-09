@@ -1,12 +1,11 @@
 ---
 title: prepush / git hooks
-date: 2026-02-25
+date: 2026-02-25T00:00:00Z
 tags:
   - git
   - git-hooks
   - pre-push
 ---
-
 To activate pre-push, rename `.git/hooks/pre-push.sample` to `.git/hooks/pre-push`
 
 ---
@@ -23,7 +22,7 @@ allowed_branch_name="my-branch"
 
 if [ "$branch_name" != "$allowed_branch_name" ]; then
   echo "Current branch: ${RED}${branch_name}${RESET}"
-  echo "Allowed branch: ${GREEN}${allowed_branch_name}${RESET}" 
+  echo "Allowed branch: ${GREEN}${allowed_branch_name}${RESET}"
   echo
   echo "You can't push directly to this branch."
   exit 1
@@ -33,21 +32,19 @@ fi
 ### Insert the current branch into the top of the pre-push file
 
 ```sh
-sed -i "" "s&An example&$(git branch --show-current)\n# An example&" .git/hooks/pre-push 
+sed -i "" "s&An example&$(git branch --show-current)\n# An example&" .git/hooks/pre-push
 ```
 
-> Replace "An example" with current branch \n # An example
+> Replace "An example" with current branch \\n \# An example
 
 ### Copy current branch to Mac clipboard
 
 ```sh
-echo $(git branch --show-current) | pbcopy 
+echo $(git branch --show-current) | pbcopy
 ```
 
 From vim:
 
-
 ```sh
-:!echo $(git branch --show-current) | pbcopy 
+:!echo $(git branch --show-current) | pbcopy
 ```
-
