@@ -78,6 +78,8 @@ collections_config:
         _structures:
         create:
         new_preview_url:
+editor:
+  default_path:
 timezone: Europe/Oslo
 markdown:
   engine: commonmark
