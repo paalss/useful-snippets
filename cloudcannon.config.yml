@@ -6,6 +6,8 @@ collections_config:
     path: posts
     icon: newspaper
     disable_url: false
+    _enabled_editors:
+      - visual
     add_options:
       - name: Default note
         icon: ad
