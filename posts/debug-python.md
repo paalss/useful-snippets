@@ -1,20 +1,19 @@
 ---
 title: Debug
-date: 2023-11-18
+date: 2023-11-18T00:00:00Z
 tags:
-- debug
-- python
-- pycharm
+  - debug
+  - python
+  - pycharm
 ---
-
 # In Python
 
 ```
-raise ValueError("custom message") 
+raise ValueError("custom message")
 ```
 
-- <https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python>
-- <https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code>
+* [https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python)
+* [https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code](https://stackoverflow.com/questions/1156023/print-current-call-stack-from-a-method-in-code)
 
 # In PyCharm
 
@@ -22,12 +21,14 @@ Top right drop-down menu:
 
 Edit configurations
 
-python interpreter: <python environment>
+python interpreter:
+
+```
+<python environment=""></python>
+```
 
 place breakpoint (not in the template, click the left border)
 
---OK--
+\--OK--
 
 Debug 'name' (F5) (At least with VS Code keymap)
-
-
