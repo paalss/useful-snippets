@@ -27,7 +27,7 @@ If MR author forgot to bring feature up to date with main.
 Compare against main at the time when branch was created.
 
 ```bash
-git diff $(git merge-base main HEAD) HEAD | delta
+git diff $(git merge-base main HEAD) HEAD
 ```
 
 ---
