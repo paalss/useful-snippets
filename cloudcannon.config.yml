@@ -41,6 +41,9 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
     schemas:
+      customer_story:
+        name: Customer story
+        path: .cloudcannon/schemas/customer-story.md
       post-schema:
         path:
         reorder_inputs: true
