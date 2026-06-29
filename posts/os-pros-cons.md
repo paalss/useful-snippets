@@ -1,28 +1,27 @@
 ---
 title: fordeler/ulemper med Windows/MacOS
-date: 2023-10-22
+date: 2023-10-22T00:00:00Z
 ranking: 4
 tags:
   - windows
   - mac
   - autohotkey
 ---
-
 ## mislikte/misliker med mac:
 
-1. man må ha app store account og derav også registrere bankkort for å oppdatere OS.
-2. finder sorterer filtyper helt alfabetisk i stedet for å putte mapper over alt annet
-3. man må aktivt rydde opp filene hele tiden for å få det på stell, og hvis man vil ha auto sortering på noe annet enn filnavn må man takke seg til å gruppere filene i forskjellige rader
+1. ~~man må ha app store account og derav også registrere bankkort for å oppdatere OS.~~ (Tror denne er utdatert)
+2. ~~finder sorterer filtyper helt alfabetisk i stedet for å putte mapper over alt annet~~
+3. ~~man må aktivt rydde opp filene hele tiden for å få det på stell, og hvis man vil ha auto sortering på noe annet enn filnavn må man takke seg til å gruppere filene i forskjellige rader~~
 4. kryss og minifiser og det er på feil side, dessuten er knappene veldig små
 5. skrivebordet plasserer alltid programmer på feil side (og man må flytte over programmene manuelt og stille inn grid slik at det går. Det resettes når man velger sortering og nye programmer dukker opp til høyre)
-6. savner muligheten til å raskt forvandle vindu til å oppta halvparten av skjermen
-7. fullscreen-uten-å-ta-bort-dock er upraktisk
+6. ~~savner muligheten til å raskt forvandle vindu til å oppta halvparten av skjermen~~ det er mulig nå!
+7. ~~fullscreen-uten-å-ta-bort-dock er upraktisk~~ man trenger ikke bruke denne fullscreen varianten
 8. På Mac XAMPP versjonen må man aktivt mounte xampp/lampp-mappa. Slitsomt
 9. launchpad kan noen ganger ta lang tid på å laste inn noen programmer. i hvert fall etter seks år.
 10. Teit at menyelementer ofte finnes på to steder: Både i menylinje og i selve programvinduet. Er for det meste windows programvarer dette gjelder.
 11. Hvis derimot menyelement kun finnes på det ene stedet (i VSCode så vises den bare i overmenyen, i XAMPP vises nesten ingenting der) så ender man opp med mye ubrukt luft som bare opptar skjermplass
 12. Man kan ikke trykke fn + esc for å slå på og av funksjonstaster
-13. når man kobler til et kamera så går macen bare ut i fra at du vil bruke den fotogalleri-appen. Det er så irriterende! Hvis mankopierer camera raw file derfra så blir de til jpg når man limer dem inn!
+13. når man kobler til et kamera så går macen bare ut i fra at du vil bruke den fotogalleri-appen. Det er så irriterende! Hvis man kopierer camera raw file derfra så blir de til jpg når man limer dem inn!
 
 ### (sort of) fikset
 
@@ -32,13 +31,13 @@ tags:
 4. man har tastatursnarveier som man bruker oftest
 5. den har introdusert GUI knapper for å få vinduet til å oppta halvparten av plassen, men dette er ikke godt nok. knappene finnes også i window menyalternativet.
 
-For å få vinduet til venstre, må man først hover'e over den knøttlille grønne knappen, vente et kvart sekund og så klikke.
+~~For å få vinduet til venstre, må man først hover'e over den knøttlille grønne knappen, vente et kvart sekund og så klikke.~~ enkelt å bruke tastatursnarvei i dag eller klikke og dra vinduet til venstre eller høyre kant slik som på windows 
 
-Man kan forresten legge til egen app shortcut, så lenge man vet hva man skal gjøre (må følge en tutorial)
+~~Man kan forresten legge til egen app shortcut, så lenge man vet hva man skal gjøre (må følge en tutorial)~~
 
 Men det er jo nesten ingen tastastursnarveier igjen!
 
-https://www.paulsahner.com/posts/window-movement
+<https://www.paulsahner.com/posts/window-movement>
 
 ## Mislikte/misliker med windows:
 
@@ -49,13 +48,12 @@ https://www.paulsahner.com/posts/window-movement
 5. Word har ikke like behagelig søkefelt, og man kan ikke åpne det med ctrl+F
 6. Elendige tastatursnarveier
 7. Litt irriterende uten egen PDF app. Når du åpner et dokument så åpner den automatisk MS Edge for å vise PDF-en. Og selv om du ikke har tenkt å bruke nettleseren til noe nettspesifikt, kommer den med meldinger som at "du må sikre nettleseren" eller hva det nå var det sto. Og det er ikke relevant hvis du bare skal se på en PDF! Distraherende!
-8. I filutforsker, hvis man prøver å navigere opp fra "Pål Stakvik"-mappa, så kommer man ikke til Users, men til desktop. Og når man klikker i addressefeltet, så står det bare "Pål Stakvik" - som om det er øverste mappa. Man må navigere seg inn en mappe, og først da får man den fulle og hele addresselinjen: "C:\Users\Pål Stakvik\Postman".
+8. I filutforsker, hvis man prøver å navigere opp fra "Pål Stakvik"-mappa, så kommer man ikke til Users, men til desktop. Og når man klikker i addressefeltet, så står det bare "Pål Stakvik" - som om det er øverste mappa. Man må navigere seg inn en mappe, og først da får man den fulle og hele addresselinjen: "C:\\Users\\Pål Stakvik\\Postman".
 
-- - særlig hvis du jobber med typografi. Windows' "tastatursnarveier" for ekte anførselstegn er en vits og blir fullstendig grust av de til mac. Gjelder også:
+* * særlig hvis du jobber med typografi. Windows' "tastatursnarveier" for ekte anførselstegn er en vits og blir fullstendig grust av de til mac. Gjelder også:
 
 * ellipse
-* binde- og tankestrek
-  Ellers gir tastatursnarveiene til mac generelt mer mening (f.eks. så er "/", "|" og "\" alle samlet under samme knapp).
+* binde- og tankestrek Ellers gir tastatursnarveiene til mac generelt mer mening (f.eks. så er "/", "\|" og "" alle samlet under samme knapp).
 
 7. McAfee kommer med sine dialog-bokser og avbryter deg i arbeidet ditt
 
