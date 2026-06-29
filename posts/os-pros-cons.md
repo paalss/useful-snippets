@@ -14,7 +14,7 @@ tags:
 2. ~~Finder (filutforsker) sorterer filtyper helt alfabetisk i stedet for å putte mapper over alt annet~~ dette kan endres i innstillinger nå
 3. ~~man må aktivt rydde opp filene hele tiden for å få det på stell, og hvis man vil ha auto sortering på noe annet enn filnavn må man takke seg til å gruppere filene i forskjellige rader~~ dette er også mulig nå!
 4. kryss og minifiser og det er på feil side, dessuten er knappene veldig små
-   1. dette bryr jeg meg ikke noe om lenger
+   1. dette bryr jeg meg ikke noe om lenger. fungerer helt greit å bruke tastatursnarveier
 5. skrivebordet plasserer alltid programmer på feil side (og man må flytte over programmene manuelt og stille inn grid slik at det går. Det resettes når man velger sortering og nye programmer dukker opp til høyre)
    1. samme her
 6. ~~savner muligheten til å raskt forvandle vindu til å oppta halvparten av skjermen~~ det er mulig nå!
@@ -52,21 +52,20 @@ Men det er jo nesten ingen tastastursnarveier igjen!
 
 ## Mislikte/misliker med windows:
 
-1. Den hadde forferdelige problemer mellom Endnote og Word og sitering (se diarium og komprimerte tanker bok)
-2. Noe forbanna herk å få ekstern harddisk til å faktisk kopiere alt jeg ba den om å kopiere
+1. Den hadde forferdelige problemer mellom Endnote og Word og sitering (se diarium og komprimerte tanker bok) men fikk fikset det til slutt, da
+2. Noe forbanna herk å få ekstern harddisk til å faktisk kopiere alt jeg ba den om å kopiere. fikk fikset det til slutt, da
 3. Ting brekker. GUI er brukken. Ting funker ikke. Lyd, PC-frys, PC bestemmer seg bare for å slukne helt uten videre. Task-bar sin ekstern harddisk symbol fungerer ikke alltid
 4. Windows' Adobe Bridge ser ut som en vits. Meny og greier er for store.
 5. Word har ikke like behagelig søkefelt, og man kan ikke åpne det med ctrl+F
 6. Elendige tastatursnarveier
 7. Litt irriterende uten egen PDF app. Når du åpner et dokument så åpner den automatisk MS Edge for å vise PDF-en. Og selv om du ikke har tenkt å bruke nettleseren til noe nettspesifikt, kommer den med meldinger som at "du må sikre nettleseren" eller hva det nå var det sto. Og det er ikke relevant hvis du bare skal se på en PDF! Distraherende!
 8. I filutforsker, hvis man prøver å navigere opp fra "Pål Stakvik"-mappa, så kommer man ikke til Users, men til desktop. Og når man klikker i addressefeltet, så står det bare "Pål Stakvik" - som om det er øverste mappa. Man må navigere seg inn en mappe, og først da får man den fulle og hele addresselinjen: "C:\\Users\\Pål Stakvik\\Postman".
-
-* * særlig hvis du jobber med typografi. Windows' "tastatursnarveier" for ekte anførselstegn er en vits og blir fullstendig grust av de til mac. Gjelder også:
-
-* ellipse
-* binde- og tankestrek Ellers gir tastatursnarveiene til mac generelt mer mening (f.eks. så er "/", "\|" og "" alle samlet under samme knapp).
-
-7. McAfee kommer med sine dialog-bokser og avbryter deg i arbeidet ditt
+9. Særlig hvis du jobber med typografi. Windows' "tastatursnarveier" for ekte anførselstegn er en vits og blir fullstendig grust av de til mac. Gjelder også:
+   1. ellipse
+   2. binde- og tankestrek
+   3. Ellers gir tastatursnarveiene til mac generelt mer mening (f.eks. så er "/", "\|" og "" alle samlet under samme knapp).
+   4. men man kan installere Autohotkey på Windows for å lage bedre snarveier
+10. McAfee kommer med sine dialog-bokser og avbryter deg i arbeidet ditt
 
 <!--
 
