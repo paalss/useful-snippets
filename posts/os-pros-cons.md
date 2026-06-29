@@ -25,6 +25,8 @@ tags:
 
 ### (sort of) fikset
 
+Kommentarer ang. listen over:
+
 1. det er mulig å komme rundt dette
 2. finnes innstilling for å ikke gjøre det slik
 3. det har kommet innstilling for auto stortering etter filtyper
@@ -58,6 +60,8 @@ Men det er jo nesten ingen tastastursnarveier igjen!
 7. McAfee kommer med sine dialog-bokser og avbryter deg i arbeidet ditt
 
 ### fikset
+
+Kommentarer ang. listen over:
 
 1. Fikk funnet ut hva som var feil, etter en hel dags research og prat med utviklerne/support.
 2. Fikk fikset det til slutt
