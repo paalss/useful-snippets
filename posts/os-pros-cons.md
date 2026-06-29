@@ -11,22 +11,24 @@ tags:
 ## mislikte/misliker med mac:
 
 1. ~~man må ha app store account og derav også registrere bankkort for å oppdatere OS.~~ (Tror denne er utdatert)
-2. ~~Finder (filutforsker) sorterer filtyper helt alfabetisk i stedet for å putte mapper over alt annet~~
-3. ~~man må aktivt rydde opp filene hele tiden for å få det på stell, og hvis man vil ha auto sortering på noe annet enn filnavn må man takke seg til å gruppere filene i forskjellige rader~~ det er mulig, nå!
+2. ~~Finder (filutforsker) sorterer filtyper helt alfabetisk i stedet for å putte mapper over alt annet~~ dette kan endres i innstillinger nå
+3. ~~man må aktivt rydde opp filene hele tiden for å få det på stell, og hvis man vil ha auto sortering på noe annet enn filnavn må man takke seg til å gruppere filene i forskjellige rader~~ dette er også mulig nå!
 4. kryss og minifiser og det er på feil side, dessuten er knappene veldig små
    1. dette bryr jeg meg ikke noe om lenger
-6. skrivebordet plasserer alltid programmer på feil side (og man må flytte over programmene manuelt og stille inn grid slik at det går. Det resettes når man velger sortering og nye programmer dukker opp til høyre)
+5. skrivebordet plasserer alltid programmer på feil side (og man må flytte over programmene manuelt og stille inn grid slik at det går. Det resettes når man velger sortering og nye programmer dukker opp til høyre)
    1. samme her
-8. ~~savner muligheten til å raskt forvandle vindu til å oppta halvparten av skjermen~~ det er mulig nå!
-9. ~~fullscreen-uten-å-ta-bort-dock er upraktisk~~ man trenger ikke bruke denne fullscreen varianten
-10. På Mac XAMPP versjonen må man aktivt mounte xampp/lampp-mappa. Slitsomt
+6. ~~savner muligheten til å raskt forvandle vindu til å oppta halvparten av skjermen~~ det er mulig nå!
+7. ~~fullscreen-uten-å-ta-bort-dock er upraktisk~~ man trenger ikke bruke denne fullscreen varianten
+8. På Mac XAMPP versjonen må man aktivt mounte xampp/lampp-mappa. Slitsomt
    1. bruker ikke dette programmet mer
-12. launchpad (listen over alle appene) kan noen ganger ta lang tid på å laste inn noen programmer. i hvert fall etter seks år.
-13. Teit at menyelementer ofte finnes på to steder: Både i menylinje og i selve programvinduet. Er for det meste windows programvarer dette gjelder.
+9. launchpad (listen over alle appene) kan noen ganger ta lang tid på å laste inn noen programmer. i hvert fall etter seks år.
+10. Teit at menyelementer ofte finnes på to steder: Både i menylinje og i selve programvinduet. Er for det meste windows programvarer dette gjelder.
    1. ja, det er litt fjollete, men det blir man vandt til
-15. Hvis derimot menyelement kun finnes på det ene stedet (i VSCode så vises den bare i overmenyen, i XAMPP vises nesten ingenting der) så ender man opp med mye ubrukt luft som bare opptar skjermplass
-16. Man kan ikke trykke fn + esc for å slå på og av funksjonstaster
-17. når man kobler til et kamera så går macen bare ut i fra at du vil bruke den fotogalleri-appen. Det er så irriterende! Hvis man kopierer camera raw file derfra så blir de til jpg når man limer dem inn! Jeg trenger å åpne i Finder!
+11. Hvis derimot menyelement kun finnes på det ene stedet (i VSCode så vises den bare i overmenyen, i XAMPP vises nesten ingenting der) så ender man opp med mye ubrukt luft som bare opptar skjermplass
+12. Man kan ikke trykke fn + esc for å slå på og av funksjonstaster
+13. når man kobler til et kamera så går macen bare ut i fra at du vil bruke den fotogalleri-appen. Det er så irriterende! Hvis man kopierer camera raw file derfra så blir de til jpg når man limer dem inn! Jeg trenger å åpne i Finder!
+
+<!--
 
 ### (sort of) fikset
 
@@ -37,6 +39,8 @@ Kommentarer ang. listen over:
 3. det har kommet innstilling for auto stortering etter filtyper
 4. man har tastatursnarveier som man bruker oftest
 5. den har introdusert GUI knapper for å få vinduet til å oppta halvparten av plassen, men dette er ikke godt nok. knappene finnes også i window menyalternativet.
+
+-->
 
 ~~For å få vinduet til venstre, må man først hover'e over den knøttlille grønne knappen, vente et kvart sekund og så klikke.~~ enkelt å bruke tastatursnarvei i dag eller klikke og dra vinduet til venstre eller høyre side slik som på windows 
 
@@ -64,6 +68,8 @@ Men det er jo nesten ingen tastastursnarveier igjen!
 
 7. McAfee kommer med sine dialog-bokser og avbryter deg i arbeidet ditt
 
+<!--
+
 ### fikset
 
 Kommentarer ang. listen over:
@@ -71,3 +77,5 @@ Kommentarer ang. listen over:
 1. Fikk funnet ut hva som var feil, etter en hel dags research og prat med utviklerne/support.
 2. Fikk fikset det til slutt
 3. man kan lage et autohotkey skript for å få til samme snarveier som mac
+
+-->
