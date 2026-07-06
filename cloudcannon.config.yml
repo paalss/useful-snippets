@@ -14,7 +14,7 @@ collections_config:
         editor:
         base_path:
         collection:
-        schema:
+        schema: customer_story
         default_content_file: posts/blueprint.md
     create:
       path:
