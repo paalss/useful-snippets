@@ -29,6 +29,24 @@ if [ "$branch_name" != "$allowed_branch_name" ]; then
 fi
 ```
 
+Evt.
+
+```sh
+  echo "Allowed branch (f): ${GREEN}${allowed_branch_name}${RESET}"
+```
+
+hvis f er for å checkoute til den branchen:
+
+```sh
+alias f="git checkout $(cat ~/assigned-feature-branch.txt)"
+````
+
+Se dotfiles
+
+&nbsp;
+
+&nbsp;
+
 ### Insert the current branch into the top of the pre-push file
 
 ```sh
