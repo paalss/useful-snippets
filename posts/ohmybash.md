@@ -7,6 +7,8 @@ tags:
 - cli
 ---
 
+<https://paalss.github.io/oh-my-aliases/>
+
 Hvordan starte med ohmybash, velge theme og laste ned nødvendig font icons
 
 ## Installasjon
