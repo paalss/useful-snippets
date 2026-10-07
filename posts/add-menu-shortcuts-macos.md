@@ -11,6 +11,6 @@ tags:
 4. + or Notes.app
 5. For Notes.app, menu title: `Format->Font->Strikethrough`
 
-![image](/images/keyboard shortcuts.png)
+![image](/images/keyboard-shortcuts.png)
 ![image](/images/apple-notes-strikethrough-functionality.png)
 ![image](/images/apple-notes-strikethrough-shortcut-creation.png)
