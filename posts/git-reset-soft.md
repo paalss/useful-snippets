@@ -5,6 +5,10 @@ tags:
   - git
 ---
 
+<https://useful-snippets.netlify.app/posts/undo-soft-reset/>
+
+<https://useful-snippets.netlify.app/posts/git-reflog/>
+
 ```sh
 git reset --soft HEAD~1
 ```
