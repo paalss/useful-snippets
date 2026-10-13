@@ -5,6 +5,8 @@ tags:
 - git
 ---
 
+<https://useful-snippets.netlify.app/posts/undo-soft-reset/>
+
 1. `git reflog` find commit before reset
 2. `git checkout <commit>`
 3. `git log` verify that this commit includes the resetted commit
