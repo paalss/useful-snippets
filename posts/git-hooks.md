@@ -53,7 +53,7 @@ if [ "$branch_name" != "$allowed_branch_name" ]; then
   echo "Allowed branch (f): ${GREEN}${allowed_branch_name}${RESET}" # = assigned to me - press "f" to checkout to it
   echo
   echo "Are you sure you want to push?"
-  echo "  1) Yes, don't ask me again"
+  echo "  1) Yes, don't ask me again (updatecurrentprepush)"
   echo "  2) Yes"
   echo "  3) No"
   printf "Choice [1/2/3]: "
