@@ -136,7 +136,7 @@ Evt.
 hvis f er for å checkoute til den branchen:
 
 ```sh
-alias f="git checkout $(cat ~/assigned-feature-branch.txt)"
+alias fe="git checkout $(cat ~/assigned-feature-branch.txt)"
 ````
 
 Se dotfiles
