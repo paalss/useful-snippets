@@ -50,7 +50,7 @@ allowed_branch_name="feature/1942_add_missing_translations"
 
 if [ "$branch_name" != "$allowed_branch_name" ]; then
   echo "Current branch: ${RED}${branch_name}${RESET}"
-  echo "Allowed branch (f): ${GREEN}${allowed_branch_name}${RESET}" # = assigned to me - press "f" to checkout to it
+  echo "Allowed branch (fe): ${GREEN}${allowed_branch_name}${RESET}" # = assigned to me - press "fe" to checkout to it
   echo
   echo "Are you sure you want to push?"
   echo "  1) Yes, don't ask me again (updatecurrentprepush)"
