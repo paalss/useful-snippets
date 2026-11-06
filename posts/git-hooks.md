@@ -44,13 +44,13 @@ RED='\033[1;91m'
 RESET='\033[0m'
 
 branch_name="$(git branch --show-current)"
-allowed_branch_name="feature/1942_add_missing_translations"
+allowed_branch_name="feature-branch"
 
 # SPC SPC bran: ----> Copy branch name to clipboard
 
 if [ "$branch_name" != "$allowed_branch_name" ]; then
   echo "Current branch: ${RED}${branch_name}${RESET}"
-  echo "Allowed branch (fe): ${GREEN}${allowed_branch_name}${RESET}" # = assigned to me - press "fe" to checkout to it
+  echo "Allowed branch (fe): ${GREEN}${allowed_branch_name}${RESET}" # = assigned to me - press "f" to checkout to it
   echo
   echo "Are you sure you want to push?"
   echo "  1) Yes, don't ask me again (updatecurrentprepush)"
@@ -81,69 +81,33 @@ fi
 #
 # while read local_ref local_oid remote_ref remote_oid
 # do
-#     if test "$local_oid" = "$zero"
-#     then
-#         # Handle delete
-#         :
-#     else
-#         if test "$remote_oid" = "$zero"
-#         then
-#             # New branch, examine all commits
-#             range="$local_oid"
-#         else
-#             # Update to existing branch, examine new commits
-#             range="$remote_oid..$local_oid"
-#         fi
+# 	if test "$local_oid" = "$zero"
+# 	then
+# 		# Handle delete
+# 		:
+# 	else
+# 		if test "$remote_oid" = "$zero"
+# 		then
+# 			# New branch, examine all commits
+# 			range="$local_oid"
+# 		else
+# 			# Update to existing branch, examine new commits
+# 			range="$remote_oid..$local_oid"
+# 		fi
 #
-#         # Check for WIP commit
-#         commit=$(git rev-list -n 1 --grep '^WIP' "$range")
-#         if test -n "$commit"
-#         then
-#             echo >&2 "Found WIP commit in $local_ref, not pushing"
-#             exit 1
-#         fi
-#     fi
+# 		# Check for WIP commit
+# 		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+# 		if test -n "$commit"
+# 		then
+# 			echo >&2 "Found WIP commit in $local_ref, not pushing"
+# 			exit 1
+# 		fi
+# 	fi
 # done
 
 exit 0
 ```
 
-### Example script (prevent pushes on wrong branch)
-
-```sh
-GREEN='\033[0;32m'
-RED='\033[1;91m'
-RESET='\033[0m'
-
-branch_name="$(git branch --show-current)"
-allowed_branch_name="my-branch"
-
-if [ "$branch_name" != "$allowed_branch_name" ]; then
-  echo "Current branch: ${RED}${branch_name}${RESET}"
-  echo "Allowed branch: ${GREEN}${allowed_branch_name}${RESET}"
-  echo
-  echo "You can't push directly to this branch."
-  exit 1
-fi
-```
-
-Evt.
-
-```sh
-  echo "Allowed branch (f): ${GREEN}${allowed_branch_name}${RESET}"
-```
-
-hvis f er for å checkoute til den branchen:
-
-```sh
-alias fe="git checkout $(cat ~/assigned-feature-branch.txt)"
-````
-
-Se dotfiles
-
-&nbsp;
-
-&nbsp;
 
 ### Insert the current branch into the top of the pre-push file
 
